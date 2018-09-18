@@ -1,0 +1,18 @@
+.page-post {
+
+    .grid {
+        @supports not (display: grid) {
+            .main {
+                flex: initial;
+            }
+        }
+
+        @supports (display: grid) {
+            grid-template-areas:
+                "header"
+                "main"
+                "post-navigation"
+                "footer";
+        }
+    }
+}

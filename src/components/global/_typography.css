@@ -1,0 +1,98 @@
+
+@custom-selector :--heading h1, h2, h3, h4, .h1, .h2, .h3, .h4;
+
+html {
+    font-size: var(--base-font-size);
+}
+
+body {
+    font-size: 100%;
+}
+
+:--heading,
+p,
+pre,
+blockquote,
+ul, li, ol {
+    color: var(--gray-dark);
+}
+
+:--heading {
+    color: var(--black);
+    font-family: system-ui, sans-serif;
+    font-size: var(--heading-h1-size);
+    font-weight: 600;
+    line-height: 1.05em;
+
+    @media (--tablet) {
+        font-size: 2.5em;
+        line-height: 1.125em;
+    }
+}
+
+.h2 { font-size: var(--heading-h2-size); line-height: 1.25; }
+.h3 { font-size: var(--heading-h3-size); line-height: 1.25; }
+.h4 { font-size: var(--heading-h4-size); line-height: 1.222em; }
+
+.blockquote {
+    font-size: 1.5em;
+    line-height: 1.458333em;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.list-inline {
+    display: inline-block;
+    padding: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+.list-mobile-inline li {
+    display: inline;
+
+    & + li {
+        margin-left: 8px;
+    }
+
+    @media (--tablet) {
+        display: block;
+
+        & + li {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+    }
+}
+
+.post-body--copy a {
+    border-bottom: 4px solid var(--primary);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+
+    /*
+     * TODO: Make nice transition
+     */
+    &:--hover {
+        border: none;
+    }
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main-title {
+    color: var(--secondary);
+    font-size: 3em;
+    margin-bottom: 45px;
+    text-shadow: 5px 6px 0 var(--primary);
+}

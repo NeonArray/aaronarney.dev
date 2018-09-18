@@ -1,0 +1,32 @@
+.show-for-mobile {
+    display: block;
+
+    @media(--tablet) {
+        display: none !important;
+    }
+}
+
+.hide-for-mobile {
+    display: none;
+
+    @media(--tablet) {
+        display: block !important;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-columns {
+    flex-direction: column;
+}
+
+.align-right {
+    align-items: flex-end;
+}
+
+.color__vr       { background: var(--secondary-gradient); }
+.color__general  { background: var(--purple-gradient); }
+.color__web      { background: var(--primary-gradient); }
+.color__software { background: var(--yellow-gradient); a { color: var(--black); } }

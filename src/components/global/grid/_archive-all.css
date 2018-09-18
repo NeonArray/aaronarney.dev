@@ -1,0 +1,5 @@
+.archive .grid {
+    @supports (display: grid) {
+        grid-template-areas: "header" "main" "footer";
+    }
+}
