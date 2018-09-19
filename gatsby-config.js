@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Default Starter',
+        title: 'Ocular-Rhythm',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -10,6 +10,21 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/posts`,
                 name: 'pages',
+            },
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            classPrefix: "language-",
+                            inlineCodeMarker: null,
+                            aliases: {},
+                        },
+                    },
+                ],
             },
         },
         {
