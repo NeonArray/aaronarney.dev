@@ -1,0 +1,12 @@
+
+.callout {
+    color: var(--white);
+    background: var(--callout-background);
+    box-shadow: 8px 8px 0 #efefef;
+    display: block;
+    font-weight: bold;
+    margin: 2em auto;
+    max-width: var(--max-content-width);
+    padding: 1.2em;
+    text-transform: uppercase;
+}
