@@ -2,11 +2,11 @@ import React from 'react';
 
 import PostBlock from '../post-block';
 
-import './archive.css';
+import style from './archive.module.css';
 
 const Archive = ({ posts }) => {
     return (
-        <div className="posts">
+        <div className={ style.posts }>
             { posts.map((i, c) => {
                 return (
                     <PostBlock key={ c } meta={ i.node }/>
