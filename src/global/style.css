@@ -54,6 +54,7 @@ body {
     overflow-x: hidden;
     padding: 0;
 }
+
 .show-for-mobile {
     display: block;
 
@@ -101,13 +102,13 @@ body {
     }
 }
 
-.header {
+[data-grid-area="header"] {
     @supports (display: grid) {
         grid-area: header;
     }
 }
 
-.aside {
+[data-grid-area="aside"] {
     @supports not (display: grid) {
     }
 
@@ -116,7 +117,7 @@ body {
     }
 }
 
-.main {
+[data-grid-area="main"] {
     @supports not (display: grid) {
     }
 
@@ -136,11 +137,12 @@ body {
     }
 }
 
-.footer {
+[data-grid-area="footer"] {
     @supports not (display: grid) {
         grid-area: footer;
     }
 }
+
 .page-post {
 
     .grid {
@@ -161,15 +163,15 @@ body {
 }
 .archive-category {
 
-    .header {
+    [data-grid-area="header"] {
         margin-bottom: 0;
     }
 
-    .aside {
+    [data-grid-area="aside"] {
         padding: 25px;
     }
 
-    .main {
+    [data-grid-area="main"] {
         padding: 25px 45px;
     }
 
