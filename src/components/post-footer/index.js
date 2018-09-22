@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import style from  './post-footer.css';
+import style from  './post-footer.module.css';
 
 const PostFooter = ({ links }) => {
     const { next, prev } = links;
 
     return (
-        <div className={ style.nav }>
+        <div data-grid-area="footer" className={ style.nav }>
             <Link to={ prev !== null ? prev.frontmatter.path : '' } className={ style.previous }>
                 <div className={ style.copy }>
                     <span className={ style.direction }>
