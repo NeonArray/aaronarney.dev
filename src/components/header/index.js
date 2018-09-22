@@ -9,7 +9,7 @@ import github from '../../images/github.svg';
 import codepen from '../../images/codepen.svg';
 
 export default ({ siteTitle }) => (
-    <header className={ style.header }>
+    <header data-grid-area="header" className={ style.header }>
         <div className={ style.inner }>
             <div className={ style.logo }>
                 <Link to="/">
