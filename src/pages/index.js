@@ -1,8 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 
 import Archive from '../components/archive';
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 
 export default ({ data }) => {
     const { allMarkdownRemark: edges } = data;
