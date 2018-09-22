@@ -1,5 +1,5 @@
 ---
-path: "blog/category/software/some-other-post"
+path: "/some-other-post"
 date: "2017-05-10T17:12:33.962Z"
 title: "The reason I was getting tripped up"
 category: "software"
@@ -7,7 +7,7 @@ category: "software"
 
 When I first began to use Phaser 2, I had trouble wrapping my head around the way that "levels", stages", or "scenes" (like in Unity) were created and accessed. I was looking in the documentation for some kind of Level Manager or methods that would allow me to load said scenes but came up short.
 
-The reason I was getting tripped up, is due to the (official tuttorials)[https://phaser.io/tutorials/making-your-first-phaser-2-game] way of creating the `Phaser.Game` object.
+The reason I was getting tripped up, is due to the (official tutorials)[https://phaser.io/tutorials/making-your-first-phaser-2-game] way of creating the `Phaser.Game` object.
 
 When the game configuration object is created, another object is passed into it containing three methods, the `preload`, `create`, and `update` methods. These are essentially Phasers "life cycle" methods that tell the engine what should happen during each of these phases.
 
