@@ -18,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
 
     const blogPostTemplate = path.resolve(`src/templates/single.js`);
+    const blogCategoryTemplate = path.resolve('src/templates/category.js');
 
     return new Promise((resolve, reject) => {
         resolve(graphql(`{ allMarkdownRemark(
@@ -47,6 +48,24 @@ exports.createPages = ({ actions, graphql }) => {
                         context: {
                             prev: index === 0 ? null : posts[index - 1].node,
                             next: index === (posts.length - 1) ? null : posts[index + 1].node,
+                        },
+                    });
+                });
+
+                let categories = [];
+                posts.forEach((edge) => {
+                    categories.push(edge.node.frontmatter.category);
+                });
+
+                // Create unique set of categories
+                categories = [...new Set(categories)];
+
+                categories.forEach((category) => {
+                    createPage({
+                        path: `blog/category/${category}`,
+                        component: blogCategoryTemplate,
+                        context: {
+                            category,
                         },
                     });
                 });
