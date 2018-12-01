@@ -20,9 +20,9 @@ function shouldShowCallout(date) {
     return undefined;
 }
 
-export default function Template({ data, pathContext }) {
+export default function Template({ data, pageContext }) {
     const post = data.markdownRemark;
-    const { html, frontmatter } = post;
+    const { frontmatter } = post;
     const callout = shouldShowCallout(frontmatter.date);
 
     return (
@@ -40,7 +40,7 @@ export default function Template({ data, pathContext }) {
 
                     <PostBody content={ post } />
 
-                    <PostFooter links={ pathContext } />
+                    <PostFooter links={ pageContext } />
                 </article>
             </main>
         </Layout>
