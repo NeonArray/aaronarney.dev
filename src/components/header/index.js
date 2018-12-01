@@ -21,9 +21,9 @@ export default ({ siteTitle }) => (
                     <li className={ style.navItem }>
                         <Link className={ style.link } to="/blog">Blog</Link>
                     </li>
-                    <li className={ style.navItem }>
-                        <Link className={ style.link } to="/projects">Projects</Link>
-                    </li>
+                    {/*<li className={ style.navItem }>*/}
+                        {/*<Link className={ style.link } to="/projects">Projects</Link>*/}
+                    {/*</li>*/}
                 </ul>
                 <ul className={ style.socialLinks }>
                     <li className={ style.socialLink }>
