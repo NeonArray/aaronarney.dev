@@ -12,8 +12,8 @@ export default ({ siteTitle }) => (
     <header data-grid-area="header" className={ style.header }>
         <div className={ style.inner }>
             <div className={ style.logo }>
-                <Link to="/">
-                    <img src={ logo } alt={ siteTitle } height="28.62" width="186.37" />
+                <Link to="/" title="Go home">
+                    <img src={ logo } alt="Ocular-Rhythm" height="28.62" width="186.37" />
                 </Link>
             </div>
             <nav className={ style.navigation }>
