@@ -23,7 +23,6 @@ const Layout = ({ children }) => (
                     titleTemplate={ data.site.siteMetadata.titleTemplate }
                 >
                     <html lang="en" />
-
                 </Helmet>
                 <Header />
                 <div className="grid">

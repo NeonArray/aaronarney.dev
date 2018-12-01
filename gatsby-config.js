@@ -12,7 +12,6 @@ module.exports = {
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
-        'gatsby-plugin-offline',
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -44,8 +43,9 @@ module.exports = {
                 background_color: '#6CC9D2',
                 theme_color: '#6CC9D2',
                 display: 'minimal-ui',
-                icon: 'static/icons/icon-512x512.png', // This path is relative to the root of the site.
+                icon: 'static/icons/icon.png', // This path is relative to the root of the site.
             },
         },
+        'gatsby-plugin-offline',
     ],
 };
