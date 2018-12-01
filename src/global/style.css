@@ -3,7 +3,9 @@
     --heading-h2-size: 2.25em;
     --heading-h3-size: 1.75em;
     --heading-h4-size: 1.125em;
+    --base-font-family:  system-ui, sans-serif;
     --base-font-size: 14px;
+    --base-font-line-height: 1.8;
 
     --black: #000;
     --white: #FFFDFD;
@@ -38,37 +40,45 @@
 
     --tag-background: #D8EBED;
     --tag-box-shadow: 3px 3px 0 #D2D2D2;
-}
 
-@custom-selector :--hover :active, :focus, :hover;
+    --animation-duration: .15s;
+
+}
+* { box-sizing: border-box; }
+
+@custom-selector :--heading h1, h2, h3, h4, .h1, .h2, .h3, .h4;
+@custom-selector :--hover :hover, :active, :focus;
 
 @custom-media --phone (min-width: 480px);
 @custom-media --tablet (min-width: 768px);
 @custom-media --desktop (min-width: 1024px);
 @custom-media --large-desktop (min-width: 1200px);
 
+html { font-size: var(--base-font-size); }
+
 body {
-    font-family: system-ui, sans-serif;
+    font-size: 100%;
+    font-family: var(--base-font-family);
+    line-height: var(--base-font-line-height);
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 0;
 }
 
-.show-for-mobile {
-    display: block;
+.link {
+    border-bottom: 4px solid var(--primary);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
 
-    @media(--tablet) {
-        display: none !important;
+    &:hover {
+        color: var(--primary);
     }
 }
 
-.hide-for-mobile {
-    display: none;
-
-    @media(--tablet) {
-        display: block !important;
-    }
+.align-right {
+    align-items: flex-end;
 }
 
 .flex {
@@ -79,18 +89,8 @@ body {
     flex-direction: column;
 }
 
-.align-right {
-    align-items: flex-end;
-}
-
-.color__vr       { background: var(--secondary-gradient); }
-.color__general  { background: var(--purple-gradient); }
-.color__web      { background: var(--primary-gradient); }
-.color__software { background: var(--yellow-gradient); a { color: var(--black); } }
-
 .grid {
     width: 100vw;
-
     @supports (display: grid) {
         display: grid;
         grid-template-areas: "header" "main" "footer";
@@ -126,6 +126,12 @@ body {
     }
 }
 
+[data-grid-area="footer"] {
+    @supports not (display: grid) {
+        grid-area: footer;
+    }
+}
+
 .post-navigation {
     display: flex;
 
@@ -134,12 +140,6 @@ body {
 
     @supports (display: grid) {
         grid-area: post-navigation;
-    }
-}
-
-[data-grid-area="footer"] {
-    @supports not (display: grid) {
-        grid-area: footer;
     }
 }
 
@@ -190,25 +190,16 @@ body {
                         "header header"
                         "aside main"
                         "footer footer";
-                grid-template-columns: auto;
+                grid-template-columns: 1fr 2fr;
             }
         }
     }
 }
+
 .archive .grid {
     @supports (display: grid) {
         grid-template-areas: "header" "main" "footer";
     }
-}
-
-@custom-selector :--heading h1, h2, h3, h4, .h1, .h2, .h3, .h4;
-
-html {
-    font-size: var(--base-font-size);
-}
-
-body {
-    font-size: 100%;
 }
 
 :--heading,
@@ -220,7 +211,6 @@ ul, li, ol {
 }
 
 :--heading {
-    color: var(--black);
     font-family: system-ui, sans-serif;
     font-size: var(--heading-h1-size);
     font-weight: 600;
@@ -241,56 +231,7 @@ ul, li, ol {
     line-height: 1.458333em;
 }
 
-.list-unstyled {
-    list-style-type: none;
-    margin-left: 0;
-}
 
-.list-inline {
-    display: inline-block;
-    padding: 0;
-
-    li {
-        display: inline;
-    }
-}
-
-.list-mobile-inline li {
-    display: inline;
-
-    & + li {
-        margin-left: 8px;
-    }
-
-    @media (--tablet) {
-        display: block;
-
-        & + li {
-            margin-left: 0;
-            margin-top: 8px;
-        }
-    }
-}
-
-.post-body--copy a {
-    border-bottom: 4px solid var(--primary);
-    color: var(--link-color);
-    font-weight: bold;
-    text-decoration: none;
-
-    /*
-     * TODO: Make nice transition
-     */
-    &:--hover {
-        border: none;
-    }
-}
-
-.section-label {
-    font-size: 12px;
-    font-weight: 800;
-    text-align: center;
-}
 
 .main-title {
     color: var(--secondary);

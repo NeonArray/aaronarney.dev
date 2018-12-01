@@ -16,6 +16,17 @@
         padding: 0;
         max-width: var(--max-content-width);
     }
+
+    a {
+        border-bottom: 4px solid var(--primary);
+        color: var(--link-color);
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+           color: var(--primary);
+        }
+    }
 }
 
 pre {

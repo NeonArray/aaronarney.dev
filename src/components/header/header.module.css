@@ -2,12 +2,8 @@
 .header {
     border-bottom: 1px solid var(--gray-light);
     display: block;
-    margin-bottom: 25px;
+    //margin-bottom: 25px;
     width: 100vw;
-
-    @media (--tablet) {
-        margin-bottom: 50px;
-    }
 }
 
 .inner {
