@@ -1,10 +1,18 @@
 module.exports = {
     siteMetadata: {
-        title: 'Ocular-Rhythm',
+        title: "Ocular-Rhythm",
+        defaultTitle: "Ocular-Rhythm",
+        titleTemplate: "%s · A development blog",
+        description:
+            "Ocular-Rhythm is a development blog, brought to you by Aaron Arney.",
+        url: "https://www.ocular-rhythm.com", // No trailing slash allowed!
+        image: "/icons/favicon.ico", // Path to your image you placed in the 'static' folder
+        twitterUsername: "@agarney",
     },
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
+        'gatsby-plugin-offline',
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -30,13 +38,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: 'gatsby-starter-default',
-                short_name: 'starter',
+                name: 'ocular-rhythm',
+                short_name: 'ocularrhythm',
                 start_url: '/',
-                background_color: '#663399',
-                theme_color: '#663399',
+                background_color: '#6CC9D2',
+                theme_color: '#6CC9D2',
                 display: 'minimal-ui',
-                icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+                icon: 'static/icons/icon-512x512.png', // This path is relative to the root of the site.
             },
         },
     ],
