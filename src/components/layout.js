@@ -8,17 +8,22 @@ import '../global/style.css';
 
 const Layout = ({ children }) => (
     <StaticQuery
-        query={ graphql`query SiteTitleQuery { site { siteMetadata { title } } }` }
+        query={ graphql`query SiteTitleQuery { site { siteMetadata {
+        defaultTitle: title
+        titleTemplate: titleTemplate
+        defaultDescription: description
+        siteUrl: url
+        defaultImage: image
+        twitterUsername
+      } } }` }
         render={ data => (
             <>
                 <Helmet
                     title={ data.site.siteMetadata.title }
-                    meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
-                    ]}
+                    titleTemplate={ data.site.siteMetadata.titleTemplate }
                 >
                     <html lang="en" />
+
                 </Helmet>
                 <Header />
                 <div className="grid">
