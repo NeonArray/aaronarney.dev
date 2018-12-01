@@ -4,17 +4,18 @@ import style from './post-body.module.css';
 import 'prismjs/themes/prism-okaidia.css';
 
 const PostBody = ({ content }) => {
-    let cleanedhtml = `<div class="${ style.copy }">`;
+    let html = `<div class="${ style.copy }">`;
+    // eslint-disable-next-line
     const REGEXP = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
 
-    cleanedhtml += content.html.replace(REGEXP,
+    html += content.html.replace(REGEXP,
         `</div><div class="${ style.block }"><div class="${ style.heading }">` +
-        `<p class="${ style.language }">$1</p><button class="${ style.copyButton } js-copy-btn">Copy</button></div>` +
+        `<p class="${ style.language }">$1</p><button data-button="copy" class="${ style.copyButton }">Copy</button></div>` +
         `<div class="${ style.wrapper } gatsby-highlight">$&</div></div><div class="${ style.copy }">`
     );
 
     return (
-        <div className={ style.post } dangerouslySetInnerHTML={{ __html: cleanedhtml }}>
+        <div className={ style.post } dangerouslySetInnerHTML={{ __html: html }}>
 
         </div>
     );
