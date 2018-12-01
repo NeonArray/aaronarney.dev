@@ -9,7 +9,7 @@ import '../global/style.css';
 const Layout = ({ children }) => (
     <StaticQuery
         query={ graphql`query SiteTitleQuery { site { siteMetadata { title } } }` }
-        render={data => (
+        render={ data => (
             <>
                 <Helmet
                     title={ data.site.siteMetadata.title }
