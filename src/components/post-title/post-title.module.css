@@ -1,0 +1,42 @@
+.title {
+    font-size: 1.6em;
+    font-weight: 800;
+    line-height: 1.1;
+    position: relative;
+    z-index: var(--z-top);
+
+    @media (--tablet) {
+        font-size: 2em;
+    }
+}
+
+.link {
+    color: var(--black);
+    text-decoration: none;
+    will-change: text-shadow;
+
+    &:hover {
+        color: var(--blue);
+        text-shadow: 13px 8px 0 var(--gray-light);
+        transition: .25s text-shadow linear;
+    }
+}
+
+.date {
+    border-top: 1px solid var(--gray-light);
+    color: var(--gray-dark);
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 1em;
+    padding-top: .5em;
+}
+
+.time {
+    display: block;
+}
+
+.tags {
+    display: block;
+}

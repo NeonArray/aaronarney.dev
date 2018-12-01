@@ -1,0 +1,34 @@
+.aside {
+    text-align: right;
+}
+
+.title {
+    font-size: 1em;
+    line-height: 1.125;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+
+    @media (--tablet) {
+        margin: 0;
+    }
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.categories {
+    list-style-type: none;
+    margin-left: 0;
+
+    & li + li {
+        margin-top: 10px;
+    }
+}
