@@ -1,24 +1,19 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { assign } from '../../utils';
+
+import PostTitle from '../post-title';
 
 import style from './post-block.module.css';
 
-const PostBlock = ({ meta }) => {
-    const cssClass = `color__${meta.frontmatter.category.toLowerCase()}`;
-
+const PostBlock = ({ meta, layout }) => {
     return (
-        <article className={ style.block }>
-            <div className={`${style.category} ${cssClass}`}>
-                { meta.frontmatter.category }
-            </div>
-            <div className={ style.title }>
-                <Link className={ style.link } to={ meta.frontmatter.path }>
-                    { meta.frontmatter.title }
-                </Link>
-            </div>
-            <time className={ style.date }>
-                { meta.frontmatter.date }
-            </time>
+        <article className={ assign(style.block, style[layout]) }>
+           <PostTitle
+               category={ meta.frontmatter.category }
+               title={ meta.frontmatter.title }
+               date={ meta.frontmatter.date }
+               path={ meta.frontmatter.path }
+           />
         </article>
     );
 };
