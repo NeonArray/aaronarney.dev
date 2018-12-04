@@ -38,9 +38,9 @@ To ensure its installed correctly, run this command in your terminal/console to 
 tsc -v
 ```
 
-Your output should be something along the lines of `Version 2.7.1`. If you see something similar `command not found: tsc`, then it means TypeScript wasn't installed. Try installing it again and then restarting your terminal/console.
+If you see something like "Version 2.7.1," great! If you see something like `command not found: tsc`, then it means TypeScript wasn't installed. Try installing it again and then restarting your terminal/console.
 
-Now, create an empty file with the extension `.ts` - that stands for TypeScript. Inside we'll just create a simple function that represents a Vector2 to ensure our compiler works.
+Now, create an empty file with the extension .ts - that stands for TypeScript. Inside we'll just create a simple function that represents a Vector2 to ensure our compiler works.
 
 ```javascript
 function Vector2(x, y) { 
@@ -48,7 +48,7 @@ function Vector2(x, y) {
 } 
 ```
 
-Go back to your command line and run `tsc name-of-file.ts` and wait. If all goes well you will see no errors on the command line, but a new file will have been created with the same name as your TypeScript file - except with a `.js` extension. This is the compiled file TypeScript generated with your code. If you look, you'll notice it's the same, because we haven't written any TypeScript yet.
+Go back to your command line and run tsc name-of-file.ts and wait. If all goes well you will see no errors on the command line, but a new file will have been created with the same name as your TypeScript file - except with a .js extension. This is the compiled file TypeScript generated with your code. If you look, you'll notice it's the same, because we haven't written any TypeScript yet.
 
 
 ### Writing Type Annotations 
@@ -80,7 +80,7 @@ If you run the compiler now, TypeScript is going to give you an error:
 thing.ts(5,9): error TS2345: Argument of type '"fail"' is not assignable to parameter of type 'number'. 
 ```
 
-That's the beauty of TypeScript. Now you can always ensure that your functions are being called with the correct type. The best part of it is though is that this error is caught at compile time, not run time. Meaning it's not going to pop up as a surprise to you or your users. 
+Awesome! That's the beauty of TypeScript. Now you can always ensure that your functions are being called with the correct type. The best part of it is though is that this error is caught at compile time, not run time. Meaning it's not going to pop up as a surprise to you or your users. 
 
 
 ### Return Type 
