@@ -8,12 +8,12 @@ import CategoryHeader from '../components/category-header';
 import CategoryAside from '../components/category-aside';
 import CategoryList from '../components/category-list';
 
-export default function Template({ data, pathContext }) {
+export default function Template({ data, pageContext }) {
     const { edges } = data.allMarkdownRemark;
 
     return (
         <Layout location={data.location}>
-            <CategoryAside data={ pathContext } />
+            <CategoryAside data={ pageContext } />
 
             <main data-grid-area="main">
                 <article className="post">
@@ -23,7 +23,7 @@ export default function Template({ data, pathContext }) {
 
                     <CategoryList />
 
-                    <CategoryHeader data={ pathContext } />
+                    <CategoryHeader data={ pageContext } />
 
                     <Archive posts={ edges } layout="stack" />
                 </article>
