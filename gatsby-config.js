@@ -31,6 +31,9 @@ module.exports = {
                             aliases: {},
                         },
                     },
+                    {
+                        resolve: "gatsby-remark-external-links"
+                    }
                 ],
             },
         },
