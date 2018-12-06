@@ -73,10 +73,7 @@ $actual = new FirstClass( new SecondClass() );
 The reason is that when we write our unit test for the constructor, we'll be passing what is known as a `stub` instead of an actual `SecondClass` object. We'll get into that later on, but for now just know that unit tests should **always** be done in isolation, meaning to have no external dependencies or reliance on code outside of its own body.
 
 
-## Getting Started
-
-
-### Requirements
+### Get Dependencies
 
 In order to even use WP Mock, you will need to have `PHP v^7.0` installed in your environment. You'll also need the plugin you are going to test installed into WordPress.
 
@@ -110,7 +107,7 @@ This file should be named `phpunit.xml.dist` and placed in your project root. To
 - Test file names all start with `test-`
 - File extensions with `.php`
 
-```php
+```xml
 <?xml version="1.0"?>
 <phpunit>
     <testsuites>
@@ -125,7 +122,7 @@ I like to see my code coverage so I have a clear picture of exactly what code is
 
 This section gets added just beneath the `</testsuites>` closing element.
 
-```php
+```xml
 <logging>
     <log type="coverage-html"
          target="tests/coverage"
@@ -150,7 +147,7 @@ Lastly, we need to add a section that specifies directories to exclude from bein
 
 Add this section directly under the `</logging>` section, replacing the `./your-source-files` with the directory your plugin code is contained in.
 
-```php
+```xml
 <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
         <directory suffix=".php">./your-source-files</directory>
@@ -172,7 +169,7 @@ touch tests/bootstrap.php
 
 In order for PHPUnit to use this file, it will need to be defined in your `phpunit.dist.xml` file...
 
-```php
+```xml
 <?xml version="1.0"?>
 <phpunit bootstrap="tests/bootstrap.php">
     ...
