@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 
 import style from  './post-footer.module.css';
 
-const PostFooter = ({ links }) => {
+
+export default ({ links }) => {
     const { next, prev } = links;
 
     return (
@@ -28,5 +29,3 @@ const PostFooter = ({ links }) => {
         </div>
     );
 };
-
-export default PostFooter;

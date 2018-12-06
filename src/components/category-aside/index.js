@@ -6,7 +6,8 @@ import tag from '../../global/tags.module.css';
 import help from '../../global/helpers.module.css';
 import CategoryImage from '../category-image';
 
-const CategoryAside = ({ data }) => {
+
+export default ({ data }) => {
     return (
         <aside data-grid-area="aside" className={ style.aside }>
             <div className="flex align-right flex-columns">
@@ -26,5 +27,3 @@ const CategoryAside = ({ data }) => {
         </aside>
     );
 };
-
-export default CategoryAside;

@@ -5,7 +5,8 @@ import { assign } from '../../utils';
 import style from './post-title.module.css';
 import tag from '../../global/tags.module.css';
 
-const PostTitle = ({ category, title, date, path }) => {
+
+export default ({ category, title, date, path }) => {
     return (
         <>
             <div>
@@ -24,5 +25,3 @@ const PostTitle = ({ category, title, date, path }) => {
         </>
     );
 };
-
-export default PostTitle;

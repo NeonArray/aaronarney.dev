@@ -4,7 +4,7 @@ import CategoryImage from "../category-image";
 
 import style from './post-header.module.css';
 
-const PostHeader = ({ content }) => {
+export default ({ content }) => {
     return (
         <header className={ style.header }>
             <div className={ style.left }>
@@ -21,5 +21,3 @@ const PostHeader = ({ content }) => {
         </header>
     );
 };
-
-export default PostHeader;

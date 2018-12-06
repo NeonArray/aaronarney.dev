@@ -8,11 +8,12 @@ import twitter from '../../images/twitter.svg';
 import github from '../../images/github.svg';
 import codepen from '../../images/codepen.svg';
 
+
 export default ({ siteTitle }) => (
     <header data-grid-area="header" className={ style.header }>
         <div className={ style.inner }>
             <div className={ style.logo }>
-                <Link to="/" title="Go home">
+                <Link to="/index" title="Go home">
                     <img src={ logo } alt="Ocular-Rhythm" height="28.62" width="186.37" />
                 </Link>
             </div>
@@ -27,8 +28,8 @@ export default ({ siteTitle }) => (
                 </ul>
                 <ul className={ style.socialLinks }>
                     <li className={ style.socialLink }>
-                        <a href="https://twitter.com/agarney" target="_blank" rel="noopener noreferrer nofollow" title="Twitter Profile">
-                            <img src={ twitter } alt="Twitter Profile" height="18"/>
+                        <a href="https://twitter.com/agarney" target="_blank" rel="noopener noreferrer nofollow" title="Twitter Please Dont Judge Me">
+                            <img src={ twitter } alt="Twitter Profile Dont Judge Me Please" height="18"/>
                         </a>
                     </li>
                     <li className={ style.socialLink }>
