@@ -7,6 +7,8 @@ import Layout from '../components/layout';
 import CategoryHeader from '../components/category-header';
 import CategoryAside from '../components/category-aside';
 import CategoryList from '../components/category-list';
+import { capitalizeWords } from '../utils';
+
 
 export default function Template({ data, pageContext }) {
     const { edges } = data.allMarkdownRemark;
@@ -17,7 +19,9 @@ export default function Template({ data, pageContext }) {
 
             <main data-grid-area="main">
                 <article className="post">
-                    <Helmet title={`Your Blog Name`} bodyAttributes={{
+                    <Helmet
+                        title={ `${capitalizeWords(pageContext.category)} Posts` }
+                        bodyAttributes={{
                         class: 'archive-category'
                     }} />
 
