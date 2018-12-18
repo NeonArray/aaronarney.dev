@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 
-import Archive from '../components/archive';
+import Archive from '../components/archive/index';
 import Layout from '../components/layout';
 
 export default ({ data }) => {
@@ -14,7 +14,7 @@ export default ({ data }) => {
                 <Helmet title="Ocular-Rhythm" bodyAttributes={{
                     class: 'archive'
                 }} />
-                <Archive posts={ edges.edges } />
+                <Archive centered={ true } posts={ edges.edges } />
             </div>
         </Layout>
     );
