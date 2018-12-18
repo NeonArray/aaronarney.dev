@@ -2,9 +2,12 @@ import React from 'react';
 import PostBlock from '../post-block';
 import style from './archive.module.css';
 
-const Archive = ({ posts, layout }) => {
+
+const Archive = ({ centered, posts, layout }) => {
+    const centerMargin = centered ? { margin: '0 auto' } : null;
+
     return (
-        <div className={ style.posts }>
+        <div style={ centerMargin } className={ style.posts }>
             { posts.map((i, c) => {
                 return (
                     <PostBlock key={ c } meta={ i.node } layout={ layout } />
