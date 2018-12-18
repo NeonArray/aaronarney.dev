@@ -30,6 +30,7 @@
     font-weight: 500;
     line-height: 1.1;
     margin-top: 1em;
+    max-width: 300px;
     padding-top: .5em;
 }
 
