@@ -3,6 +3,7 @@ import { assign } from '../../utils';
 
 import style from './category-header.module.css';
 
+
 const CategoryHeader = ({ data }) => {
     return (
         <div className={ assign(style.title, style[ data.category.toLowerCase() ]) }>

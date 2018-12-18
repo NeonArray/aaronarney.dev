@@ -17,4 +17,3 @@ const Archive = ({ centered, posts, layout }) => {
     );
 };
 
-export default Archive;

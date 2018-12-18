@@ -7,7 +7,7 @@ import style from './category-list.module.css';
 import CategoryImage from "../category-image";
 
 
-const CategoryList = () => {
+export default () => {
     return (
         <div className={ helpers.showForMobile }>
             <div className={ style.blocks }>
@@ -43,5 +43,3 @@ const CategoryList = () => {
         </div>
     );
 };
-
-export default CategoryList;

@@ -29,12 +29,11 @@ const dictionary = {
     },
 };
 
-const CategoryImage = ({ height, width, category, cssClass }) => {
+
+export default ({ height, width, category, cssClass }) => {
     const img = dictionary[category.toLowerCase()];
 
     return (
         <img alt={ img.alt } src={ img.src } height={ height } width={ width } className={ cssClass } />
     );
 };
-
-export default CategoryImage;

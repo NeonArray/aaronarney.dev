@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import Archive from '../components/archive/index';
 import Layout from '../components/layout';
 
+
 export default ({ data }) => {
     const { allMarkdownRemark: edges } = data;
 

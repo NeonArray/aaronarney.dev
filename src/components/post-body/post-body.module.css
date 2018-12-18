@@ -24,7 +24,7 @@
         text-decoration: none;
 
         &:hover {
-           color: var(--primary);
+            color: var(--primary);
         }
     }
 }
@@ -84,4 +84,12 @@ pre {
         background: #4b8d96;
         cursor: pointer;
     }
+}
+
+:not(pre) code[class="language-text"] {
+    border-radius: .3em;
+    padding: .1em .4em;
+    white-space: normal;
+    font-size: .8em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
