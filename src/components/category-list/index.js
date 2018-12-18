@@ -6,6 +6,7 @@ import helpers from '../../global/helpers.module.css';
 import style from './category-list.module.css';
 import CategoryImage from "../category-image";
 
+
 const CategoryList = () => {
     return (
         <div className={ helpers.showForMobile }>
