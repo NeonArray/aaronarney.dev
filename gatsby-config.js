@@ -1,13 +1,13 @@
 module.exports = {
     siteMetadata: {
-        title: "Ocular-Rhythm",
-        defaultTitle: "Ocular-Rhythm",
-        titleTemplate: "%s · A development blog",
+        title: 'Ocular-Rhythm',
+        defaultTitle: 'Ocular-Rhythm',
+        titleTemplate: '%s · A development blog',
         description:
-            "Ocular-Rhythm is a development blog, brought to you by Aaron Arney.",
-        url: "https://www.ocular-rhythm.com", // No trailing slash allowed!
-        image: "/icons/favicon.ico", // Path to your image you placed in the 'static' folder
-        twitterUsername: "@agarney",
+            'Ocular-Rhythm is a development blog, brought to you by Aaron Arney.',
+        url: 'https://www.ocular-rhythm.io',
+        image: '/icons/favicon.ico',
+        twitterUsername: '@agarney',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -26,19 +26,19 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-prismjs`,
                         options: {
-                            classPrefix: "language-",
+                            classPrefix: 'language-',
                             inlineCodeMarker: null,
                             aliases: {},
                         },
                     },
                     {
-                        resolve: "gatsby-remark-external-links"
+                        resolve: 'gatsby-remark-external-links'
                     }
                 ],
             },
         },
         {
-            resolve: `gatsby-plugin-manifest`,
+            resolve: 'gatsby-plugin-manifest',
             options: {
                 name: 'ocular-rhythm',
                 short_name: 'ocularrhythm',
@@ -46,7 +46,7 @@ module.exports = {
                 background_color: '#6CC9D2',
                 theme_color: '#6CC9D2',
                 display: 'minimal-ui',
-                icon: 'static/icons/icon.png', // This path is relative to the root of the site.
+                icon: 'static/icons/icon.png',
             },
         },
         'gatsby-plugin-offline',
