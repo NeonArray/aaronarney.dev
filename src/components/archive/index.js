@@ -3,7 +3,7 @@ import PostBlock from '../post-block';
 import style from './archive.module.css';
 
 
-const Archive = ({ centered, posts, layout }) => {
+export default ({ centered, posts, layout }) => {
     const centerMargin = centered ? { margin: '0 auto' } : null;
 
     return (
