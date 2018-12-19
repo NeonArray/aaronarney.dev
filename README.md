@@ -13,3 +13,12 @@ All code can be found in the `src` directory. Inside that directory, the structu
 - `Utils` - Utility functions
 
 To get started, just run `yarn install` and then `yarn develop`.
+
+
+## Learnings
+
+Getting up and running in Gatsby is fairly straightforward. Writing components in React and piecing those together is also nothing new. The biggest hurdle I had to tackle was figuring out how to structure my pages/posts in a way that reflects the URL structure I was looking for. After a while a tinkering and trial and error, I found the sweet spot.
+
+I've seen often where people praise Gatsby for their clear and helpful documentation, but I will say that for someone with 4 or 5 years of JavaScript experience and using a ton of different frameworks, I still found myself confused and frustrated at certain points.
+
+I believe Gatsby will continue to improve and evolve so I am confident it will only get better from here.
