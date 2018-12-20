@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_headers" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,7 +96,7 @@
         <counts>
           <entry key="_headers" value="27" />
           <entry key="css" value="1933" />
-          <entry key="js" value="10199" />
+          <entry key="js" value="10207" />
           <entry key="json" value="9" />
           <entry key="md" value="619" />
         </counts>
@@ -106,7 +105,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="10199" />
+          <entry key="JavaScript" value="10207" />
           <entry key="Markdown" value="619" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="PostCSS" value="1931" />
@@ -119,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gatsby-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="650">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -346,12 +345,12 @@
       <workItem from="1542379553093" duration="329000" />
       <workItem from="1543606661996" duration="406000" />
       <workItem from="1543689593465" duration="7571000" />
-      <workItem from="1545335264277" duration="4252000" />
+      <workItem from="1545335264277" duration="4560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81124000" />
+    <option name="totallyTimeSpent" value="81432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="650">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>
