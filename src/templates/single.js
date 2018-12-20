@@ -10,7 +10,6 @@ import PostBody from '../components/post-body';
 import PostFooter from '../components/post-footer';
 
 function shouldShowCallout(date) {
-    console.log(date);
     const currentDate = moment();
     const postDate = moment(date);
 
