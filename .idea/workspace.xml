@@ -96,7 +96,7 @@
         <counts>
           <entry key="_headers" value="27" />
           <entry key="css" value="1933" />
-          <entry key="js" value="10437" />
+          <entry key="js" value="10443" />
           <entry key="json" value="9" />
           <entry key="md" value="619" />
         </counts>
@@ -105,7 +105,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="10437" />
+          <entry key="JavaScript" value="10443" />
           <entry key="Markdown" value="619" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="PostCSS" value="1931" />
@@ -118,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gatsby-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="468">
+              <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -381,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82734000" />
+    <option name="totallyTimeSpent" value="83020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="468">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
         </state>
       </provider>
     </entry>
