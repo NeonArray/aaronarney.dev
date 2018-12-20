@@ -13,6 +13,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-netlify',
             options: {
+                mergeSecurityHeaders: false,
                 headers: {
                     '/*': [
                         'Content-Security-Policy: default-src \'none\'; script-src \'self\' \'unsafe-inline\'; connect-src \'self\'; img-src \'none\'; style-src \'self\' \'unsafe-inline\';',

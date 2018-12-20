@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,9 +69,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="_headers" value="2" />
-          <entry key="css" value="67" />
+          <entry key="css" value="68" />
           <entry key="gitignore" value="2" />
-          <entry key="js" value="124" />
+          <entry key="js" value="125" />
           <entry key="json" value="4" />
           <entry key="map" value="1" />
           <entry key="md" value="30" />
@@ -80,10 +81,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
+          <entry key="CSS" value="5" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="122" />
+          <entry key="JavaScript" value="123" />
           <entry key="Markdown" value="30" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="PostCSS" value="63" />
@@ -96,7 +97,7 @@
         <counts>
           <entry key="_headers" value="27" />
           <entry key="css" value="1933" />
-          <entry key="js" value="10220" />
+          <entry key="js" value="10433" />
           <entry key="json" value="9" />
           <entry key="md" value="619" />
         </counts>
@@ -105,7 +106,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="10220" />
+          <entry key="JavaScript" value="10433" />
           <entry key="Markdown" value="619" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="PostCSS" value="1931" />
@@ -118,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gatsby-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="123" selection-start-line="17" selection-start-column="123" selection-end-line="17" selection-end-column="123" />
+            <state relative-caret-position="390">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -199,8 +200,8 @@
         <option value="$PROJECT_DIR$/src/components/post-block/index.js" />
         <option value="$PROJECT_DIR$/src/components/post-header/index.js" />
         <option value="$PROJECT_DIR$/src/components/archive/archive.module.css" />
-        <option value="$PROJECT_DIR$/src/components/post-title/index.js" />
         <option value="$PROJECT_DIR$/src/templates/single.js" />
+        <option value="$PROJECT_DIR$/src/components/post-title/index.js" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
       </list>
     </option>
@@ -299,7 +300,14 @@
               <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="post-body" type="462c0819:PsiDirectoryNode" />
+              <item name="post-header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="post-title" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,7 +376,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81725000" />
+    <option name="totallyTimeSpent" value="82349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/post-block/post-block.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post-block/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -772,10 +773,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/post-block/post-block.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post-title/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="572">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -784,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="123" selection-start-line="17" selection-start-column="123" selection-end-line="17" selection-end-column="123" />
+        <state relative-caret-position="390">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
