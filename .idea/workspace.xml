@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-title/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-title/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_headers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,7 @@
           <entry key="_headers" value="2" />
           <entry key="css" value="67" />
           <entry key="gitignore" value="2" />
-          <entry key="js" value="123" />
+          <entry key="js" value="124" />
           <entry key="json" value="4" />
           <entry key="map" value="1" />
           <entry key="md" value="30" />
@@ -86,7 +84,7 @@
           <entry key="CSS" value="4" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="121" />
+          <entry key="JavaScript" value="122" />
           <entry key="Markdown" value="30" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="PostCSS" value="63" />
@@ -99,7 +97,7 @@
         <counts>
           <entry key="_headers" value="27" />
           <entry key="css" value="1933" />
-          <entry key="js" value="10148" />
+          <entry key="js" value="10199" />
           <entry key="json" value="9" />
           <entry key="md" value="619" />
         </counts>
@@ -108,7 +106,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="10148" />
+          <entry key="JavaScript" value="10199" />
           <entry key="Markdown" value="619" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="PostCSS" value="1931" />
@@ -118,38 +116,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/post-title/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/templates/single.js">
+        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/post-header/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -228,10 +199,10 @@
         <option value="$PROJECT_DIR$/_headers" />
         <option value="$PROJECT_DIR$/src/components/post-block/index.js" />
         <option value="$PROJECT_DIR$/src/components/post-header/index.js" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/archive/archive.module.css" />
         <option value="$PROJECT_DIR$/src/components/post-title/index.js" />
         <option value="$PROJECT_DIR$/src/templates/single.js" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
       </list>
     </option>
   </component>
@@ -313,44 +284,6 @@
               <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="archive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="post-header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="post-title" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -413,12 +346,12 @@
       <workItem from="1542379553093" duration="329000" />
       <workItem from="1543606661996" duration="406000" />
       <workItem from="1543689593465" duration="7571000" />
-      <workItem from="1545335264277" duration="3732000" />
+      <workItem from="1545335264277" duration="4252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80604000" />
+    <option name="totallyTimeSpent" value="81124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/archive/archive.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -811,7 +737,24 @@
     <entry file="file://$PROJECT_DIR$/src/components/post-header/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-761">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -828,20 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-761">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
