@@ -6,7 +6,7 @@ import PostTitle from '../post-title';
 import style from './post-block.module.css';
 
 
-const PostBlock = ({ meta, layout }) => {
+export default ({ meta, layout }) => {
     return (
         <article className={ assign(style.block, style[layout]) }>
            <PostTitle
@@ -18,5 +18,3 @@ const PostBlock = ({ meta, layout }) => {
         </article>
     );
 };
-
-export default PostBlock;

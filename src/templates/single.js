@@ -13,8 +13,8 @@ function shouldShowCallout(date) {
     const currentDate = moment();
     const postDate = moment(date);
 
-    if (currentDate.diff(postDate, 'years') >= 1) {
-        return (<Callout message={`This article was published over ${currentDate.diff(postDate, 'years') } ago.`}/>);
+    if (currentDate.diff(postDate, 'months') >= 6) {
+        return (<Callout message={`This article was published over ${currentDate.diff(postDate, 'months') } ago.`}/>);
     }
 
     return undefined;
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
-                date(formatString: "MMMM-DD-YYYY")
+                date(formatString: "MM-DD-YYYY")
                 category
             }
         }

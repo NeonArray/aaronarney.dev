@@ -4,6 +4,7 @@ import CategoryImage from "../category-image";
 
 import style from './post-header.module.css';
 
+
 export default ({ content }) => {
     return (
         <header className={ style.header }>
