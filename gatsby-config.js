@@ -10,7 +10,18 @@ module.exports = {
         twitterUsername: '@agarney',
     },
     plugins: [
-        'gatsby-plugin-netlify',
+        {
+            resolve: 'gatsby-plugin-netlify',
+            options: {
+                headers: {
+                    '/*': [
+                        'Content-Security-Policy: default-src https://ocular-rhythm.io:*',
+                        'Referrer-Policy: no-referrer',
+                        'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
+                    ]
+                }
+            }
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
         {
