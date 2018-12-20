@@ -13,7 +13,6 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-netlify',
             options: {
-                mergeSecurityHeaders: false,
                 headers: {
                     '/*': [
                         'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\'; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
