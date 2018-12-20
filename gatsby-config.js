@@ -15,7 +15,7 @@ module.exports = {
             options: {
                 headers: {
                     '/*': [
-                        'Content-Security-Policy: default-src "none"; script-src "self" "unsafe-inline"; connect-src "self"; style-src "self" "unsafe-inline";',
+                        'Content-Security-Policy: default-src \'none\'; script-src \'self\' \'unsafe-inline\'; connect-src \'self\'; img-src \'none\'; style-src \'self\' \'unsafe-inline\';',
                         'Referrer-Policy: no-referrer',
                         'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
                     ]
