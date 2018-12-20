@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { assign } from '../../utils';
-import moment from 'moment';
 
 import style from './post-title.module.css';
 import tag from '../../global/tags.module.css';
@@ -16,12 +15,12 @@ export default ({ category, title, date, path }) => {
                 </Link>
             </div>
             <div className={ style.title }>
-                <Link className={ style.link } to={ path }>
+                <Link className={ style.link } to={ path || '' }>
                     { title }
                 </Link>
             </div>
             <time className={ style.date }>
-                { moment(date) }
+                { date }
             </time>
         </>
     );
