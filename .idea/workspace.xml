@@ -96,7 +96,7 @@
         <counts>
           <entry key="_headers" value="27" />
           <entry key="css" value="1933" />
-          <entry key="js" value="10210" />
+          <entry key="js" value="10220" />
           <entry key="json" value="9" />
           <entry key="md" value="619" />
         </counts>
@@ -105,7 +105,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="10210" />
+          <entry key="JavaScript" value="10220" />
           <entry key="Markdown" value="619" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="PostCSS" value="1931" />
@@ -119,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/gatsby-config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="17" column="167" selection-start-line="17" selection-start-column="167" selection-end-line="17" selection-end-column="167" />
+              <caret line="17" column="123" selection-start-line="17" selection-start-column="123" selection-end-line="17" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -283,6 +283,24 @@
               <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="post-body" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -350,7 +368,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81690000" />
+    <option name="totallyTimeSpent" value="81725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,13 +730,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/_headers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="5" lean-forward="true" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/_headers" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -773,7 +785,7 @@
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="167" selection-start-line="17" selection-start-column="167" selection-end-line="17" selection-end-column="167" />
+          <caret line="17" column="123" selection-start-line="17" selection-start-column="123" selection-end-line="17" selection-end-column="123" />
         </state>
       </provider>
     </entry>
