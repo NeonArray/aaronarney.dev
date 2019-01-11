@@ -11,6 +11,14 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/static/uploads`,
+                name: 'uploads',
+            },
+        },
+        'gatsby-plugin-sharp',
+        {
             resolve: 'gatsby-plugin-netlify',
             options: {
                 headers: {
@@ -45,6 +53,18 @@ module.exports = {
                     },
                     {
                         resolve: 'gatsby-remark-external-links'
+                    },
+                    {
+                        resolve: `gatsby-remark-relative-images`,
+                        options: {
+                            name: 'uploads'
+                        }
+                    },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 666,
+                        }
                     }
                 ],
             },
