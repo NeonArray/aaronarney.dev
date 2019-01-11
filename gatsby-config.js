@@ -17,7 +17,6 @@ module.exports = {
                 name: 'uploads',
             },
         },
-        'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-plugin-netlify',
             options: {
@@ -55,13 +54,13 @@ module.exports = {
                         resolve: 'gatsby-remark-external-links'
                     },
                     {
-                        resolve: `gatsby-remark-relative-images`,
+                        resolve: 'gatsby-remark-relative-images',
                         options: {
                             name: 'uploads'
                         }
                     },
                     {
-                        resolve: `gatsby-remark-images`,
+                        resolve: 'gatsby-remark-images',
                         options: {
                             maxWidth: 666,
                         }
