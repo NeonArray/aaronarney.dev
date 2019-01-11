@@ -14,7 +14,7 @@ function shouldShowCallout(date) {
     const postDate = moment(date);
 
     if (currentDate.diff(postDate, 'months') >= 6) {
-        return (<Callout message={`This article was published over ${currentDate.diff(postDate, 'months') } ago.`}/>);
+        return (<Callout message={`Heads up! This article was published over ${currentDate.diff(postDate, 'months') } months ago.`}/>);
     }
 
     return undefined;
