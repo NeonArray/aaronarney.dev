@@ -10,6 +10,7 @@ module.exports = {
         twitterUsername: '@agarney',
     },
     plugins: [
+        'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -32,7 +33,7 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/src/posts`,
                 name: 'pages',
@@ -43,7 +44,7 @@ module.exports = {
             options: {
                 plugins: [
                     {
-                        resolve: `gatsby-remark-prismjs`,
+                        resolve: 'gatsby-remark-prismjs',
                         options: {
                             classPrefix: 'language-',
                             inlineCodeMarker: null,
