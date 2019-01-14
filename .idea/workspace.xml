@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/archive/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/archive/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/callout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/callout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-aside/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-aside/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-image/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-image/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-block/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-block/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-body/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-body/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-title/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-title/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/single.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/projects.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="78">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -96,7 +73,6 @@
         <option value="$PROJECT_DIR$/src/global/style.css" />
         <option value="$PROJECT_DIR$/src/posts/making-switch-to-typescript.md" />
         <option value="$PROJECT_DIR$/src/posts/managing-levels-in-phaser.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_headers" />
         <option value="$PROJECT_DIR$/src/components/archive/archive.module.css" />
         <option value="$PROJECT_DIR$/static/_redirects" />
@@ -120,9 +96,10 @@
         <option value="$PROJECT_DIR$/src/pages/blog.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/post-body/index.js" />
         <option value="$PROJECT_DIR$/src/pages/projects.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -203,13 +180,8 @@
               <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="post-body" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,12 +248,12 @@
       <workItem from="1543689593465" duration="7571000" />
       <workItem from="1545335264277" duration="4818000" />
       <workItem from="1547479196128" duration="2283000" />
-      <workItem from="1547484728746" duration="2026000" />
+      <workItem from="1547484728746" duration="3121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88454000" />
+    <option name="totallyTimeSpent" value="89549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +272,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1760667" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.4711934" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.61603653" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.6697531" />
@@ -486,14 +458,6 @@
           <first_editor relative-caret-position="156">
             <caret line="6" selection-start-line="6" selection-end-line="6" />
           </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -710,27 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post-block/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/post-body/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -753,8 +700,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/projects.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="16" column="23" lean-forward="true" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/post-body/index.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1040">
+            <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
