@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import style from './category-aside.module.css';
@@ -7,7 +8,7 @@ import help from '../../global/helpers.module.css';
 import CategoryImage from '../category-image';
 
 
-export default ({ data }) => {
+export default function CategoryAside({ data }) {
     return (
         <aside data-grid-area="aside" className={ style.aside }>
             <div className="flex align-right flex-columns">
@@ -26,4 +27,8 @@ export default ({ data }) => {
             </div>
         </aside>
     );
+}
+
+CategoryAside.propTypes = {
+    data: PropTypes.object.isRequired,
 };

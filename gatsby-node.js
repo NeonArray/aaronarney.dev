@@ -1,13 +1,14 @@
-const path = require("path");
+const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
-    if (node.internal.type === `MarkdownRemark`) {
+    if (node.internal.type === 'MarkdownRemark') {
         const value = createFilePath({ node, getNode });
+
         createNodeField({
-            name: `slug`,
+            name: 'slug',
             node,
             value,
         });
@@ -17,7 +18,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
 
-    const blogPostTemplate = path.resolve(`src/templates/single.js`);
+    const blogPostTemplate = path.resolve('src/templates/single.js');
     const blogCategoryTemplate = path.resolve('src/templates/category.js');
 
     return new Promise((resolve, reject) => {

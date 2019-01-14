@@ -7,7 +7,7 @@ import style from './category-list.module.css';
 import CategoryImage from "../category-image";
 
 
-export default () => {
+export default function CategoryList() {
     return (
         <div className={ helpers.showForMobile }>
             <div className={ style.blocks }>
@@ -42,4 +42,4 @@ export default () => {
             </div>
         </div>
     );
-};
+}

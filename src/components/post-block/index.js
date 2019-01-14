@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { assign } from '../../utils';
 
 import PostTitle from '../post-title';
@@ -6,7 +7,7 @@ import PostTitle from '../post-title';
 import style from './post-block.module.css';
 
 
-export default ({ meta, layout }) => {
+export default function PostBlock({ meta, layout }) {
     return (
         <article className={ assign(style.block, style[layout]) }>
            <PostTitle
@@ -17,4 +18,9 @@ export default ({ meta, layout }) => {
            />
         </article>
     );
+}
+
+PostBlock.propTypes = {
+    meta: PropTypes.object.isRequired,
+    layout: PropTypes.string,
 };

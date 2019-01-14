@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { assign } from '../../utils';
 
 import style from './category-header.module.css';
 
 
-const CategoryHeader = ({ data }) => {
+export default function CategoryHeader({ data }) {
     return (
         <div className={ assign(style.title, style[ data.category.toLowerCase() ]) }>
             <h1 className={ style.heading }>
@@ -14,6 +15,8 @@ const CategoryHeader = ({ data }) => {
             </h1>
         </div>
     );
-};
+}
 
-export default CategoryHeader;
+CategoryHeader.propTypes = {
+    data: PropTypes.object.isRequired,
+};

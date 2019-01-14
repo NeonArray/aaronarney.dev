@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 import vrImage from '../../images/vr.svg';
 import codeImage from '../../images/code.svg';
@@ -30,10 +31,17 @@ const dictionary = {
 };
 
 
-export default ({ height, width, category, cssClass }) => {
+export default function CategoryImage({ height, width, category, cssClass }) {
     const img = dictionary[category.toLowerCase()];
 
     return (
         <img alt={ img.alt } src={ img.src } height={ height } width={ width } className={ cssClass } />
     );
+}
+
+CategoryImage.propTypes = {
+    height: PropTypes.number,
+    width: PropTypes.number,
+    category: PropTypes.string,
+    cssClass: PropTypes.string,
 };

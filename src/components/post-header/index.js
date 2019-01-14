@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PostTitle from "../post-title";
 import CategoryImage from "../category-image";
 
 import style from './post-header.module.css';
 
 
-export default ({ content }) => {
+export default function PostHeader({ content }) {
     return (
         <header className={ style.header }>
             <div className={ style.left }>
@@ -21,4 +22,8 @@ export default ({ content }) => {
             </div>
         </header>
     );
+}
+
+PostHeader.propTypes = {
+    content: PropTypes.object.isRequired,
 };

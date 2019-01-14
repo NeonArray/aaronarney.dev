@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import moment from 'moment';
 
@@ -46,6 +47,11 @@ export default function Template({ data, pageContext }) {
         </Layout>
     );
 }
+
+Template.propTypes = {
+    data: PropTypes.object.isRequired,
+    pageContext: PropTypes.object.isRequired,
+};
 
 export const pageQuery = graphql`
     query BlogPostBySlug($path: String!) {

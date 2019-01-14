@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { assign } from '../../utils';
 import moment from 'moment';
+
 import style from './post-title.module.css';
 import tag from '../../global/tags.module.css';
 
 
-export default ({ category, title, date, path }) => {
+export default function PostTitle({ category, title, date, path }) {
     return (
         <>
             <div>
@@ -24,4 +26,11 @@ export default ({ category, title, date, path }) => {
             </time>
         </>
     );
+}
+
+PostTitle.propTypes = {
+    category: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 };

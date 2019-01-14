@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import style from  './post-footer.module.css';
 
 
-export default ({ links }) => {
+export default function PostFooter({ links }) {
     const { next, prev } = links;
 
     return (
@@ -28,4 +29,8 @@ export default ({ links }) => {
             </Link>
         </div>
     );
+}
+
+PostFooter.propTypes = {
+    links: PropTypes.object.isRequired,
 };

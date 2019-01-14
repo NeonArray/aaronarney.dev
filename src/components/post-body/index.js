@@ -1,10 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import style from './post-body.module.css';
 import 'prismjs/themes/prism-okaidia.css';
 
 
-export default ({ content }) => {
+export default function PostBody({ content }) {
+    /**
+     * ==== :: What's Happening Here? :: ==========
+     * This jumble of a mess came about from spending hours trying to figure out how I can dynamically inject my markdown content, whilst maintaining
+     * the syntax highlighting blocks that are used by Prism. The only solution I could come up with was to messily replace and concatenate the content
+     * into HTML elements. Then place those "dangerously" into the React component.
+     *
+     * Alas, this route is not ideal and it also introduces a roadblock that prevents my "Copy" code button from functioning. I may have to extract
+     * all of this out into it's own plugin at some point and find a more robust and elegant solution.
+     */
     let html = `<div class="${ style.copy }">`;
     // eslint-disable-next-line
     const REGEXP = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
@@ -27,4 +37,8 @@ export default ({ content }) => {
 
         </div>
     );
+}
+
+PostBody.propTypes = {
+    content: PropTypes.object.isRequired,
 };

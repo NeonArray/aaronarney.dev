@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 
@@ -6,7 +7,7 @@ import Archive from '../components/archive/index';
 import Layout from '../components/layout';
 
 
-export default ({ data }) => {
+export default function Blog({ data }) {
     const { allMarkdownRemark: edges } = data;
 
     return (
@@ -19,7 +20,7 @@ export default ({ data }) => {
             </div>
         </Layout>
     );
-};
+}
 
 export const pageQuery = graphql`
     query BlogQuery {
@@ -36,3 +37,7 @@ export const pageQuery = graphql`
         }
     }
 }`;
+
+Blog.propTypes = {
+    data: PropTypes.object.isRequired,
+};
