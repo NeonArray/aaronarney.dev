@@ -24,6 +24,7 @@ export default function Layout({ children }) {
                         titleTemplate={ data.site.siteMetadata.titleTemplate }
                     >
                         <html lang="en" />
+                        <meta name="msvalidate.01" content="1B785495556C9DE837E22313FC8A33E7" />
                     </Helmet>
                     <Header />
                     <div className="grid">
