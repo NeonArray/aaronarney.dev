@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+
 import { assign } from '../../utils';
 
 import helpers from '../../global/helpers.module.css';
