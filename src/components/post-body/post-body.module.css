@@ -87,9 +87,10 @@ pre {
 }
 
 :not(pre) code[class="language-text"] {
-    border-radius: .3em;
-    padding: .1em .4em;
+    border-radius: 0 !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 85%;
+    padding: 0 .4em !important;
     white-space: normal;
-    font-size: .8em;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
