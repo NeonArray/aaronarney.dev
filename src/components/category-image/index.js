@@ -40,8 +40,8 @@ export default function CategoryImage({ height, width, category, cssClass }) {
 }
 
 CategoryImage.propTypes = {
-    height: PropTypes.number,
-    width: PropTypes.number,
-    category: PropTypes.string,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+    category: PropTypes.string.isRequired,
     cssClass: PropTypes.string,
 };
