@@ -1,4 +1,5 @@
 # Ocular-Rhythm Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ec9eaef-cf0a-4a83-a593-6b1f81c27491/deploy-status)](https://app.netlify.com/sites/ocular-rhythm/deploys)
 
 The source code to my personal website and blog, Ocular-Rhythm. I built this using Gatsby, which is a rad JavaScript framework. I also used Netlify for the first time with this project and am extremely impressed with it.
 
