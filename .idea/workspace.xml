@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/archive/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/archive/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/callout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/callout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-aside/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-aside/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/category-image/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-image/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/category-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-block/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-block/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-body/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-body/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post-title/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-title/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post-body/post-body.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-body/post-body.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post-footer/post-footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-footer/post-footer.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,13 +16,59 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1753765849">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="467" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="467" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/projects.js">
+        <entry file="file://$PROJECT_DIR$/src/components/category-list/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="72">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/category.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +83,7 @@
       <find>section-la</find>
       <find>&quot;</find>
       <find>moment</find>
+      <find>CategoryImage</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -64,6 +93,7 @@
       <dir>$PROJECT_DIR$/src</dir>
       <dir>D:\repos\ocular-rhythm-site\public</dir>
       <dir>D:\repos\ocular-rhythm-site\src</dir>
+      <dir>D:\repos\ocular-rhythm-site\src\components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +132,6 @@
         <option value="$PROJECT_DIR$/static/_redirects" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/templates/category.js" />
-        <option value="$PROJECT_DIR$/src/components/category-image/index.js" />
         <option value="$PROJECT_DIR$/src/components/category-header/index.js" />
         <option value="$PROJECT_DIR$/src/components/category-aside/index.js" />
         <option value="$PROJECT_DIR$/src/components/callout/index.js" />
@@ -115,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/components/layout.js" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/templates/single.js" />
-        <option value="$PROJECT_DIR$/src/components/category-list/index.js" />
         <option value="$PROJECT_DIR$/src/pages/404.js" />
         <option value="$PROJECT_DIR$/src/pages/blog.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
@@ -123,11 +151,29 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/post-body/index.js" />
         <option value="$PROJECT_DIR$/src/pages/projects.js" />
+        <option value="$PROJECT_DIR$/src/components/category-image/index.js" />
+        <option value="$PROJECT_DIR$/src/components/category-list/index.js" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="479" />
     <option name="y" value="23" />
     <option name="width" value="2081" />
@@ -203,7 +249,20 @@
               <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocular-rhythm-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocular-rhythm-site" type="b2602c69:ProjectViewProjectNode" />
@@ -225,23 +284,23 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="settings.editor.splitter.proportion" value="0.19873016" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\repos\ocular-rhythm-site\static" />
-      <recent name="D:\repos\ocular-rhythm-site\public" />
-      <recent name="D:\repos\ocular-rhythm-site\static\icons" />
-      <recent name="D:\repos\ocular-rhythm-site\static\images" />
-      <recent name="D:\repos\ocular-rhythm-site\src\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\repos\ocular-rhythm-site\static" />
       <recent name="D:\repos\ocular-rhythm-site\src\posts" />
       <recent name="D:\repos\ocular-rhythm-site\src" />
       <recent name="D:\repos\ocular-rhythm-site\src\pages" />
       <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\repos\ocular-rhythm-site\static" />
+      <recent name="D:\repos\ocular-rhythm-site\public" />
+      <recent name="D:\repos\ocular-rhythm-site\static\icons" />
+      <recent name="D:\repos\ocular-rhythm-site\static\images" />
+      <recent name="D:\repos\ocular-rhythm-site\src\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,11 +336,12 @@
       <workItem from="1545335264277" duration="4818000" />
       <workItem from="1547479196128" duration="2283000" />
       <workItem from="1547484728746" duration="2026000" />
+      <workItem from="1547829840833" duration="2319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88454000" />
+    <option name="totallyTimeSpent" value="90773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,12 +353,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="479" y="23" width="2081" height="1577" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1760667" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.4711934" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -346,20 +405,9 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
@@ -544,43 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category-image/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category-header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/category-aside/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -595,19 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/archive/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1366">
           <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,23 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category-list/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -689,20 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc" />
     <entry file="file://$PROJECT_DIR$/static/_redirects">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -751,10 +716,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/projects.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/projects.js" />
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="364">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category-image/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category-header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/archive/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
