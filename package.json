@@ -1,7 +1,7 @@
 {
     "name": "ocular-rhythm-site",
-    "description": "The website for Ocular-Rhythm built on Gatsby",
-    "version": "1.2.0",
+    "description": "The website for Ocular-Rhythm",
+    "version": "1.3.1",
     "author": "Aaron Arney",
     "dependencies": {
         "ajv": "^5.5.2",
