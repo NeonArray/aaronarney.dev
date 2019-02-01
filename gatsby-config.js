@@ -1,10 +1,10 @@
 module.exports = {
     siteMetadata: {
+        siteUrl: 'https://www.ocular-rhythm.io',
         title: 'Ocular-Rhythm',
         defaultTitle: 'Ocular-Rhythm',
         titleTemplate: '%s · A development blog',
-        description:
-            'Ocular-Rhythm is a development blog, brought to you by Aaron Arney.',
+        description: 'Ocular-Rhythm is a development blog, brought to you by Aaron Arney.',
         url: 'https://www.ocular-rhythm.io',
         image: '/icons/favicon.ico',
         twitterUsername: '@agarney',
@@ -43,8 +43,7 @@ module.exports = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-                plugins: [
-                    {
+                plugins: [{
                         resolve: 'gatsby-remark-prismjs',
                         options: {
                             classPrefix: 'language-',
@@ -82,6 +81,7 @@ module.exports = {
                 icon: 'static/icons/icon.png',
             },
         },
+        'gatsby-plugin-sitemap',
         'gatsby-plugin-offline',
     ],
 };
