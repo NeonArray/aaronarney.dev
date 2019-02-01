@@ -3,7 +3,7 @@
     --heading-h2-size: 2.25em;
     --heading-h3-size: 1.75em;
     --heading-h4-size: 1.125em;
-    --base-font-family:  system-ui, sans-serif;
+    --base-font-family: system-ui, sans-serif;
     --base-font-size: 14px;
     --base-font-line-height: 1.8;
 
@@ -44,17 +44,31 @@
     --animation-duration: .15s;
 
 }
-* { box-sizing: border-box; }
 
-@custom-selector :--heading h1, h2, h3, h4, .h1, .h2, .h3, .h4;
-@custom-selector :--hover :hover, :active, :focus;
+* {
+    box-sizing: border-box;
+}
+
+@custom-selector :--heading h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4;
+@custom-selector :--hover :hover,
+:active,
+:focus;
 
 @custom-media --phone (min-width: 480px);
 @custom-media --tablet (min-width: 768px);
 @custom-media --desktop (min-width: 1024px);
 @custom-media --large-desktop (min-width: 1200px);
 
-html { font-size: var(--base-font-size); }
+html {
+    font-size: var(--base-font-size);
+}
 
 body {
     font-size: 100%;
@@ -91,9 +105,10 @@ body {
 
 .grid {
     width: 100vw;
+
     @supports (display: grid) {
         display: grid;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header""main""footer";
     }
 
     @supports not (display: grid) {
@@ -109,8 +124,7 @@ body {
 }
 
 [data-grid-area="aside"] {
-    @supports not (display: grid) {
-    }
+    @supports not (display: grid) {}
 
     @supports (display: grid) {
         grid-area: aside;
@@ -118,8 +132,7 @@ body {
 }
 
 [data-grid-area="main"] {
-    @supports not (display: grid) {
-    }
+    @supports not (display: grid) {}
 
     @supports (display: grid) {
         grid-area: main;
@@ -135,8 +148,7 @@ body {
 .post-navigation {
     display: flex;
 
-    @supports not (display: grid) {
-    }
+    @supports not (display: grid) {}
 
     @supports (display: grid) {
         grid-area: post-navigation;
@@ -154,13 +166,14 @@ body {
 
         @supports (display: grid) {
             grid-template-areas:
-                    "header"
-                    "main"
-                    "post-navigation"
-                    "footer";
+                "header"
+                "main"
+                "post-navigation"
+                "footer";
         }
     }
 }
+
 .archive-category {
 
     [data-grid-area="header"] {
@@ -180,16 +193,16 @@ body {
             grid-column-gap: 10px;
             grid-row-gap: 15px;
             grid-template-areas:
-                    "header"
-                    "main"
-                    "footer";
+                "header"
+                "main"
+                "footer";
             grid-template-columns: 100%;
 
             @media (--tablet) {
                 grid-template-areas:
-                        "header header"
-                        "aside main"
-                        "footer footer";
+                    "header header"
+                    "aside main"
+                    "footer footer";
                 grid-template-columns: 1fr 2fr;
             }
         }
@@ -198,7 +211,7 @@ body {
 
 .archive .grid {
     @supports (display: grid) {
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header""main""footer";
     }
 }
 
@@ -206,7 +219,9 @@ body {
 p,
 pre,
 blockquote,
-ul, li, ol {
+ul,
+li,
+ol {
     color: var(--gray-dark);
 }
 
@@ -222,13 +237,31 @@ ul, li, ol {
     }
 }
 
-.h2 { font-size: var(--heading-h2-size); line-height: 1.25; }
-.h3 { font-size: var(--heading-h3-size); line-height: 1.25; }
-.h4 { font-size: var(--heading-h4-size); line-height: 1.222em; }
+.h2 {
+    font-size: var(--heading-h2-size);
+    line-height: 1.25;
+}
+
+.h3 {
+    font-size: var(--heading-h3-size);
+    line-height: 1.25;
+}
+
+.h4 {
+    font-size: var(--heading-h4-size);
+    line-height: 1.222em;
+}
 
 .blockquote {
+    background: var(--gray-eee);
     font-size: 1.5em;
     line-height: 1.458333em;
+    margin: 0;
+    padding: .5em 1em;
+
+    p {
+        color: var(--black);
+    }
 }
 
 .main-title {
