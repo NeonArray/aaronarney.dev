@@ -16,21 +16,21 @@ export default function Template({ data, pageContext }) {
 
     return (
         <Layout location={data.location}>
-            <CategoryAside data={ pageContext } />
+            <CategoryAside data={pageContext} />
 
             <main data-grid-area="main">
                 <article className="post">
                     <Helmet
-                        title={ `${capitalizeWords(pageContext.category)} Posts` }
+                        title={`${capitalizeWords(pageContext.category)} Posts`}
                         bodyAttributes={{
-                        class: 'archive-category'
-                    }} />
+                            class: 'archive-category'
+                        }} />
 
                     <CategoryList />
 
-                    <CategoryHeader data={ pageContext } />
+                    <CategoryHeader data={pageContext} />
 
-                    <Archive posts={ edges } layout="stack" />
+                    <Archive posts={edges} layout="stack" />
                 </article>
             </main>
         </Layout>
@@ -38,7 +38,15 @@ export default function Template({ data, pageContext }) {
 }
 
 Template.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+        location: PropTypes.string,
+        markdownremark: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            path: PropTypes.string,
+            date: PropTypes.string.isRequired,
+            tags: PropTypes.array,
+        }),
+    }),
     pageContext: PropTypes.object.isRequired,
 };
 

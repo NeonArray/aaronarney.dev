@@ -1,4 +1,3 @@
-
 .label {
     border: 2px solid transparent;
     color: var(--black);
@@ -39,8 +38,22 @@
     text-transform: uppercase;
 }
 
-.vr       { composes: label; background: var(--secondary-gradient); }
-.general  { composes: label; background: var(--purple-gradient); }
-.web      { composes: label; background: var(--primary-gradient); }
-.software { composes: label; background: var(--yellow-gradient); }
+.vr {
+    composes: label;
+    background: var(--secondary-gradient);
+}
 
+.general {
+    composes: label;
+    background: var(--purple-gradient);
+}
+
+.web {
+    composes: label;
+    background: var(--primary-gradient);
+}
+
+.software {
+    composes: label;
+    background: var(--yellow-gradient);
+}

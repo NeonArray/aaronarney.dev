@@ -9,7 +9,7 @@ import '../global/style.css';
 export default function Layout({ children }) {
     return (
         <StaticQuery
-            query={ graphql`query SiteTitleQuery { site { siteMetadata {
+            query={graphql`query SiteTitleQuery { site { siteMetadata {
                 defaultTitle: title
                 titleTemplate: titleTemplate
                 defaultDescription: description
@@ -17,18 +17,18 @@ export default function Layout({ children }) {
                 defaultImage: image
                 twitterUsername
               } } }` }
-            render={ data => (
+            render={data => (
                 <>
                     <Helmet
-                        title={ data.site.siteMetadata.title }
-                        titleTemplate={ data.site.siteMetadata.titleTemplate }
+                        title={data.site.siteMetadata.title}
+                        titleTemplate={data.site.siteMetadata.titleTemplate}
                     >
                         <html lang="en" />
                         <meta name="msvalidate.01" content="1B785495556C9DE837E22313FC8A33E7" />
                     </Helmet>
                     <Header />
                     <div className="grid">
-                        { children }
+                        {children}
                     </div>
                 </>
             )}
