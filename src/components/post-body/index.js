@@ -15,7 +15,7 @@ export default function PostBody({ content }) {
      * Alas, this route is not ideal and it also introduces a roadblock that prevents my "Copy" code button from functioning. I may have to extract
      * all of this out into it's own plugin at some point and find a more robust and elegant solution.
      */
-    let html = `<div class="${ style.copy }">`;
+    let html = `<div class="${style.copy}">`;
     // eslint-disable-next-line
     const REGEXP = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
 
@@ -27,18 +27,20 @@ export default function PostBody({ content }) {
     // );
 
     html += content.html.replace(REGEXP,
-        `</div><div class="${ style.block }"><div class="${ style.heading }">` +
-        `<p class="${ style.language }">$1</p></div>` +
-        `<div class="${ style.wrapper } gatsby-highlight">$&</div></div><div class="${ style.copy }">`
+        `</div><div class="${style.block}"><div class="${style.heading}">` +
+        `<p class="${style.language}">$1</p></div>` +
+        `<div class="${style.wrapper} gatsby-highlight">$&</div></div><div class="${style.copy}">`
     );
 
     return (
-        <div className={ style.post } dangerouslySetInnerHTML={{ __html: html }}>
+        <div className={style.post} dangerouslySetInnerHTML={{ __html: html }}>
 
         </div>
     );
 }
 
 PostBody.propTypes = {
-    content: PropTypes.object.isRequired,
+    content: PropTypes.shape({
+        html: PropTypes.string.isRequired,
+    }),
 };

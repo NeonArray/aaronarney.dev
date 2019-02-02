@@ -15,7 +15,7 @@ function shouldShowCallout(date) {
     const postDate = moment(date);
 
     if (currentDate.diff(postDate, 'months') >= 6) {
-        return (<Callout message={`Heads up! This article was published over ${currentDate.diff(postDate, 'months') } months ago.`}/>);
+        return (<Callout message={`Heads up! This article was published over ${currentDate.diff(postDate, 'months')} months ago.`} />);
     }
 
     return undefined;
@@ -28,20 +28,20 @@ export default function Template({ data, pageContext }) {
 
     return (
         <Layout location={data.location}>
-            <Helmet title={ frontmatter.title } bodyAttributes={{
+            <Helmet title={frontmatter.title} bodyAttributes={{
                 class: 'page-post'
             }} />
 
             <main className="main" data-grid-area="main">
                 <article className="post">
 
-                    <PostHeader content={ frontmatter } />
+                    <PostHeader content={frontmatter} />
 
-                    { callout }
+                    {callout}
 
-                    <PostBody content={ post } />
+                    <PostBody content={post} />
 
-                    <PostFooter links={ pageContext } />
+                    <PostFooter links={pageContext} />
                 </article>
             </main>
         </Layout>
@@ -49,7 +49,15 @@ export default function Template({ data, pageContext }) {
 }
 
 Template.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+        location: PropTypes.string,
+        markdownremark: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            path: PropTypes.string,
+            date: PropTypes.string.isRequired,
+            tags: PropTypes.array,
+        }),
+    }),
     pageContext: PropTypes.object.isRequired,
 };
 
@@ -66,6 +74,7 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "YYYY-MM-DD")
                 category
+                tags
             }
         }
     }`;

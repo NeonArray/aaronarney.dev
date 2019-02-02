@@ -12,17 +12,17 @@ export default function PostTitle({ category, title, date, path }) {
     return (
         <>
             <div>
-                <Link className={ assign(tag[category.toLowerCase() ], tag.cat) } to={ `blog/category/${category}` }>
-                    { category }
+                <Link className={assign(tag[category.toLowerCase()], tag.cat)} to={`blog/category/${category}`}>
+                    {category}
                 </Link>
             </div>
-            <div className={ style.title }>
-                <Link className={ style.link } to={ path || '' }>
-                    { title }
+            <div className={style.title}>
+                <Link className={style.link} to={path || ''}>
+                    {title}
                 </Link>
             </div>
-            <time className={ style.date }>
-                { moment(date).format('MMMM DD, YYYY') }
+            <time className={style.date}>
+                {moment(date).format('MMMM DD, YYYY')}
             </time>
         </>
     );
@@ -31,6 +31,6 @@ export default function PostTitle({ category, title, date, path }) {
 PostTitle.propTypes = {
     category: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired,
+    path: PropTypes.string,
     title: PropTypes.string.isRequired,
 };

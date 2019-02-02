@@ -276,3 +276,21 @@ ol {
     margin: 60px 0;
     text-decoration: none;
 }
+
+.tags {
+    display: flex;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        transform: rotate(-3deg);
+    }
+}
+
+.tag {
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    padding: 0 1em;
+}
