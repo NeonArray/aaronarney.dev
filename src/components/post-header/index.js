@@ -18,9 +18,10 @@ export default function PostHeader({ content }) {
                     title={content.title}
                     date={content.date}
                     path={content.path}
+                    isLink={false}
                 />
                 <div className="tags">
-                    <ul>
+                    <ul itemProp="keywords">
                         <li>Tags:&nbsp;</li>
                         {content.tags && content.tags.map((tag, i) => {
                             return (
