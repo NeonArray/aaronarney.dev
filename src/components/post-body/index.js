@@ -33,9 +33,9 @@ export default function PostBody({ content }) {
     );
 
     return (
-        <div className={style.post} dangerouslySetInnerHTML={{ __html: html }}>
+        <section className={style.post} dangerouslySetInnerHTML={{ __html: html }} itemProp="articleBody">
 
-        </div>
+        </section>
     );
 }
 
