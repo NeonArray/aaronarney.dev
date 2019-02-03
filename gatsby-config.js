@@ -13,6 +13,12 @@ module.exports = {
         'gatsby-plugin-eslint',
         'gatsby-plugin-sharp',
         {
+            resolve: 'gatsby-plugin-canonical-urls',
+            options: {
+                siteUrl: 'https://www.ocular-rhythm.io',
+            },
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/static/uploads`,

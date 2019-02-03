@@ -5,6 +5,9 @@
             "version": "detect"
         }
     },
+    "env": {
+        "node": true
+    },
     "parser": "babel-eslint",
     "rules": {
         "strict": 0

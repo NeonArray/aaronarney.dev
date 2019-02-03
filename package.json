@@ -6,6 +6,7 @@
     "dependencies": {
         "ajv": "^5.5.2",
         "gatsby": "^2.0.53",
+        "gatsby-plugin-canonical-urls": "^2.0.10",
         "gatsby-plugin-eslint": "^2.0.3",
         "gatsby-plugin-feed": "^2.0.11",
         "gatsby-plugin-manifest": "^2.0.2",
