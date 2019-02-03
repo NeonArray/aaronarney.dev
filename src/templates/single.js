@@ -32,7 +32,7 @@ export default function Template({ data, pageContext }) {
                 class: 'page-post'
             }} />
 
-            <main className="main" data-grid-area="main">
+            <main className="main" data-grid-area="main" itemScope itemType="https://schema.org/Article">
                 <article className="post">
 
                     <PostHeader content={frontmatter} />
