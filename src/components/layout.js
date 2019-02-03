@@ -23,8 +23,14 @@ export default function Layout({ children }) {
                         title={data.site.siteMetadata.title}
                         titleTemplate={data.site.siteMetadata.titleTemplate}
                     >
-                        <html lang="en" />
+                        <html lang="en" itemScope itemType="https://schema.org/Blog"/>
+
+                        <link rel="author" href="Aaron Arney" />
+
                         <meta name="msvalidate.01" content="1B785495556C9DE837E22313FC8A33E7" />
+                        <meta name="robots" content="index,follow" />
+                        <meta name="googlebot" content="index,follow" />
+                        <meta name="twitter:dnt" content="on" />
                     </Helmet>
                     <Header />
                     <div className="grid">
