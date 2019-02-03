@@ -7,8 +7,7 @@ import moment from 'moment';
 import style from './post-title.module.css';
 import tag from '../../global/tags.module.css';
 
-
-export default function PostTitle({ category, title, date, path }) {
+export default function PostTitle({ category, title, date, path, isLink }) {
     return (
         <>
             <div>
@@ -16,12 +15,16 @@ export default function PostTitle({ category, title, date, path }) {
                     {category}
                 </Link>
             </div>
-            <div className={style.title}>
-                <Link className={style.link} to={path || ''}>
-                    {title}
-                </Link>
-            </div>
-            <time className={style.date}>
+      
+            <h1 className={style.title} itemProp="headline">
+                {isLink ? (
+                    <Link className={style.link} to={path || ''}>
+                        {title}
+                    </Link>
+                ) : (title) }
+            </h1>
+      
+            <time className={style.date} itemProp="datePublished" dateTime={moment(date).toISOString()}>
                 {moment(date).format('MMMM DD, YYYY')}
             </time>
         </>
@@ -33,4 +36,5 @@ PostTitle.propTypes = {
     date: PropTypes.string.isRequired,
     path: PropTypes.string,
     title: PropTypes.string.isRequired,
+    isLink: PropTypes.bool,
 };
