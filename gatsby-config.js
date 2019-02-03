@@ -13,6 +13,13 @@ module.exports = {
         'gatsby-plugin-eslint',
         'gatsby-plugin-sharp',
         {
+            resolve: 'gatsby-plugin-fathom',
+            options: {
+                trackingUrl: 'ec2co-ecsel-3n61xfwqcf8z-320699018.us-east-1.elb.amazonaws.com:8080',
+                siteId: 'ocular-rhythm.com'
+            }
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/static/uploads`,
