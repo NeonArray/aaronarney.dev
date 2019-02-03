@@ -15,6 +15,7 @@ export default function PostBlock({ meta, layout }) {
                title={ meta.frontmatter.title }
                date={ meta.frontmatter.date }
                path={ meta.frontmatter.path }
+               isLink={true}
            />
         </article>
     );
