@@ -59,7 +59,7 @@ class FirstClass {
     protected $secondClass;
 
     public function __constructor( SecondClass $instance ) {
-        $this->secondClass = $secondClass;
+        $this->secondClass = $instance;
     }
 }
 ```
@@ -250,3 +250,8 @@ If for some reason you have any errors or failures use the output and error mess
 ---
 
 Hopefully that gives you a taste of how to set up tests with your WordPress plugin, but there's still plenty more to cover and learn. Stay tuned for part 2.
+
+
+###### Edits
+
+- March 4, 2019 - Fixed a typo
