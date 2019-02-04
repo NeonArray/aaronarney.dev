@@ -20,12 +20,12 @@ export default function PostHeader({ content }) {
                     path={content.path}
                     isLink={false}
                 />
-                <div className="tags">
+                <div className={style.tags}>
                     <ul itemProp="keywords">
                         <li>Tags:&nbsp;</li>
                         {content.tags && content.tags.map((tag, i) => {
                             return (
-                                <li className="tag" key={i}>{tag}</li>
+                                <li className={style.tag} key={i}>{tag}</li>
                             );
                         })}
                     </ul>
