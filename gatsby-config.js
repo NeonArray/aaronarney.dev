@@ -18,7 +18,7 @@ module.exports = {
                 trackingUrl: 'ec2-54-173-166-214.compute-1.amazonaws.com:9000',
                 siteId: 'EUBDJ'
             }
-        }
+        },
         {
             resolve: 'gatsby-plugin-canonical-urls',
             options: {
