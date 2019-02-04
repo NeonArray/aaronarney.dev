@@ -15,8 +15,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-fathom',
             options: {
-                trackingUrl: 'ec2-54-173-166-214.compute-1.amazonaws.com:9000',
-                siteId: 'EUBDJ'
+                trackingUrl: 'keytar.co',
+                siteId: 'YERHP'
             }
         },
         {
@@ -37,7 +37,7 @@ module.exports = {
             options: {
                 headers: {
                     '/*': [
-                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\' http://ec2-54-173-166-214.compute-1.amazonaws.com\:9000; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
+                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\' https://keytar.co; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
                         'Referrer-Policy: no-referrer',
                         'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
                     ]
