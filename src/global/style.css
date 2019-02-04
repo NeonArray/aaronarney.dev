@@ -277,29 +277,3 @@ ol {
     text-decoration: none;
 }
 
-.tags {
-    display: flex;
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        list-style-type: none;
-        padding-left: 0;
-
-        @media (--tablet) {
-            justify-content: space-between;
-        }
-    }
-}
-
-.tag {
-    background: #fff;
-    border: 1px solid #d3d3d3;
-    font-size: 12px;
-    padding: 0 1em;
-    text-transform: capitalize;
-}
-
-.tag + .tag {
-    margin-left: 5px;
-}
