@@ -13,6 +13,13 @@ module.exports = {
         'gatsby-plugin-eslint',
         'gatsby-plugin-sharp',
         {
+            resolve: 'gatsby-plugin-fathom',
+            options: {
+                trackingUrl: 'ec2-54-173-166-214.compute-1.amazonaws.com:9000',
+                siteId: 'EUBDJ'
+            }
+        },
+        {
             resolve: 'gatsby-plugin-canonical-urls',
             options: {
                 siteUrl: 'https://www.ocular-rhythm.io',
@@ -30,7 +37,7 @@ module.exports = {
             options: {
                 headers: {
                     '/*': [
-                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\'; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
+                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\' http://ec2-54-173-166-214.compute-1.amazonaws.com\:9000; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
                         'Referrer-Policy: no-referrer',
                         'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
                     ]
@@ -50,28 +57,28 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [{
-                        resolve: 'gatsby-remark-prismjs',
-                        options: {
-                            classPrefix: 'language-',
-                            inlineCodeMarker: null,
-                            aliases: {},
-                        },
+                    resolve: 'gatsby-remark-prismjs',
+                    options: {
+                        classPrefix: 'language-',
+                        inlineCodeMarker: null,
+                        aliases: {},
                     },
-                    {
-                        resolve: 'gatsby-remark-external-links'
-                    },
-                    {
-                        resolve: 'gatsby-remark-relative-images',
-                        options: {
-                            name: 'uploads'
-                        }
-                    },
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 666,
-                        }
+                },
+                {
+                    resolve: 'gatsby-remark-external-links'
+                },
+                {
+                    resolve: 'gatsby-remark-relative-images',
+                    options: {
+                        name: 'uploads'
                     }
+                },
+                {
+                    resolve: 'gatsby-remark-images',
+                    options: {
+                        maxWidth: 666,
+                    }
+                }
                 ],
             },
         },
