@@ -20,16 +20,19 @@ export default function PostHeader({ content }) {
                     path={content.path}
                     isLink={false}
                 />
-                <div className={style.tags}>
-                    <ul itemProp="keywords">
-                        <li>Tags:&nbsp;</li>
-                        {content.tags && content.tags.map((tag, i) => {
-                            return (
-                                <li className={style.tag} key={i}>{tag}</li>
-                            );
-                        })}
-                    </ul>
-                </div>
+
+                {content.tags !== null ? (
+                    <div className={style.tags}>
+                        <ul itemProp="keywords">
+                            <li>Tags:&nbsp;</li>
+                            {content.tags && content.tags.map((tag, i) => {
+                                return (
+                                    <li className={style.tag} key={i}>{tag}</li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                ) : null}
             </div>
         </header>
     );
