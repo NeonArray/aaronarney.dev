@@ -37,7 +37,7 @@ module.exports = {
             options: {
                 headers: {
                     '/*': [
-                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\' https://keytar.co; connect-src \'self\'; img-src https://*.ocular-rhythm.io data:; style-src \'self\' \'unsafe-inline\';',
+                        'Content-Security-Policy: default-src \'self\'; script-src \'self\' \'unsafe-inline\' https://keytar.co; connect-src \'self\'; img-src https://*.ocular-rhythm.io https://keytar.co data:; style-src \'self\' \'unsafe-inline\';',
                         'Referrer-Policy: no-referrer',
                         'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
                     ]
