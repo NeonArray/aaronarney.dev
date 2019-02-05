@@ -41,7 +41,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 Now was the time to initialize the Sentry client, which happens to be a class named `Raven_Client`. I put this logic in the base plugin class located in the `includes` directory - `ferret/includes/class-ferret.php`.
 
-To follow the practice of single responsbility and to keep my functions small, I created a new function to initialize Sentry. Note that to keep my DSN and Project ID secret, I'm just using dummy text in their place.
+To follow the practice of single responsibility and to keep my functions small, I created a new function to initialize Sentry. Note that to keep my DSN and Project ID secret, I'm just using dummy text in their place.
 
 ```php
 public function init_sentry() {
@@ -68,7 +68,7 @@ $this->init_sentry();
 
 Writing code to handle options has gotten better than it used to be (I think), but it's still a somewhat confusing process. The way I've been accomplishing it lately is by creating a helper class to encapsulate my getters and setters for the native WordPress `get_option` function. Then passing an instance of that class to constructors of other classes, so they have a single access point for everything. This has reduced the need to arbitrarily pass around key strings and reduces the cognitive load.
 
-Since quite a bit is going on to create these options, I don't want to wite everything I did in this post, but it was essentially what I just outlined above. If you want to take a look and dissect my approach, you may find the folllowing files of interest...
+Since quite a bit is going on to create these options, I don't want to wite everything I did in this post, but it was essentially what I just outlined above. If you want to take a look and dissect my approach, you may find the following files of interest...
 
 - [Ferret_Public class](https://github.com/leap-spark/ferret/blob/master/public/class-ferret-public.php)
 - [Ferret_Options class](https://github.com/leap-spark/ferret/blob/master/includes/class-ferret-options.php)
@@ -100,3 +100,8 @@ Thanks for reading!
 
 - [Plugin Git Repo](https://github.com/leap-spark/ferret)
 - [Plugin Homepage](https://wordpress.org/plugins/ferret/)
+
+
+###### Edits
+
+- March 5, 2019 - Fixed typo
