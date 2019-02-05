@@ -3,6 +3,7 @@ path: "/blog/managing-levels-in-phaser-2"
 date: "2018-09-10"
 title: "Managing Levels in Phaser 2"
 category: "web"
+tags: ["games", "tutorial", "JavaScript"]
 ---
 
 When I first began to use Phaser 2, I had trouble wrapping my head around the way that "levels", stages", or "scenes" (like in Unity) were created and accessed. I was looking in the documentation for some kind of Level Manager or methods that would allow me to load said scenes but came up short.

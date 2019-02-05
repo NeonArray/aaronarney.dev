@@ -3,6 +3,7 @@ path: "/blog/testing-wordpress-plugins-phpunit"
 date: "2018-12-06"
 title: "Testing WordPress Plugins with PHPUnit and WP Mock"
 category: "web"
+tags: ["PHP", "WordPress", "Plugin", "Testing"]
 ---
 
 ## Part 1: Up & Running

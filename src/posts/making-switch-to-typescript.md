@@ -3,6 +3,7 @@ path: "/blog/making-the-switch-to-typescript"
 date: "2018-11-05"
 title: "Making the Switch to TypeScript"
 category: "web"
+tags: ["JavaScript", "TypeScript", "Tooling"]
 ---
 
 If you've been living under a rock, you might have not yet heard about [Microsoft's TypeScript](https://www.typescriptlang.org/index.html) - "a typed superset of JavaScript that compiles to JavaScript." A typed superset in this context just means it combines plain old JavaScript syntax with a few new extras. 
@@ -13,7 +14,7 @@ If you've been living under a rock, you might have not yet heard about [Microsof
 
 To answer this question, it is first helpful to understand how JavaScript works. Since JavaScript is a loosely typed language, that means that we don't have to explicitly declare our types, instead the JavaScript [JIT (just in type) compiler](https://en.wikipedia.org/wiki/Just-in-time_compilation) that is built into our web browsers, simply infer the type at run time.
 
-That makes situations like this possible:  
+That makes situations like this possible:
 ```javascript
 let a = 'string'; 
 a = 1; 

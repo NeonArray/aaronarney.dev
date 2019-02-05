@@ -3,6 +3,7 @@ path: "/blog/initial-thoughts-flutter"
 date: "2018-12-19"
 title: "Initial Thoughts on Flutter"
 category: "software"
+tags: ["react native", "mobile apps", "thoughts"]
 ---
 
 While building an app in React Native, I accidentally stumbled on Flutter. I had heard of, but never used the Dart language and was surprised to learn that Flutter existed as a React Native alternative. Glancing the docs got me excited to try it out, so I wrapped up as much as I could to make my other app "complete" and immediately moved into rebuilding it in Flutter.

@@ -3,7 +3,7 @@ path: "/blog/writing-ferret-plugin"
 date: "2019-01-11"
 title: "Writing the Ferret Plugin"
 category: "web"
-tags: ["php", "wordpress", "plugins", "open source", "sentry"]
+tags: ["PHP", "WordPress", "plugins", "open source", "sentry"]
 ---
 
 Recently I decided to begin leveraging the [Sentry](https://sentry.io) service for some of the WordPress sites I manage. I wanted to use this on several sites, and I noticed that Sentry has a PHP library but not an officially supported plugin for WordPress.
