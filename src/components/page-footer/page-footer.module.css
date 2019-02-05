@@ -1,0 +1,11 @@
+.footer {
+    align-items: flex-end;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    padding: .5em 1em;
+
+    a {
+        color: var(--black);
+    }
+}
