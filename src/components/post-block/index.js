@@ -9,14 +9,15 @@ import style from './post-block.module.css';
 
 export default function PostBlock({ meta, layout }) {
     return (
-        <article className={ assign(style.block, style[layout]) }>
-           <PostTitle
-               category={ meta.frontmatter.category }
-               title={ meta.frontmatter.title }
-               date={ meta.frontmatter.date }
-               path={ meta.frontmatter.path }
-               isLink={true}
-           />
+        <article className={assign(style.block, style[layout])}>
+            <PostTitle
+                category={meta.frontmatter.category}
+                title={meta.frontmatter.title}
+                date={meta.frontmatter.date}
+                path={meta.frontmatter.path}
+                isLink={true}
+                isH1={false}
+            />
         </article>
     );
 }
