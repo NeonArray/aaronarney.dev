@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import PageFooter from './page-footer';
 import '../global/style.css';
 
 export default function Layout({ children }) {
@@ -23,7 +24,7 @@ export default function Layout({ children }) {
                         title={data.site.siteMetadata.title}
                         titleTemplate={data.site.siteMetadata.titleTemplate}
                     >
-                        <html lang="en" itemScope itemType="https://schema.org/Blog"/>
+                        <html lang="en" itemScope itemType="https://schema.org/Blog" />
 
                         <link rel="author" href="Aaron Arney" />
 
@@ -36,6 +37,8 @@ export default function Layout({ children }) {
                     <div className="grid">
                         {children}
                     </div>
+
+                    <PageFooter />
                 </>
             )}
         />
