@@ -51,7 +51,7 @@ With unit tests, we would write separate tests for each individual method, `add`
 
 ### Integration Tests
  
-On the other hand, integration tests are those that test an entire system or object. For example, if we had written a class that uses dependency injection to load another class in its constructor; with integration tests we would test that the classes work together appropritately.
+On the other hand, integration tests are those that test an entire system or object. For example, if we had written a class that uses dependency injection to load another class in its constructor; with integration tests we would test that the classes work together appropriately.
 
 ```php
 class FirstClass {
@@ -255,3 +255,4 @@ Hopefully that gives you a taste of how to set up tests with your WordPress plug
 ###### Edits
 
 - March 4, 2019 - Fixed a typo
+- March 5, 2019 - Fixed a typo
