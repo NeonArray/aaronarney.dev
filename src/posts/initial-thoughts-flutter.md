@@ -23,9 +23,13 @@ I decided to run through a Udemy course (which I highly recommend) called ["The 
 ### Cons:
 - Not a lot of worldwide adoption so the ecosystem is much smaller than React Native.
 - While the API docs are great, I found there to be lacking real-world examples here and there.
-- The Dart linter takes direction from a remote server so can be difficult to configure. There was limted documentaiton on how to customize these lint rules. Other times I encountered errors which said one thing but meant another. Overall this was a very limited and tame issue.
+- The Dart linter takes direction from a remote server so can be difficult to configure. There was limited documentation on how to customize these lint rules. Other times I encountered errors which said one thing but meant another. Overall this was a very limited and tame issue.
 - Could be a harder "sell" to development teams since it not only requires learning a new framework, but a new language as well. If teams are already using React Native and other JavaScript frameworks, I could see this being an uphill battle.
 
 
 As a fan of React, it _almost_ disappoints me to say that I found Flutter to be a much better tech stack to build apps with. The amount of configuring and third-party libraries and tools you need to get started in React Native and debugging, is just maddening. I absolutely love just having everything work and tie-in out of the box. Debugging apps on a mac with React Native Debugger sucks!
 
+
+###### Edits
+
+- March 5, 2019 - Fixed several typos
