@@ -26,4 +26,9 @@ The goal is to manage this perception using a combination of factors.
 4. Reduce or cut passive aggressiveness. We all suffer from this affliction.
 5. Be an advocate for my accomplishments. If I do something cool, share it with people. Don't assume nobody cares.
 
-That at least starts me out with giving me a good leg up on trying to improve my soft skills. It will be difficult for me to quantity or measure the results of my efforts, I will be able to tell a difference based on the attituides afforded to me.
+That at least starts me out with giving me a good leg up on trying to improve my soft skills. It will be difficult for me to quantity or measure the results of my efforts, I will be able to tell a difference based on the attitudes afforded to me.
+
+
+###### Edits
+
+- March 5, 2019 - Fixed typo
