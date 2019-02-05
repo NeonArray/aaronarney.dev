@@ -7,7 +7,30 @@ import moment from 'moment';
 import style from './post-title.module.css';
 import tag from '../../global/tags.module.css';
 
-export default function PostTitle({ category, title, date, path, isLink }) {
+function createHeader(isH1, headerContent) {
+
+    if (isH1) {
+        return (
+            <h1 className={style.title} itemProp="headline">
+                {headerContent}
+            </h1>
+        );
+    }
+
+    return (
+        <h2 className={style.title} itemProp="headline">
+            {headerContent}
+        </h2>
+    );
+}
+
+export default function PostTitle({ category, title, date, path, isLink, isH1 }) {
+    const headerContent = isLink ? (
+        <Link className={style.link} to={path || ''} >
+            {title}
+        </Link >
+    ) : (title);
+
     return (
         <>
             <div>
@@ -15,15 +38,9 @@ export default function PostTitle({ category, title, date, path, isLink }) {
                     {category}
                 </Link>
             </div>
-      
-            <h1 className={style.title} itemProp="headline">
-                {isLink ? (
-                    <Link className={style.link} to={path || ''}>
-                        {title}
-                    </Link>
-                ) : (title) }
-            </h1>
-      
+
+            {createHeader(isH1, headerContent)}
+
             <time className={style.date} itemProp="datePublished" dateTime={moment(date).toISOString()}>
                 {moment(date).format('MMMM DD, YYYY')}
             </time>
@@ -37,4 +54,5 @@ PostTitle.propTypes = {
     path: PropTypes.string,
     title: PropTypes.string.isRequired,
     isLink: PropTypes.bool,
+    isH1: PropTypes.bool,
 };
