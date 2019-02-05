@@ -145,6 +145,12 @@ body {
     }
 }
 
+[data-grid-area="page-footer"] {
+    @supports not (display: grid) {
+        grid-area: page-footer;
+    }
+}
+
 .post-navigation {
     display: flex;
 
@@ -195,14 +201,16 @@ body {
             grid-template-areas:
                 "header"
                 "main"
-                "footer";
+                "footer"
+                "page-footer";
             grid-template-columns: 100%;
 
             @media (--tablet) {
                 grid-template-areas:
                     "header header"
                     "aside main"
-                    "footer footer";
+                    "footer footer"
+                    "page-footer page-footer";
                 grid-template-columns: 1fr 2fr;
             }
         }
@@ -211,7 +219,11 @@ body {
 
 .archive .grid {
     @supports (display: grid) {
-        grid-template-areas: "header""main""footer";
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            "page-footer";
     }
 }
 
