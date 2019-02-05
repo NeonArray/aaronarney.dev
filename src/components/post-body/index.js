@@ -17,7 +17,7 @@ export default function PostBody({ content }) {
      */
     let html = `<div class="${style.copy}">`;
     // eslint-disable-next-line
-    const REGEXP = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
+    const MATCH_CODE_BLOCKS = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
 
     // THE COPY BUTTON - TODO: Fix this please, Aaron
     // html += content.html.replace(REGEXP,
@@ -26,11 +26,17 @@ export default function PostBody({ content }) {
     //     `<div class="${ style.wrapper } gatsby-highlight">$&</div></div><div class="${ style.copy }">`
     // );
 
-    html += content.html.replace(REGEXP,
+    const contentContainsMarkup = MATCH_CODE_BLOCKS.test(html);
+
+    html += content.html.replace(MATCH_CODE_BLOCKS,
         `</div><div class="${style.block}"><div class="${style.heading}">` +
         `<p class="${style.language}">$1</p></div>` +
         `<div class="${style.wrapper} gatsby-highlight">$&</div></div><div class="${style.copy}">`
     );
+
+    if (contentContainsMarkup) {
+        html += '</div>';
+    }
 
     return (
         <section className={style.post} dangerouslySetInnerHTML={{ __html: html }} itemProp="articleBody">
