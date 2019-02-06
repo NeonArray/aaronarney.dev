@@ -83,7 +83,7 @@ Since this was a _very_ simple plugin, there wasn't too much to be worried about
 
 - **Localization** - I had never generated this before but it was simple. I used the recommended app [Poedit](https://poedit.net/) to generate my english `.pot` file. For the uninitiated, you need to wrap all of your plain text that is visible to users with the native WordPress `__()` or `_e()` functions. This lets WordPress know that the strings are translatable. 
 - **README.txt** - The readme is very important. This is where all of the critical information is placed, such as compatible versions, author data, descriptions, etc.
-- **SVN** - Once the plugin is approved, you are required to commit your code into an svn repository. This is a bummer but not the end of the world. SVN is truely awful in my opinion, but most of that opinion stems from lack of extensive use and understanding. The "svn way" is quite different than the "git way". When all was said and done, I think I had to publish around 7 versions just to rename a file.
+- **SVN** - Once the plugin is approved, you are required to commit your code into an svn repository. This is a bummer but not the end of the world. SVN is truly awful in my opinion, but most of that opinion stems from lack of extensive use and understanding. The "svn way" is quite different than the "git way". When all was said and done, I think I had to publish around 7 versions just to rename a file.
 
 
 
