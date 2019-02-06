@@ -6,4 +6,8 @@
     a {
         color: var(--black);
     }
+
+    a + a {
+        margin-left: 15px;
+    }
 }
