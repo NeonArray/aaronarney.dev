@@ -33,12 +33,14 @@ export default function Layout({ children }) {
                         <meta name="googlebot" content="index,follow" />
                         <meta name="twitter:dnt" content="on" />
                     </Helmet>
-                    <Header />
+                    
                     <div className="grid">
-                        {children}
-                    </div>
+                        <Header />
 
-                    <PageFooter />
+                        {children}
+
+                        <PageFooter />
+                    </div>
                 </>
             )}
         />
