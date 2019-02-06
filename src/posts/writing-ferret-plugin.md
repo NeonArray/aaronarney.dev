@@ -68,7 +68,7 @@ $this->init_sentry();
 
 Writing code to handle options has gotten better than it used to be (I think), but it's still a somewhat confusing process. The way I've been accomplishing it lately is by creating a helper class to encapsulate my getters and setters for the native WordPress `get_option` function. Then passing an instance of that class to constructors of other classes, so they have a single access point for everything. This has reduced the need to arbitrarily pass around key strings and reduces the cognitive load.
 
-Since quite a bit is going on to create these options, I don't want to wite everything I did in this post, but it was essentially what I just outlined above. If you want to take a look and dissect my approach, you may find the following files of interest...
+Since quite a bit is going on to create these options, I don't want to write everything I did in this post, but it was essentially what I just outlined above. If you want to take a look and dissect my approach, you may find the following files of interest...
 
 - [Ferret_Public class](https://github.com/leap-spark/ferret/blob/master/public/class-ferret-public.php)
 - [Ferret_Options class](https://github.com/leap-spark/ferret/blob/master/includes/class-ferret-options.php)
@@ -83,7 +83,7 @@ Since this was a _very_ simple plugin, there wasn't too much to be worried about
 
 - **Localization** - I had never generated this before but it was simple. I used the recommended app [Poedit](https://poedit.net/) to generate my english `.pot` file. For the uninitiated, you need to wrap all of your plain text that is visible to users with the native WordPress `__()` or `_e()` functions. This lets WordPress know that the strings are translatable. 
 - **README.txt** - The readme is very important. This is where all of the critical information is placed, such as compatible versions, author data, descriptions, etc.
-- **SVN** - Once the plugin is approved, you are required to commit your code into an svn repository. This is a bummer but not the end of the world. SVN is trully awful in my opinion, but most of that opinion stems from lack of extensive use and understanding. The "svn way" is quite different than the "git way". When all was said and done, I think I had to publish around 7 versions just to rename a file.
+- **SVN** - Once the plugin is approved, you are required to commit your code into an svn repository. This is a bummer but not the end of the world. SVN is truely awful in my opinion, but most of that opinion stems from lack of extensive use and understanding. The "svn way" is quite different than the "git way". When all was said and done, I think I had to publish around 7 versions just to rename a file.
 
 
 
@@ -104,4 +104,4 @@ Thanks for reading!
 
 ###### Edits
 
-- March 5, 2019 - Fixed typo
+- February 5, 2019 - Fixed typo

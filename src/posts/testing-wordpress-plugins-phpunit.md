@@ -255,5 +255,5 @@ Hopefully that gives you a taste of how to set up tests with your WordPress plug
 
 ###### Edits
 
-- March 4, 2019 - Fixed a typo
-- March 5, 2019 - Fixed a typo
+- February 4, 2019 - Fixed a typo
+- February 5, 2019 - Fixed a typo

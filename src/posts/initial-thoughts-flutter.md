@@ -33,4 +33,4 @@ As a fan of React, it _almost_ disappoints me to say that I found Flutter to be 
 
 ###### Edits
 
-- March 5, 2019 - Fixed several typos
+- February 5, 2019 - Fixed several typos
