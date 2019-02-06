@@ -239,12 +239,12 @@ ol {
 
 :--heading {
     font-family: system-ui, sans-serif;
-    font-size: var(--heading-h1-size);
+    font-size: 2em;
     font-weight: 600;
     line-height: 1.05em;
 
     @media (--tablet) {
-        font-size: 2.5em;
+        font-size: var(--heading-h1-size);
         line-height: 1.125em;
     }
 }
