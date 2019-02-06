@@ -23,23 +23,20 @@ export default function Header() {
                         <li className={style.navItem}>
                             <Link className={style.link} to="/blog">Blog</Link>
                         </li>
-                        {/*<li className={ style.navItem }>*/}
-                        {/*<Link className={ style.link } to="/projects">Projects</Link>*/}
-                        {/*</li>*/}
                     </ul>
                     <ul className={style.socialLinks}>
                         <li className={style.socialLink}>
-                            <a href="https://twitter.com/agarney" target="_blank" rel="noopener noreferrer nofollow" title="Twitter Please Dont Judge Me">
+                            <a href="https://twitter.com/agarney" target="_blank" rel="noopener noreferrer nofollow" title="Twitter Please Dont Judge Me - opens in new window">
                                 <img src={twitter} alt="Twitter Profile Dont Judge Me Please" height="18" />
                             </a>
                         </li>
                         <li className={style.socialLink}>
-                            <a href="https://codepen.io/AArney" target="_blank" rel="noopener noreferrer nofollow" title="Codepen Profile">
+                            <a href="https://codepen.io/AArney" target="_blank" rel="noopener noreferrer nofollow" title="Codepen Profile - opens in new window">
                                 <img src={codepen} alt="Codepen Profile" height="18" />
                             </a>
                         </li>
                         <li className={style.socialLink}>
-                            <a href="https://github.com/ocularrhythm" target="_blank" rel="noopener noreferrer nofollow" title="Github Profile">
+                            <a href="https://github.com/ocularrhythm" target="_blank" rel="noopener noreferrer nofollow" title="Github Profile - opens in new window">
                                 <img src={github} alt="Github Profile" height="18" />
                             </a>
                         </li>
