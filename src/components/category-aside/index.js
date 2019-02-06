@@ -21,7 +21,6 @@ export default function CategoryAside({ data }) {
                         <li><Link className={ tag.software } to="blog/category/software">Software</Link></li>
                         <li><Link className={ tag.web } to="blog/category/web">Web</Link></li>
                         <li><Link className={ tag.general } to="blog/category/general">General</Link></li>
-                        <li><Link className={ tag.vr } to="blog/category/vr">VR</Link></li>
                     </ul>
                 </div>
             </div>
