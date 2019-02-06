@@ -24,7 +24,7 @@ function createHeader(isH1, headerContent) {
     );
 }
 
-export default function PostTitle({ category, title, date, path, isLink, isH1 }) {
+export default function PostTitle({ category, title, date, path, isLink, isH1 = true }) {
     const headerContent = isLink ? (
         <Link className={style.link} to={path || ''} >
             {title}
