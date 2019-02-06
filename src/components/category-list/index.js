@@ -10,32 +10,26 @@ import CategoryImage from "../category-image";
 
 export default function CategoryList() {
     return (
-        <div className={ helpers.showForMobile }>
-            <div className={ style.blocks }>
+        <div className={helpers.showForMobile}>
+            <div className={style.blocks}>
                 <p className="section-label">Categories</p>
 
-                <ul className={ assign(style.categories, helpers.listInline) }>
-                    <li>
-                        <Link to="blog/category/vr">
-                            <CategoryImage height={ 50 } width={ 50 } category="vr" cssClass={ style.image } />
-                            VR
-                        </Link>
-                    </li>
+                <ul className={assign(style.categories, helpers.listInline)}>
                     <li>
                         <Link to="blog/category/software">
-                            <CategoryImage height={ 50 } width={ 50 } category="software" cssClass={ style.image } />
+                            <CategoryImage height={50} width={50} category="software" cssClass={style.image} />
                             Software
                         </Link>
                     </li>
                     <li>
                         <Link to="blog/category/web">
-                            <CategoryImage height={ 50 } width={ 50 } category="web" cssClass={ style.image } />
+                            <CategoryImage height={50} width={50} category="web" cssClass={style.image} />
                             Web
                         </Link>
                     </li>
                     <li>
                         <Link to="blog/category/general">
-                            <CategoryImage height={ 50 } width={ 50 } category="general" cssClass={ style.image } />
+                            <CategoryImage height={50} width={50} category="general" cssClass={style.image} />
                             General
                         </Link>
                     </li>
