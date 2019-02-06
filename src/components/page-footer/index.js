@@ -10,6 +10,9 @@ export default function PageFooter() {
             <Link to="/privacy-policy">
                 Privacy Policy
             </Link>
+            <Link to="/sitemap.xml">
+                Sitemap
+            </Link>
         </div>
     );
 }
