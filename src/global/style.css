@@ -104,11 +104,13 @@ body {
 }
 
 .grid {
+    min-height: 100vh;
     width: 100vw;
 
     @supports (display: grid) {
         display: grid;
-        grid-template-areas: "header""main""footer";
+        grid-template-areas: "header" "main" "footer";
+        grid-template-rows: auto 1fr auto;
     }
 
     @supports not (display: grid) {
@@ -176,6 +178,7 @@ body {
                 "main"
                 "post-navigation"
                 "footer";
+            grid-template-rows: auto 1fr auto auto;
         }
     }
 }
