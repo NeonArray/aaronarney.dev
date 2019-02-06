@@ -10,7 +10,7 @@ The following is not entirely a step-by-step tutorial on how to get up and runni
 
 ## Fathom
 
-[Fathom is an privacy focused data collection system](https://github.com/usefathom/fathom) that replaces the need for using intrusive and overreaching platforms like Google or Adobe analytics. Of course companies or individuals that require a great deal of data filtering, conversions, filters, etc, will probably not be able to replace their platforms of choice with Fathom. The greatess "weakness" of Fathom is also it's greatest strength, simplicity. Instead of tracking tons of data that you really will never use, much less _how_ to use, Fathom just gives you the data you're really looking for - visitors and top pages.
+[Fathom is an privacy focused data collection system](https://github.com/usefathom/fathom) that replaces the need for using intrusive and overreaching platforms like Google or Adobe analytics. Of course companies or individuals that require a great deal of data filtering, conversions, filters, etc, will probably not be able to replace their platforms of choice with Fathom. The greatest "weakness" of Fathom is also it's greatest strength, simplicity. Instead of tracking tons of data that you really will never use, much less _how_ to use, Fathom just gives you the data you're really looking for - visitors and top pages.
 
 It took me a few hours to get the Fathom server up and running using an Amazon Web Services EC2 instance. This is mostly due to my inexperience with managing servers on AWS and less to do with Fathom as an application. I first attempted to run the Fathom docker image using Amazon's ECS platform, but those efforts proved futile. In the end I decided to say fuck it and just boot up an Ubuntu image and install Fathom manually.
 
@@ -22,10 +22,21 @@ This is how I went about it. The instructions are written in the
 1. Create an EC2 instance, with Ubuntu
 2. Create an Elastic IP and associate it with the EC2 instance
 3. SSH into the instance
-4. Download Fathom `curl -o fathom.tar.gz -L https://github.com/usefathom/fathom/releases/download/v1.2.1/fathom_1.2.1_linux_amd64.tar.gz`
-5. Extract the tarball `sudo tar -C /usr/local/bin -xzf fathom.tar.gz`
-6. Change the permissions `sudo chmod +x /usr/local/bin/fathom`
-7. Check it installed `fathom --version`
+4. Run the following commands
+
+```bash
+# Download the release
+curl -o fathom.tar.gz -L https://github.com/usefathom/fathom/releases/download/v1.2.1/fathom_1.2.1_linux_amd64.tar.gz
+
+# Extract it
+sudo tar -C /usr/local/bin -xzf fathom.tar.gz
+
+# Change the permissions 
+sudo chmod +x /usr/local/bin/fathom
+
+# Check that it installed correctly
+fathom --version
+```
 
 
 ### Configuring Fathom
@@ -41,7 +52,13 @@ FATHOM_DATABASE_NAME="fathom.db"
 FATHOM_SECRET="random-secret-string-change-this"
 ```
 
-2. Create a service file `sudo touch /etc/systemd/system/fathom.service`
+2. Create a service file
+
+```bash
+sudo touch /etc/systemd/system/fathom.service
+```
+
+3. Add the following to the file
 
 ```bash
 [Unit]
@@ -86,9 +103,12 @@ sudo a2enmod proxy_balancer
 sudo a2enmod proxy_http
 ```
 
-8. Edit the Apache2.conf `sudo vim /etc/apache2/apache2.conf` and add the following at the bottom
+8. Edit the `Apache2.conf`
 
-```apacheconf
+```bash
+sudo vim /etc/apache2/apache2.conf
+
+# Add the following to the file
 ProxyPass "/" "http://keytar.co:8080/"
 ProxyPassReverse "/" "http://keytar.co:8080/"
 ```
@@ -111,3 +131,8 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 The last step is to throw the tracking code Fathom gives you when you create a new site.
  
 Bye.
+
+
+###### Edits
+
+- February 5, 2019 - Reworked inline code snippets and fixed typo
