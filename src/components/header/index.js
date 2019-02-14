@@ -1,47 +1,33 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import style from './header.module.css';
-
 import logo from '../../images/ocular-rhythm-logo.svg';
-import twitter from '../../images/twitter.svg';
 import github from '../../images/github.svg';
-import codepen from '../../images/codepen.svg';
 
 
 export default function Header() {
     return (
-        <header data-grid-area="header" className={style.header}>
-            <div className={style.inner}>
-                <div className={style.logo}>
-                    <Link to="/" title="Go home">
-                        <img src={logo} alt="Ocular Rhythm Logo of a red sphere and teal sphere" height="28" width="186" />
-                    </Link>
-                </div>
-                <nav className={style.navigation}>
-                    <ul className={style.nav} role="navigation">
-                        <li className={style.navItem}>
-                            <Link className={style.link} to="/blog">Blog</Link>
-                        </li>
-                    </ul>
-                    <ul className={style.socialLinks}>
-                        <li className={style.socialLink}>
-                            <a href="https://twitter.com/agarney" target="_blank" rel="noopener noreferrer nofollow" title="Twitter Please Dont Judge Me - opens in new window">
-                                <img src={twitter} alt="Twitter Profile Dont Judge Me Please" height="18" />
-                            </a>
-                        </li>
-                        <li className={style.socialLink}>
-                            <a href="https://codepen.io/AArney" target="_blank" rel="noopener noreferrer nofollow" title="Codepen Profile - opens in new window">
-                                <img src={codepen} alt="Codepen Profile" height="18" />
-                            </a>
-                        </li>
-                        <li className={style.socialLink}>
-                            <a href="https://github.com/ocularrhythm" target="_blank" rel="noopener noreferrer nofollow" title="Github Profile - opens in new window">
-                                <img src={github} alt="Github Profile" height="18" />
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+        <header data-grid-area="header" className="block w-screen border-2 border-grey-light">
+            <div className="my-0 mx-auto max-w-max pt-3 px-3 md:py-0 md:px-5">
+
+                <ul className="list-reset flex flex-row items-center" role="navigation">
+                    <li className="flex-1">
+                        <Link to="/" title="Go home">
+                            <img src={logo} alt="Ocular Rhythm Logo of a red sphere and teal sphere" height="28" width="186" />
+                        </Link>
+                    </li>
+
+                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-or-red ml-5">
+                        <Link className="text-gray-dark font-bold no-underline hover:text-or-red md:leading-flappy" to="/blog">Blog</Link>
+                    </li>
+
+                    <li className="ml-5">
+                        <a href="https://github.com/ocularrhythm" target="_blank" rel="noopener noreferrer nofollow" title="Github Profile - opens in new window">
+                            <img className="social-icon" src={github} alt="Github Profile" height="18" width="35" />
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </header>
     );
