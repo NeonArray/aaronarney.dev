@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PostBlock from '../post-block';
-import style from './archive.module.css';
 
 
 export default function Archive({ centered, posts, layout }) {
     const centerMargin = centered ? { margin: '0 auto' } : null;
 
     return (
-        <div style={centerMargin} className={style.posts}>
+        <div style={centerMargin} className="flex flex-col justify-center max-w-max px-5 md:content-start md:flex-row md:flex-wrap md:justify-between">
             {posts.map((i, c) => {
                 return (
                     <PostBlock key={c} meta={i.node} layout={layout} />
