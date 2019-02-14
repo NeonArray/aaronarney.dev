@@ -2,16 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import style from './post-footer.module.css';
-
 
 export default function PostFooter({ links }) {
     const { next, prev } = links;
 
     return (
-        <div data-grid-area="footer" className={style.nav}>
-            <Link to={prev !== null ? prev.frontmatter.path : ''} className={style.previous}>
-                <div className={style.copy}>
+        <div data-grid-area="footer" className="flex flex-col font-4 mt-12 relative w-screen md:flex-row">
+            <Link to={prev !== null ? prev.frontmatter.path : ''} className="paginate bg-secondary-grad text-white text-right">
+                <div className="" style={{ textOverflow: 'hidden' }}>
                     <span className={style.direction}>
                         Previous Post
                     </span>
@@ -19,7 +17,7 @@ export default function PostFooter({ links }) {
                 </div>
             </Link>
 
-            <Link to={next !== null ? next.frontmatter.path : ''} className={style.next}>
+            <Link to={next !== null ? next.frontmatter.path : ''} className="paginate bg-primary-grad text-black text-left">
                 <div className={style.copy}>
                     <span className={style.direction}>
                         Next Post
