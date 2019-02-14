@@ -1,3 +1,31 @@
+@tailwind preflight;
+@tailwind components;
+
+.label {
+    @apply text-black border-transparent inline text-base font-bold my-3 py-1 px-3 relative no-underline uppercase z-50;
+}
+
+.paginate {
+    @apply overflow-hidden font-bold text-4xl py-8 px-4 no-underline w-full;
+
+    transition: .25s width ease;
+
+    &:hover {
+        transition: .25s width ease;
+        width: 100%;
+    }
+
+    @screen md {
+        @apply text-5xl pt-32 px-4 pb-16;
+    }
+}
+
+.paginate-item {
+    @apply text-4xl font-bold overflow-hidden relative py-8 px-4 w-full;
+}
+
+@tailwind utilities;
+
 :root {
     --heading-h1-size: 3em;
     --heading-h2-size: 2.25em;
@@ -47,6 +75,66 @@
 
 * {
     box-sizing: border-box;
+}
+
+.vr {
+    background: var(--secondary-gradient);
+}
+
+.general {
+    background: var(--purple-gradient);
+}
+
+.web {
+    background: var(--primary-gradient);
+}
+
+.software {
+    background: var(--yellow-gradient);
+}
+
+.post-copy a {
+    border-bottom: 4px solid var(--primary);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+pre {
+    tab-size: 4;
+}
+
+:not(pre) code[class="language-text"] {
+    border-radius: 0 !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 85%;
+    padding: 0 .4em !important;
+    white-space: normal;
+}
+
+.copyButton {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    height: 34px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 110px;
+
+    &:hover {
+        background: #4b8d96;
+        cursor: pointer;
+    }
+}
+
+.social-icon {
+    transform: translateY(5px);
 }
 
 @custom-selector :--heading h1,
@@ -141,13 +229,17 @@ body {
 }
 
 [data-grid-area="footer"] {
-    @supports not (display: grid) {
+    @supports not (display: grid) {}
+
+    @supports (display: grid) {
         grid-area: footer;
     }
 }
 
 [data-grid-area="page-footer"] {
-    @supports not (display: grid) {
+    @supports not (display: grid) {}
+
+    @supports (display: grid) {
         grid-area: page-footer;
     }
 }
@@ -176,7 +268,7 @@ body {
                 "header"
                 "main"
                 "post-navigation"
-                "footer";
+                "page-footer";
             grid-template-rows: auto 1fr auto auto;
         }
     }
@@ -221,7 +313,7 @@ body {
 
 .archive .grid {
     @supports (display: grid) {
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "main"
             "footer"
