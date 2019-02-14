@@ -35,11 +35,9 @@ export default function PrivacyPolicy() {
                         <li>To detect, prevent and address technical issues</li>
                     </ul>
 
-                    <h2>Third Pary Privacy Policies</h2>
+                    <h2>Third Party Privacy Policies</h2>
 
                     <p>Ocular-Rhythm’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
-
-                    <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites. What Are Cookies?</p>
 
                     <h2>Our Policy on &quot;Do Not Track&quot; Signals under the California Online Protection Act (CalOPPA)</h2>
 
