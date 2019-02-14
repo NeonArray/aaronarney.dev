@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import style from './page-footer.module.css';
-
 
 export default function PageFooter() {
     return (
-        <div data-grid-area="page-footer" className={style.footer}>
-            <Link to="/privacy-policy">
+        <div data-grid-area="page-footer" className="bg-grey-lighter px-2 py-4 text-center">
+            <Link className="text-black" to="/privacy-policy">
                 Privacy Policy
             </Link>
-            <Link to="/sitemap.xml">
+            <Link className="text-black ml-4" to="/sitemap.xml">
                 Sitemap
             </Link>
         </div>
