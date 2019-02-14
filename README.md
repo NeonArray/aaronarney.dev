@@ -36,11 +36,14 @@ In the `static` directory there is a file called `_headers`. This file is respon
 Getting up and running in Gatsby is fairly straightforward. Writing components in React and piecing those together is also nothing new. The biggest hurdle I had to tackle was figuring out how to structure my pages/posts in a way that reflects the URL structure I was looking for. After a while a tinkering and trial and error, I found the sweet spot.
 
 **Documentation**
+
 I've seen often where people praise Gatsby for their clear and helpful documentation, but I will say that for someone with 4 or 5 years of JavaScript experience and using a ton of different frameworks, I still found myself confused and frustrated at certain points.
 
 I believe Gatsby will continue to improve and evolve so I am confident it will only get better from here.
 
+
 **Prism**
+
 I ran into an issue with Prism that made displaying code blocks kind of challenging. The problem I encountered was that I wanted to be able to use markdown
 to write my posts while also having the flexibility to displaying the language of a code block, along with a copy code button. I was hopeful that I could use
 the Github flavor of code blocks in markdown as well instead of having to write HTML in my markdown. 
