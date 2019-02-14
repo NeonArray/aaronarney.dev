@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import style from './callout.module.css';
-
 
 export default function Callout({ message }) {
     return (
-        <div className={ style.callout }>
+        <div className="block text-white bg-or-pink shadow-callout font-bold my-8 mx-auto max-w-max p-5 uppercase">
             { message }
         </div>
     );
