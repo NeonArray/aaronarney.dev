@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { assign } from '../../utils';
-
-import style from './category-header.module.css';
 
 
 export default function CategoryHeader({ data }) {
     return (
-        <div className={assign(style.title, style[data.category.toLowerCase()])}>
-            <h1 className={style.heading}>
+        <div style={{ left: '-15px' }} className={`inline-block mb-6 pt-1 px-4 pb-6 relative ${data.category.toLowerCase()}`}>
+            <h1 className="text-4xl font-bold leading-none mb-0">
                 {data.category}
                 <br />
-                <span className={style.subtext}>Articles</span>
+                <span className="absolute block font-normal" style={{ bottom: '-12px' }}>
+                    Articles
+                </span>
             </h1>
         </div>
     );
