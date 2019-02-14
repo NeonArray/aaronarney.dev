@@ -2,25 +2,39 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import style from './category-aside.module.css';
-import tag from '../../global/tags.module.css';
-import help from '../../global/helpers.module.css';
 import CategoryImage from '../category-image';
 
 
 export default function CategoryAside({ data }) {
     return (
-        <aside data-grid-area="aside" className={ style.aside }>
+        <aside data-grid-area="aside" className="text-right">
             <div className="flex align-right flex-columns">
-                <CategoryImage height={ 164 } width={ 164 } category={ data.category } className={ style.img } />
+                <CategoryImage
+                    height={164}
+                    width={164}
+                    category={data.category}
+                    className="block my-0 mx-auto md:m-0"
+                />
 
-                <div className={ help.hideForMobile }>
-                    <p className={ style.title }>View By Category:</p>
+                <div className="sm:invisible md:visible">
+                    <p className="my-6 text-base leading-tight">View By Category:</p>
 
-                    <ul className={ style.categories }>
-                        <li><Link className={ tag.software } to="blog/category/software">Software</Link></li>
-                        <li><Link className={ tag.web } to="blog/category/web">Web</Link></li>
-                        <li><Link className={ tag.general } to="blog/category/general">General</Link></li>
+                    <ul className="list-reset">
+                        <li className="mb-3">
+                            <Link className="label software" to="blog/category/software">
+                                Software
+                            </Link>
+                        </li>
+                        <li className="mb-3">
+                            <Link className="label web" to="blog/category/web">
+                                Web
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="label general" to="blog/category/general">
+                                General
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
