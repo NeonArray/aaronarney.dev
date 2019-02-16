@@ -1,5 +1,14 @@
-.post-copy a,
-.link {
+.post-copy {
+    @media (--tablet) {
+        width: 900px;
+    }
+}
+
+.post-copy :--heading {
+    margin-top: 35px;
+}
+
+.post-copy a {
     border-bottom: 4px solid var(--primary);
     color: var(--link-color);
     font-weight: bold;
@@ -24,6 +33,10 @@ pre {
     font-size: 85%;
     padding: 0 .4em !important;
     white-space: normal;
+}
+
+pre[class*="language-"] {
+    line-height: var(--base-font-line-height) !important;
 }
 
 .copyButton {
@@ -53,4 +66,8 @@ pre {
             clip-path: polygon(0 0, 50% 29%, 100% 0, 100% 100%, 0 100%);
         }
     }
+}
+
+.post-copy p {
+    margin-bottom: 25px;
 }
