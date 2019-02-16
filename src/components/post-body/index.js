@@ -14,7 +14,7 @@ export default function PostBody({ content }) {
      * Alas, this route is not ideal and it also introduces a roadblock that prevents my "Copy" code button from functioning. I may have to extract
      * all of this out into it's own plugin at some point and find a more robust and elegant solution.
      */
-    let html = `<div class="text-xl font-light p-3 md:p-0 md:max-w-max post-copy">`;
+    let html = `<div class="text-xl font-light p-3 md:p-0 md:max-w-copy post-copy">`;
     // eslint-disable-next-line
     const MATCH_CODE_BLOCKS = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
 
@@ -30,7 +30,7 @@ export default function PostBody({ content }) {
     html += content.html.replace(MATCH_CODE_BLOCKS,
         `</div><div class="align-center bg-black-lighter my-16 mx-0 w-screen"><div class="m-0 -mr-4 max-w-none px-3 py-0 relative bg-grey-lighter">` +
         `<p class="block font-bold leading-loose mt-0 text-grey-darker uppercase md:text-center">$1</p></div>` +
-        `<div class="mx-auto my-0 max-w-xl gatsby-highlight">$&</div></div><div class="text-xl font-light p-3 md:p-0 md:max-w-max post-copy">`
+        `<div class="mx-auto my-0 max-w-xl gatsby-highlight">$&</div></div><div class="text-xl font-light p-3 md:p-0 md:max-w-copy post-copy">`
     );
 
     if (contentContainsMarkup) {
