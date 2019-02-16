@@ -17,8 +17,8 @@ export default function Header() {
                         </Link>
                     </li>
 
-                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-or-red ml-5">
-                        <Link className="text-gray-dark font-bold no-underline hover:text-or-red md:leading-flappy" to="/blog">Blog</Link>
+                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
+                        <Link className="text-gray-dark font-bold no-underline hover:text-red md:leading-flappy" to="/blog">Blog</Link>
                     </li>
 
                     <li className="ml-5">
