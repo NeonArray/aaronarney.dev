@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
                 <Helmet title="Ocular-Rhythm" bodyAttributes={{
                     class: 'page-post'
                 }} />
-                <main data-grid-area="main" style={{ maxWidth: '920px', margin: '0 auto', padding: '0 2em' }}>
+                <main data-grid-area="main" className="post-copy max-w-copy" style={{ margin: '0 auto', padding: '0 2em' }}>
                     <h1>Privacy Policy for www.ocular-rhythm.io</h1>
 
                     <p>At Ocular-Rhythm, accessible from www.ocular-rhythm.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Ocular-Rhythm and how we use it.</p>
