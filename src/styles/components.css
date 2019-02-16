@@ -1,0 +1,22 @@
+.label {
+    @apply text-black border-transparent inline text-base font-bold my-3 py-1 px-3 relative no-underline uppercase z-50;
+}
+
+.paginate {
+    @apply overflow-hidden font-bold text-4xl py-8 px-4 no-underline w-full;
+
+    @screen md {
+        @apply text-5xl pt-32 px-4 pb-16 w-1/2;
+    }
+
+    transition: .25s width ease;
+
+    &:hover {
+        transition: .25s width ease;
+        width: 100%;
+    }
+}
+
+.paginate-item {
+    @apply text-4xl font-bold overflow-hidden relative py-8 px-4 w-full;
+}
