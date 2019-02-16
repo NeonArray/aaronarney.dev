@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import PageFooter from './page-footer';
-import '../global/style.css';
+import '../styles/style.css';
 
 export default function Layout({ children }) {
     return (
@@ -33,7 +33,7 @@ export default function Layout({ children }) {
                         <meta name="googlebot" content="index,follow" />
                         <meta name="twitter:dnt" content="on" />
                     </Helmet>
-                    
+
                     <div className="grid">
                         <Header />
 
