@@ -8,12 +8,12 @@ import CategoryImage from '../category-image';
 export default function CategoryAside({ data }) {
     return (
         <aside data-grid-area="aside" className="text-right">
-            <div className="flex align-right flex-columns">
+            <div className="flex align-right items-end flex-col">
                 <CategoryImage
                     height={164}
                     width={164}
                     category={data.category}
-                    className="block my-0 mx-auto md:m-0"
+                    cssClass="block my-0 mx-auto md:m-0"
                 />
 
                 <div className="sm:invisible md:visible">
