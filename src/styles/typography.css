@@ -31,10 +31,10 @@ ol {
 
 :--heading {
     font-family: system-ui, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     line-height: 1.05em;
-    margin: 34px 0;
+    margin: 0 0 34px 0;
 
     @media (--tablet) {
         font-size: var(--heading-h1-size);
@@ -43,18 +43,27 @@ ol {
 }
 
 h2 {
-    font-size: var(--heading-h2-size);
     line-height: 1.25;
+    
+    @media (--tablet) {
+        font-size: var(--heading-h2-size);
+    }
 }
 
 h3 {
-    font-size: var(--heading-h3-size);
     line-height: 1.25;
+
+    @media (--tablet) {
+        font-size: var(--heading-h3-size);
+    }
 }
 
 h4 {
-    font-size: var(--heading-h4-size);
     line-height: 1.222em;
+
+    @media (--tablet) {
+        font-size: var(--heading-h4-size);
+    }
 }
 
 .blockquote {
