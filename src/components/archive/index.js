@@ -7,7 +7,7 @@ export default function Archive({ centered, posts, layout }) {
     const centerMargin = centered ? { margin: '0 auto' } : null;
 
     return (
-        <div style={centerMargin} className="flex flex-col justify-center max-w-max px-5 md:content-start md:flex-row md:flex-wrap md:justify-between">
+        <div style={centerMargin} className="flex flex-col justify-center mt-8 max-w-max px-5 md:content-start md:flex-row md:flex-wrap md:justify-between">
             {posts.map((i, c) => {
                 return (
                     <PostBlock key={c} meta={i.node} layout={layout} />
