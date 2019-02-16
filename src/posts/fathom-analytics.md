@@ -39,7 +39,7 @@ fathom --version
 ```
 
 
-### Configuring Fathom
+## Configuring Fathom
 
 1. Create an `.env` file with the following
 
