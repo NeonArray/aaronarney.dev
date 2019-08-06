@@ -22,11 +22,17 @@ function createHeader(isH1, headerContent) {
 }
 
 export default function PostTitle({ category, title, date, path, isLink, isH1 = true }) {
-    const headerContent = isLink ? (
-        <Link className="text-black no-underline" to={path || ''} >
-            {title}
-        </Link >
-    ) : (title);
+    let headerContent = (title);
+
+    if (isLink && path.startsWith('http')) {
+        headerContent = (<a href={path}>{title}</a>);
+    } else if (isLink) {
+        headerContent = (
+            <Link className="text-black no-underline" to={path || ''}>
+                {title}
+            </Link>
+        )
+    }
 
     return (
         <>
