@@ -21,6 +21,10 @@ export default function Header() {
                         <Link className="text-gray-dark font-bold no-underline hover:text-red md:leading-flappy" to="/blog">Blog</Link>
                     </li>
 
+                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
+                        <Link className="text-gray-dark font-bold no-underline hover:text-red md:leading-flappy" to="/guest-posts">Guest Posts</Link>
+                    </li>
+
                     <li className="ml-5">
                         <a href="https://github.com/ocularrhythm" target="_blank" rel="noopener noreferrer nofollow" title="Github Profile - opens in new window">
                             <img className="social-icon" src={github} alt="Github Profile" height="18" width="35" />
