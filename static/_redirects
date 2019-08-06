@@ -1,4 +1,10 @@
 # Redirect domain aliases to primary domain
+https://www.ocularrhythm.com/* https://www.ocular-rhythm.io/:splat 301!
+https://ocularrhythm.com/* https://www.ocular-rhythm.io/:splat 301!
+
+https://www.ocular-rhythm.com/* https://www.ocular-rhythm.io/:splat 301!
+https://ocular-rhythm.com/* https://www.ocular-rhythm.io/:splat 301!
+
 https://www.ocularrhythm.io/* https://www.ocular-rhythm.io/:splat 301!
 https://ocularrhythm.io/* https://www.ocular-rhythm.io/:splat 301!
 
