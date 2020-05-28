@@ -1,10 +1,11 @@
-import React from 'react'
+import * as React from 'react';
+import {ReactComponentElement} from "react";
 import { Link } from 'gatsby';
+// @ts-ignore
+import * as logo from '../../images/ocular-rhythm-logo.svg';
 
-import logo from '../../images/ocular-rhythm-logo.svg';
 
-
-export default function Header() {
+export default function Header(): ReactComponentElement<any> {
     return (
         <header data-grid-area="header" className="block w-screen border-2 border-grey-light">
             <div className="my-0 mx-auto max-w-max py-4 px-3 md:px-5">
