@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import PostTitle from "../post-title";
 import CategoryImage from "../category-image";
 
@@ -37,12 +36,12 @@ export default function PostHeader({ content }) {
     );
 }
 
-PostHeader.propTypes = {
-    content: PropTypes.shape({
-        category: PropTypes.string,
-        date: PropTypes.string.isRequired,
-        path: PropTypes.string,
-        tags: PropTypes.array,
-        title: PropTypes.string.isRequired,
-    }),
-};
+// PostHeader.propTypes = {
+//     content: PropTypes.shape({
+//         category: PropTypes.string,
+//         date: PropTypes.string.isRequired,
+//         path: PropTypes.string,
+//         tags: PropTypes.array,
+//         title: PropTypes.string.isRequired,
+//     }),
+// };

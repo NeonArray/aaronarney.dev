@@ -10,12 +10,12 @@ module.exports = {
         twitterUsername: '@agarney',
     },
     plugins: [
-        'gatsby-plugin-eslint',
-        'gatsby-plugin-sharp',
+        `gatsby-plugin-react-helmet`,
         {
-            resolve: 'gatsby-plugin-canonical-urls',
+            resolve: `gatsby-source-filesystem`,
             options: {
-                siteUrl: 'https://www.ocular-rhythm.io',
+                name: `images`,
+                path: `${__dirname}/src/images`,
             },
         },
         {
@@ -24,6 +24,34 @@ module.exports = {
                 path: `${__dirname}/static/uploads`,
                 name: 'uploads',
             },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/posts`,
+                name: 'pages',
+            },
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: 'gatsby-remark-prismjs',
+                        options: {
+                            classPrefix: 'language-',
+                            inlineCodeMarker: null,
+                            aliases: {},
+                        },
+                    },
+                    {
+                        resolve: 'gatsby-remark-relative-images',
+                        options: {
+                            name: 'uploads'
+                        }
+                    }
+                ]
+            }
         },
         {
             resolve: 'gatsby-plugin-netlify',
@@ -36,57 +64,23 @@ module.exports = {
                 }
             }
         },
-        'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: `gatsby-plugin-manifest`,
             options: {
-                path: `${__dirname}/src/posts`,
-                name: 'pages',
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [{
-                    resolve: 'gatsby-remark-prismjs',
-                    options: {
-                        classPrefix: 'language-',
-                        inlineCodeMarker: null,
-                        aliases: {},
-                    },
-                },
-                {
-                    resolve: 'gatsby-remark-external-links'
-                },
-                {
-                    resolve: 'gatsby-remark-relative-images',
-                    options: {
-                        name: 'uploads'
-                    }
-                },
-                {
-                    resolve: 'gatsby-remark-images',
-                    options: {
-                        maxWidth: 666,
-                    }
-                }
-                ],
-            },
-        },
-        {
-            resolve: 'gatsby-plugin-manifest',
-            options: {
-                name: 'ocular-rhythm',
-                short_name: 'ocularrhythm',
-                start_url: '/',
-                background_color: '#6CC9D2',
-                theme_color: '#6CC9D2',
-                display: 'minimal-ui',
-                icon: 'static/icons/icon.png',
-            },
-        },
-        'gatsby-plugin-sitemap',
-        'gatsby-plugin-offline',
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        // `gatsby-plugin-offline`,
     ],
-};
+}

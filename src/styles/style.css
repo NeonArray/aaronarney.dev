@@ -1,13 +1,13 @@
-@import "./variables";
-@import "tailwindcss/preflight";
+@import "./variables.css";
+@import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "./components";
+@import "./components.css";
 @import "tailwindcss/utilities";
-@import "./grid";
-@import "./typography";
-@import "./post";
-@import "./post-header";
-@import "./tags";
+/*@import "./grid.css";*/
+@import "./typography.css";
+@import "./post.css";
+@import "./post-header.css";
+@import "./tags.css";
 
 * {
     box-sizing: border-box;

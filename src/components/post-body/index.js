@@ -1,7 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-import 'prismjs/themes/prism-okaidia.css';
 
 
 export default function PostBody({ content }) {
@@ -43,9 +40,3 @@ export default function PostBody({ content }) {
         </section>
     );
 }
-
-PostBody.propTypes = {
-    content: PropTypes.shape({
-        html: PropTypes.string.isRequired,
-    }),
-};

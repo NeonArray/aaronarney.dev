@@ -9,6 +9,7 @@
 
 .header-image {
     height: 150px;
+    margin: 0 auto;
     width: 150px;
 
     @media (--tablet) {

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import CategoryImage from '../category-image';
@@ -42,6 +41,6 @@ export default function CategoryAside({ data }) {
     );
 }
 
-CategoryAside.propTypes = {
-    data: PropTypes.object.isRequired,
-};
+// CategoryAside.propTypes = {
+//     data: PropTypes.object.isRequired,
+// };

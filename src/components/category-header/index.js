@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
-
 
 export default function CategoryHeader({ data }) {
     return (
@@ -16,8 +14,8 @@ export default function CategoryHeader({ data }) {
     );
 }
 
-CategoryHeader.propTypes = {
-    data: PropTypes.shape({
-        category: PropTypes.string.isRequired,
-    }),
-};
+// CategoryHeader.propTypes = {
+//     data: PropTypes.shape({
+//         category: PropTypes.string.isRequired,
+//     }),
+// };

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 
 // import vrImage from '../../images/vr.svg';
 // import codeImage from '../../images/code.svg';
@@ -38,10 +37,10 @@ export default function CategoryImage({ height, width, category, cssClass }) {
         <img alt={ img.alt } src={ img.src } height={ height } width={ width } className={ cssClass } />
     );
 }
-
-CategoryImage.propTypes = {
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-    category: PropTypes.string.isRequired,
-    cssClass: PropTypes.string,
-};
+//
+// CategoryImage.propTypes = {
+//     height: PropTypes.number.isRequired,
+//     width: PropTypes.number.isRequired,
+//     category: PropTypes.string.isRequired,
+//     cssClass: PropTypes.string,
+// };

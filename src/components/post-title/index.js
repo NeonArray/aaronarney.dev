@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import moment from 'moment';
 
@@ -37,9 +36,9 @@ export default function PostTitle({ category, title, date, path, isLink, isH1 = 
     return (
         <>
             <div>
-                <Link className={`${category.toLowerCase()} label tag-cat`} to={`blog/category/${category}`}>
+                <span className={`${category.toLowerCase()} label tag-cat`}>
                     {category}
-                </Link>
+                </span>
             </div>
 
             {createHeader(isH1, headerContent)}
@@ -50,12 +49,12 @@ export default function PostTitle({ category, title, date, path, isLink, isH1 = 
         </>
     );
 }
-
-PostTitle.propTypes = {
-    category: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    path: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    isLink: PropTypes.bool,
-    isH1: PropTypes.bool,
-};
+//
+// PostTitle.propTypes = {
+//     category: PropTypes.string.isRequired,
+//     date: PropTypes.string.isRequired,
+//     path: PropTypes.string,
+//     title: PropTypes.string.isRequired,
+//     isLink: PropTypes.bool,
+//     isH1: PropTypes.bool,
+// };

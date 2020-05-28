@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+
+import {Helmet} from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
-import PageFooter from './page-footer';
+
 import '../styles/style.css';
 
 export default function Layout({ children }) {
@@ -38,15 +38,9 @@ export default function Layout({ children }) {
                         <Header />
 
                         {children}
-
-                        <PageFooter />
                     </div>
                 </>
             )}
         />
     );
 }
-
-Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-};

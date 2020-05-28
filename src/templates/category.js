@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
-import Helmet from "react-helmet";
+import {Helmet} from "react-helmet";
 import { graphql } from 'gatsby';
 
 import Archive from '../components/archive';
@@ -15,13 +14,15 @@ export default function Template({ data, pageContext }) {
     const { edges } = data.allMarkdownRemark;
 
     return (
-        <Layout location={data.location}>
+        <Layout location={data.location} clsName="grid
+            grid-cols-1
+            md:grid-cols-2">
             <CategoryAside data={pageContext} />
 
             <main data-grid-area="main">
                 <article className="post">
                     <Helmet
-                        title={`${capitalizeWords(pageContext.category)} Posts`}
+                        title={`${capitalizeWords(pageContext.category)} | Ocular-Rhythm`}
                         bodyAttributes={{
                             class: 'archive-category'
                         }} />
@@ -36,19 +37,6 @@ export default function Template({ data, pageContext }) {
         </Layout>
     );
 }
-
-Template.propTypes = {
-    data: PropTypes.shape({
-        location: PropTypes.string,
-        markdownremark: PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            path: PropTypes.string,
-            date: PropTypes.string.isRequired,
-            tags: PropTypes.array,
-        }),
-    }),
-    pageContext: PropTypes.object.isRequired,
-};
 
 export const pageQuery = graphql`
     query PostByCategory($category: String!) {

@@ -15,14 +15,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 };
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
 
     const blogPostTemplate = path.resolve('src/templates/single.js');
     const blogCategoryTemplate = path.resolve('src/templates/category.js');
 
-    return new Promise((resolve, reject) => {
-        resolve(graphql(`{ allMarkdownRemark(
+    const result = await graphql(`
+        {
+            allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___date] }
                 limit: 1000
             ) {
@@ -35,43 +36,43 @@ exports.createPages = ({ actions, graphql }) => {
                         }
                     }
                 }
-            } }`).then(result => {
-                if (result.errors) {
-                    reject(result.errors);
-                }
+            } 
+        }
+    `);
 
-                const posts = result.data.allMarkdownRemark.edges;
+    if (result.errors) {
+        throw new Error(`GraphQL threw an error in gatsy-node`);
+    }
 
-                result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
-                    createPage({
-                        path: node.frontmatter.path,
-                        component: blogPostTemplate,
-                        context: {
-                            prev: index === 0 ? null : posts[index - 1].node,
-                            next: index === (posts.length - 1) ? null : posts[index + 1].node,
-                        },
-                    });
-                });
+    const posts = result.data.allMarkdownRemark.edges;
 
-                let categories = [];
-                posts.forEach((edge) => {
-                    categories.push(edge.node.frontmatter.category);
-                });
+    result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
+        createPage({
+            path: node.frontmatter.path,
+            component: blogPostTemplate,
+            context: {
+                prev: index === 0 ? null : posts[index - 1].node,
+                next: index === (posts.length - 1) ? null : posts[index + 1].node,
+            },
+        });
+    });
 
-                // Create unique set of categories
-                categories = [...new Set(categories)];
+    let categories = [];
+    posts.forEach((edge) => {
+        categories.push(edge.node.frontmatter.category);
+    });
 
-                categories.forEach((category) => {
-                    createPage({
-                        path: `blog/category/${category}`,
-                        component: blogCategoryTemplate,
-                        context: {
-                            category,
-                        },
-                    });
-                });
-            })
-        );
+    // Create unique set of categories
+    categories = [...new Set(categories)];
+
+    categories.forEach((category) => {
+        createPage({
+            path: `blog/category/${category}`,
+            component: blogCategoryTemplate,
+            context: {
+                category,
+            },
+        });
     });
 };
 

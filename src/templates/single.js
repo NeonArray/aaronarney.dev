@@ -1,6 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
+import {Helmet} from 'react-helmet';
 import { graphql } from 'gatsby';
 import moment from 'moment';
 
@@ -28,7 +27,7 @@ export default function Template({ data, pageContext }) {
 
     return (
         <Layout location={data.location}>
-            <Helmet title={frontmatter.title} bodyAttributes={{
+            <Helmet title={`${frontmatter.title} | Ocular-Rhythm`}  bodyAttributes={{
                 class: 'page-post'
             }} />
 
@@ -47,19 +46,19 @@ export default function Template({ data, pageContext }) {
         </Layout>
     );
 }
-
-Template.propTypes = {
-    data: PropTypes.shape({
-        location: PropTypes.string,
-        markdownremark: PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            path: PropTypes.string,
-            date: PropTypes.string.isRequired,
-            tags: PropTypes.array,
-        }),
-    }),
-    pageContext: PropTypes.object.isRequired,
-};
+//
+// Template.propTypes = {
+//     data: PropTypes.shape({
+//         location: PropTypes.string,
+//         markdownremark: PropTypes.shape({
+//             title: PropTypes.string.isRequired,
+//             path: PropTypes.string,
+//             date: PropTypes.string.isRequired,
+//             tags: PropTypes.array,
+//         }),
+//     }),
+//     pageContext: PropTypes.object.isRequired,
+// };
 
 export const pageQuery = graphql`
     query BlogPostBySlug($path: String!) {

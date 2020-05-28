@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 
@@ -29,19 +28,19 @@ export default function PostFooter({ links }) {
     );
 }
 
-PostFooter.propTypes = {
-    links: PropTypes.shape({
-        next: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-                path: PropTypes.string,
-                title: PropTypes.string,
-            }),
-        }),
-        prev: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-                path: PropTypes.string,
-                title: PropTypes.string,
-            }),
-        }),
-    }),
-};
+// PostFooter.propTypes = {
+//     links: PropTypes.shape({
+//         next: PropTypes.shape({
+//             frontmatter: PropTypes.shape({
+//                 path: PropTypes.string,
+//                 title: PropTypes.string,
+//             }),
+//         }),
+//         prev: PropTypes.shape({
+//             frontmatter: PropTypes.shape({
+//                 path: PropTypes.string,
+//                 title: PropTypes.string,
+//             }),
+//         }),
+//     }),
+// };

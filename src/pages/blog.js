@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Archive from '../components/archive/index';
@@ -13,7 +12,7 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <div style={{ marginTop: '75px' }}>
-                <Helmet title="Ocular-Rhythm" bodyAttributes={{
+                <Helmet title="Blog | Ocular-Rhythm" bodyAttributes={{
                     class: 'archive'
                 }} />
                 <Archive centered={ true } posts={ edges.edges } />
@@ -37,7 +36,3 @@ export const pageQuery = graphql`
         }
     }
 }`;
-
-Blog.propTypes = {
-    data: PropTypes.object.isRequired,
-};

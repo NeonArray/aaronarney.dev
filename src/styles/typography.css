@@ -1,14 +1,5 @@
-@custom-selector :--heading h1,
-h2,
-h3,
-h4,
-.h1,
-.h2,
-.h3,
-.h4;
-@custom-selector :--hover :hover,
-:active,
-:focus;
+@custom-selector :--heading h1, h2, h3, h4, .h1, .h2, .h3, .h4;
+@custom-selector :--hover :hover, :active, :focus;
 
 @custom-media --phone (min-width: 480px);
 @custom-media --tablet (min-width: 768px);
@@ -16,6 +7,7 @@ h4,
 @custom-media --large-desktop (min-width: 1200px);
 
 html {
+    background: #f4f4e8;
     font-size: var(--base-font-size);
 }
 
@@ -27,12 +19,13 @@ ul,
 li,
 ol {
     color: var(--gray-dark);
+    font-size: 1.5rem;
 }
 
 :--heading {
     font-family: system-ui, sans-serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.05em;
     margin: 0 0 34px 0;
 
@@ -86,4 +79,18 @@ h4 {
     &:hover {
         color: var(--primary);
     }
+}
+
+.stack ul,
+.stack ol {
+    list-style-type: disc;
+}
+
+
+.stack li > ul, li > ol {
+    margin: 1rem 0 0 2rem;
+}
+
+.stack h2, .stack h3 {
+    margin: 6rem auto 3rem;
 }

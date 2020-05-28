@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 import Archive from '../components/archive/index';
 import Layout from '../components/layout';
@@ -19,7 +19,7 @@ export default function GuestPosts() {
     return (
         <Layout>
             <div style={{ marginTop: '75px' }}>
-                <Helmet title="Ocular-Rhythm" bodyAttributes={{
+                <Helmet title="Guest Posts | Ocular-Rhythm" bodyAttributes={{
                     class: 'archive'
                 }} />
 

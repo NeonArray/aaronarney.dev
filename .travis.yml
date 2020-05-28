@@ -1,8 +1,0 @@
-language: node_js
-node_js:
-    - "9.10.1"
-script: 
-    - "./node_modules/.bin/eslint ./src/**/*.js"
-cache:
-  directories:
-    - node_modules

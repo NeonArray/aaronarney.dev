@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 import Layout from '../components/layout';
 
@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 export default function FourOhFour() {
     return (
         <Layout>
-            <Helmet title="404 Not Found : Ocular-Rhythm" bodyAttributes={{
+            <Helmet title="404 Not Found | Ocular-Rhythm" bodyAttributes={{
                 class: ''
             }} />
             <main data-grid-area="main" className="mx-auto align-center h-screen text-center max-w-copy" style={{ marginTop: '75px' }}>

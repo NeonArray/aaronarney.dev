@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import PostTitle from '../post-title';
 
@@ -12,7 +11,7 @@ export default function PostBlock({ meta, layout }) {
     }
 
     return (
-        <article className={`mb-10 w-full md:w-2/5 ${layoutClass}`}>
+        <article className={`${layoutClass}`}>
             <PostTitle
                 category={meta.frontmatter.category}
                 title={meta.frontmatter.title}
@@ -25,7 +24,7 @@ export default function PostBlock({ meta, layout }) {
     );
 }
 
-PostBlock.propTypes = {
-    meta: PropTypes.object.isRequired,
-    layout: PropTypes.string,
-};
+// PostBlock.propTypes = {
+//     meta: PropTypes.object.isRequired,
+//     layout: PropTypes.string,
+// };
