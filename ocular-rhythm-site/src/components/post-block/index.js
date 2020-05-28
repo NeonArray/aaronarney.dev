@@ -1,14 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import PostTitle from '../post-title';
-
+import PostTitle from '../post-title'
 
 export default function PostBlock({ meta, layout }) {
-    let layoutClass = '';
+    let layoutClass = ''
 
     if (layout === 'stack') {
-        layoutClass = 'md:w-full';
+        layoutClass = 'md:w-full'
     }
 
     return (
@@ -22,10 +21,10 @@ export default function PostBlock({ meta, layout }) {
                 isH1={false}
             />
         </article>
-    );
+    )
 }
 
 PostBlock.propTypes = {
     meta: PropTypes.object.isRequired,
     layout: PropTypes.string,
-};
+}

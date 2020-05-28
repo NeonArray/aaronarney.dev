@@ -1,9 +1,9 @@
 ---
-path: "/blog/fathom-analytics"
-date: "2019-02-04"
-title: "Fathom Analytics"
-category: "web"
-tags: ["AWS", "Apache", "EC2"]
+path: '/blog/fathom-analytics'
+date: '2019-02-04'
+title: 'Fathom Analytics'
+category: 'web'
+tags: ['AWS', 'Apache', 'EC2']
 ---
 
 The following is not entirely a step-by-step tutorial on how to get up and running with Fathom. Instead this is an overview of my setup and how I went about getting a Fathom server up and capturing data.
@@ -14,8 +14,7 @@ The following is not entirely a step-by-step tutorial on how to get up and runni
 
 It took me a few hours to get the Fathom server up and running using an Amazon Web Services EC2 instance. This is mostly due to my inexperience with managing servers on AWS and less to do with Fathom as an application. I first attempted to run the Fathom docker image using Amazon's ECS platform, but those efforts proved futile. In the end I decided to say fuck it and just boot up an Ubuntu image and install Fathom manually.
 
-This is how I went about it. The instructions are written in the 
-
+This is how I went about it. The instructions are written in the
 
 ## Launching EC2 Instance
 
@@ -31,13 +30,12 @@ curl -o fathom.tar.gz -L https://github.com/usefathom/fathom/releases/download/v
 # Extract it
 sudo tar -C /usr/local/bin -xzf fathom.tar.gz
 
-# Change the permissions 
+# Change the permissions
 sudo chmod +x /usr/local/bin/fathom
 
 # Check that it installed correctly
 fathom --version
 ```
-
 
 ## Configuring Fathom
 
@@ -86,7 +84,6 @@ sudo systemctl enable fathom
 sudo systemctl start fathom
 ```
 
-
 ## Configuring a Custom Domain
 
 1. Create a new Hosted Zone in **AWS Route 53**
@@ -117,7 +114,6 @@ ProxyPassReverse "/" "http://keytar.co:8080/"
 
 Now the requests to `http://keytar.co` should route to `http://keytar.co:8080` behind the scenes. That way users don't have to know to use the `:8080` port and makes passing the URL as a configuration much easier.
 
-
 ### Content Security Policy
 
 Fathom uses embedded data in images as a way of capturing data instead of ajax. Because of this, my content security policy was preventing the images from being created, as it sets the source of the image to be my tracking url for Fathom, in my case `https://keytar.co` (a domain I had sitting around doing nothing).
@@ -129,10 +125,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 ```
 
 The last step is to throw the tracking code Fathom gives you when you create a new site.
- 
-Bye.
 
+Bye.
 
 ###### Edits
 
-- February 5, 2019 - Reworked inline code snippets and fixed typo
+-   February 5, 2019 - Reworked inline code snippets and fixed typo

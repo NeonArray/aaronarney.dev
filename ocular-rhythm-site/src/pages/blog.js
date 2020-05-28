@@ -1,25 +1,27 @@
 import React from 'react'
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
-import Archive from '../components/archive/index';
-import Layout from '../components/layout';
-
+import Archive from '../components/archive/index'
+import Layout from '../components/layout'
 
 export default function Blog({ data }) {
-    const { allMarkdownRemark: edges } = data;
+    const { allMarkdownRemark: edges } = data
 
     return (
         <Layout>
             <div style={{ marginTop: '75px' }}>
-                <Helmet title="Ocular-Rhythm" bodyAttributes={{
-                    class: 'archive'
-                }} />
-                <Archive centered={ true } posts={ edges.edges } />
+                <Helmet
+                    title="Ocular-Rhythm"
+                    bodyAttributes={{
+                        class: 'archive',
+                    }}
+                />
+                <Archive centered={true} posts={edges.edges} />
             </div>
         </Layout>
-    );
+    )
 }
 
 export const pageQuery = graphql`
@@ -28,16 +30,17 @@ export const pageQuery = graphql`
             edges {
                 node {
                     frontmatter {
-                    title
-                    date(formatString: "YYYY-MM-DD")
-                    path
-                    category
+                        title
+                        date(formatString: "YYYY-MM-DD")
+                        path
+                        category
+                    }
                 }
             }
         }
     }
-}`;
+`
 
 Blog.propTypes = {
     data: PropTypes.object.isRequired,
-};
+}

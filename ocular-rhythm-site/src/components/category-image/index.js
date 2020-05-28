@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 // import vrImage from '../../images/vr.svg';
 // import codeImage from '../../images/code.svg';
-import generalImage from '../../images/general.svg';
-import softwareImage from '../../images/software.svg';
-import webImage from '../../images/web.svg';
+import generalImage from '../../images/general.svg'
+import softwareImage from '../../images/software.svg'
+import webImage from '../../images/web.svg'
 
 const dictionary = {
     // vr: {
@@ -28,15 +28,20 @@ const dictionary = {
         alt: 'A text editor with binary code',
         src: webImage,
     },
-};
-
+}
 
 export default function CategoryImage({ height, width, category, cssClass }) {
-    const img = dictionary[category.toLowerCase()];
+    const img = dictionary[category.toLowerCase()]
 
     return (
-        <img alt={ img.alt } src={ img.src } height={ height } width={ width } className={ cssClass } />
-    );
+        <img
+            alt={img.alt}
+            src={img.src}
+            height={height}
+            width={width}
+            className={cssClass}
+        />
+    )
 }
 
 CategoryImage.propTypes = {
@@ -44,4 +49,4 @@ CategoryImage.propTypes = {
     width: PropTypes.number.isRequired,
     category: PropTypes.string.isRequired,
     cssClass: PropTypes.string,
-};
+}

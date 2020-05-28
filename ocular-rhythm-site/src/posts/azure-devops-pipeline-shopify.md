@@ -1,15 +1,21 @@
 ---
-path: "/blog/azure-devops-pipeline-shopify"
-date: "2019-04-11"
-title: "Azure Devops Pipeline Build with Shopify"
-category: "web"
-tags: ["Azure", "DevOps", "Shopify", "Continuous Integration", "Continous Delivery"]
+path: '/blog/azure-devops-pipeline-shopify'
+date: '2019-04-11'
+title: 'Azure Devops Pipeline Build with Shopify'
+category: 'web'
+tags:
+    [
+        'Azure',
+        'DevOps',
+        'Shopify',
+        'Continuous Integration',
+        'Continous Delivery',
+    ]
 ---
 
 At Leap, we utlize Microsoft's Team Foundation for all of our version control efforts. Included in this platform is Azure DevOps, a service that allows users to set up continous improvement, continous delivery, and continous deployment, for repositories.
 
 A client of ours, [Kern's Kitchen](https://derbypie.com), is a Shopify hosted website that requires deployments from the command line in order to update theme code. I decided to set up an Azure Pipeline to automate this deployment, but ran into an issue. Shopify developed a node package called Slate that allows a dev to generate, develop, and deploy themes. This package also includes a very annoying "feature" that stopped my automated deployments dead in their tracks.
-
 
 ## The Issue
 
@@ -45,17 +51,15 @@ When I inspected the logs, there was no error to be found, just that the script 
 4. Upgraded slate-tools to the latest beta version.
 5. Many others..
 
-Then it hit me like a ton of bricks. The reason I couldn't reproduce this error locally, was that I have used slate-tools a ton. When you first build a theme with the slate-tools, Shopify asks if they can collect data from you using a prompt. Once you answer that question, a `.slaterc` file is generated and stored on the root of your OS. Since this file was present, I was never asked again - even though I cleared all global packages from my system, did `yarn cache clean`, among other things. 
+Then it hit me like a ton of bricks. The reason I couldn't reproduce this error locally, was that I have used slate-tools a ton. When you first build a theme with the slate-tools, Shopify asks if they can collect data from you using a prompt. Once you answer that question, a `.slaterc` file is generated and stored on the root of your OS. Since this file was present, I was never asked again - even though I cleared all global packages from my system, did `yarn cache clean`, among other things.
 
 Now it all made sense. Since a new container is spun up to run my scripts, it will never save a `.slaterc` file locally. Thus the question will always be asked "can we fucking collect analytics from you," with the task runner never being able to answer. Instead it aborts the script and fails, even with the `--skipPrompts` flag!
-
 
 ## Solution
 
 The solution was simple. Create a `.slaterc` file in the root of any Shopify project, copy the contents of the one on my local machine, and commit that to the repo. I also had to set a configuration value in the `slate.config.js` file that tells Slate to look for this rc file in the root of my project, as opposed to OS.
 
 What happens? Spoiler alert, it fucking deploys with no problems.
-
 
 ### In Conclusion
 

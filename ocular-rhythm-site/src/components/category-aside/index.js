@@ -1,9 +1,8 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
-import CategoryImage from '../category-image';
-
+import CategoryImage from '../category-image'
 
 export default function CategoryAside({ data }) {
     return (
@@ -17,11 +16,16 @@ export default function CategoryAside({ data }) {
                 />
 
                 <div className="sm:invisible md:visible">
-                    <p className="my-6 text-base leading-tight">View By Category:</p>
+                    <p className="my-6 text-base leading-tight">
+                        View By Category:
+                    </p>
 
                     <ul className="list-reset">
                         <li className="mb-3">
-                            <Link className="label software" to="blog/category/software">
+                            <Link
+                                className="label software"
+                                to="blog/category/software"
+                            >
                                 Software
                             </Link>
                         </li>
@@ -31,7 +35,10 @@ export default function CategoryAside({ data }) {
                             </Link>
                         </li>
                         <li>
-                            <Link className="label general" to="blog/category/general">
+                            <Link
+                                className="label general"
+                                to="blog/category/general"
+                            >
                                 General
                             </Link>
                         </li>
@@ -39,9 +46,9 @@ export default function CategoryAside({ data }) {
                 </div>
             </div>
         </aside>
-    );
+    )
 }
 
 CategoryAside.propTypes = {
     data: PropTypes.object.isRequired,
-};
+}

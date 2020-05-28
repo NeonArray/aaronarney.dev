@@ -1,18 +1,17 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import Helmet from "react-helmet";
-import { graphql } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
-import Archive from '../components/archive';
-import Layout from '../components/layout';
-import CategoryHeader from '../components/category-header';
-import CategoryAside from '../components/category-aside';
-import CategoryList from '../components/category-list';
-import { capitalizeWords } from '../utils';
-
+import Archive from '../components/archive'
+import Layout from '../components/layout'
+import CategoryHeader from '../components/category-header'
+import CategoryAside from '../components/category-aside'
+import CategoryList from '../components/category-list'
+import { capitalizeWords } from '../utils'
 
 export default function Template({ data, pageContext }) {
-    const { edges } = data.allMarkdownRemark;
+    const { edges } = data.allMarkdownRemark
 
     return (
         <Layout location={data.location}>
@@ -23,8 +22,9 @@ export default function Template({ data, pageContext }) {
                     <Helmet
                         title={`${capitalizeWords(pageContext.category)} Posts`}
                         bodyAttributes={{
-                            class: 'archive-category'
-                        }} />
+                            class: 'archive-category',
+                        }}
+                    />
 
                     <CategoryList />
 
@@ -34,7 +34,7 @@ export default function Template({ data, pageContext }) {
                 </article>
             </main>
         </Layout>
-    );
+    )
 }
 
 Template.propTypes = {
@@ -48,14 +48,14 @@ Template.propTypes = {
         }),
     }),
     pageContext: PropTypes.object.isRequired,
-};
+}
 
 export const pageQuery = graphql`
     query PostByCategory($category: String!) {
         allMarkdownRemark(
-            limit: 2000, 
-            sort: { fields: [frontmatter___date], order: DESC }, 
-            filter: { frontmatter: { category: { in: [$category] }}} 
+            limit: 2000
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { category: { in: [$category] } } }
         ) {
             totalCount
             edges {
@@ -69,4 +69,5 @@ export const pageQuery = graphql`
                 }
             }
         }
-    }`;
+    }
+`

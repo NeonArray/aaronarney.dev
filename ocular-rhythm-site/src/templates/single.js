@@ -1,40 +1,54 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import moment from 'moment';
+import React from 'react'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import moment from 'moment'
 
-import Layout from '../components/layout';
-import Callout from '../components/callout';
-import PostHeader from '../components/post-header';
-import PostBody from '../components/post-body';
-import PostFooter from '../components/post-footer';
+import Layout from '../components/layout'
+import Callout from '../components/callout'
+import PostHeader from '../components/post-header'
+import PostBody from '../components/post-body'
+import PostFooter from '../components/post-footer'
 
 function shouldShowCallout(date) {
-    const currentDate = moment();
-    const postDate = moment(date);
+    const currentDate = moment()
+    const postDate = moment(date)
 
     if (currentDate.diff(postDate, 'months') >= 6) {
-        return (<Callout message={`Heads up! This article was published over ${currentDate.diff(postDate, 'months')} months ago.`} />);
+        return (
+            <Callout
+                message={`Heads up! This article was published over ${currentDate.diff(
+                    postDate,
+                    'months'
+                )} months ago.`}
+            />
+        )
     }
 
-    return undefined;
+    return undefined
 }
 
 export default function Template({ data, pageContext }) {
-    const post = data.markdownRemark;
-    const { frontmatter } = post;
-    const callout = shouldShowCallout(frontmatter.date);
+    const post = data.markdownRemark
+    const { frontmatter } = post
+    const callout = shouldShowCallout(frontmatter.date)
 
     return (
         <Layout location={data.location}>
-            <Helmet title={frontmatter.title} bodyAttributes={{
-                class: 'page-post'
-            }} />
+            <Helmet
+                title={frontmatter.title}
+                bodyAttributes={{
+                    class: 'page-post',
+                }}
+            />
 
-            <main className="main" data-grid-area="main" itemScope itemType="https://schema.org/Article">
+            <main
+                className="main"
+                data-grid-area="main"
+                itemScope
+                itemType="https://schema.org/Article"
+            >
                 <article className="post">
-
                     <PostHeader content={frontmatter} />
 
                     {callout}
@@ -45,7 +59,7 @@ export default function Template({ data, pageContext }) {
                 </article>
             </main>
         </Layout>
-    );
+    )
 }
 
 Template.propTypes = {
@@ -59,7 +73,7 @@ Template.propTypes = {
         }),
     }),
     pageContext: PropTypes.object.isRequired,
-};
+}
 
 export const pageQuery = graphql`
     query BlogPostBySlug($path: String!) {
@@ -77,4 +91,5 @@ export const pageQuery = graphql`
                 tags
             }
         }
-    }`;
+    }
+`

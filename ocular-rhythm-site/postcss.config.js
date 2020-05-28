@@ -1,4 +1,3 @@
-
 module.exports = () => ({
     plugins: [
         require('postcss-import'),
@@ -8,4 +7,4 @@ module.exports = () => ({
         require('postcss-nested'),
         require('postcss-custom-selectors'),
     ],
-});
+})

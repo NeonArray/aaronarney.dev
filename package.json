@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ocular-rhythm-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Ocular-Rhythm in Gatsby",
+  "version": "2.0.0",
+  "author": "Aaron",
   "dependencies": {
     "gatsby": "^2.21.37",
     "gatsby-image": "^2.4.4",
@@ -28,7 +28,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --tab-width 4 --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

@@ -4,7 +4,8 @@ module.exports = {
         title: 'Ocular-Rhythm',
         defaultTitle: 'Ocular-Rhythm',
         titleTemplate: '%s · A development blog',
-        description: 'Ocular-Rhythm is a development blog, brought to you by Aaron Arney.',
+        description:
+            'Ocular-Rhythm is a development blog, brought to you by Aaron Arney.',
         url: 'https://www.ocular-rhythm.io',
         image: '/icons/favicon.ico',
         twitterUsername: '@agarney',
@@ -31,10 +32,10 @@ module.exports = {
                 headers: {
                     '/*': [
                         'Referrer-Policy: no-referrer',
-                        'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";'
-                    ]
-                }
-            }
+                        'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";',
+                    ],
+                },
+            },
         },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-postcss',
@@ -48,29 +49,30 @@ module.exports = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-                plugins: [{
-                    resolve: 'gatsby-remark-prismjs',
-                    options: {
-                        classPrefix: 'language-',
-                        inlineCodeMarker: null,
-                        aliases: {},
+                plugins: [
+                    {
+                        resolve: 'gatsby-remark-prismjs',
+                        options: {
+                            classPrefix: 'language-',
+                            inlineCodeMarker: null,
+                            aliases: {},
+                        },
                     },
-                },
-                {
-                    resolve: 'gatsby-remark-external-links'
-                },
-                {
-                    resolve: 'gatsby-remark-relative-images',
-                    options: {
-                        name: 'uploads'
-                    }
-                },
-                {
-                    resolve: 'gatsby-remark-images',
-                    options: {
-                        maxWidth: 666,
-                    }
-                }
+                    {
+                        resolve: 'gatsby-remark-external-links',
+                    },
+                    {
+                        resolve: 'gatsby-remark-relative-images',
+                        options: {
+                            name: 'uploads',
+                        },
+                    },
+                    {
+                        resolve: 'gatsby-remark-images',
+                        options: {
+                            maxWidth: 666,
+                        },
+                    },
                 ],
             },
         },
@@ -89,4 +91,4 @@ module.exports = {
         'gatsby-plugin-sitemap',
         'gatsby-plugin-offline',
     ],
-};
+}
