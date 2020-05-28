@@ -10,7 +10,7 @@ interface IProps {
 
 export default function Archive({ centered, posts, layout }: IProps): ReactComponentElement<any> {
     const centerMargin: { margin: string } = centered ? { margin: '0 auto' } : null;
-    
+
     return (
         <div style={centerMargin} className="
             grid
