@@ -1,52 +1,51 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-import Header from './header';
-import PageFooter from './page-footer';
-import '../styles/style.css';
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default function Layout({ children }) {
-    return (
-        <StaticQuery
-            query={graphql`query SiteTitleQuery { site { siteMetadata {
-                defaultTitle: title
-                titleTemplate: titleTemplate
-                defaultDescription: description
-                siteUrl: url
-                defaultImage: image
-                twitterUsername
-              } } }` }
-            render={data => (
-                <>
-                    <Helmet
-                        title={data.site.siteMetadata.title}
-                        titleTemplate={data.site.siteMetadata.titleTemplate}
-                    >
-                        <html lang="en" itemScope itemType="https://schema.org/Blog" />
+import Header from "./header"
+import "./layout.css"
 
-                        <link rel="author" href="Aaron Arney" />
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
-                        <meta name="msvalidate.01" content="1B785495556C9DE837E22313FC8A33E7" />
-                        <meta name="robots" content="index,follow" />
-                        <meta name="googlebot" content="index,follow" />
-                        <meta name="twitter:dnt" content="on" />
-                    </Helmet>
-
-                    <div className="grid">
-                        <Header />
-
-                        {children}
-
-                        <PageFooter />
-                    </div>
-                </>
-            )}
-        />
-    );
+  return (
+    <>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
+  )
 }
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-};
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout

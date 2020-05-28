@@ -1,65 +1,99 @@
-# Ocular-Rhythm Site
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2ec9eaef-cf0a-4a83-a593-6b1f81c27491/deploy-status)](https://app.netlify.com/sites/ocular-rhythm/deploys)
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-The source code to my personal website and blog, Ocular-Rhythm. I built this using Gatsby, which is a rad JavaScript framework. I also used Netlify for the first time with this project and am extremely impressed with it.
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-All code can be found in the `src` directory. Inside that directory, the structure is broken down into several sub-directories:
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-| Directory | Purpose |
-|---|---|
-| `Components`  | This is where all of the React components are situated. Each component has its' own sub-directory that contains an `index.js` file and its' `css` module.  |
-| `Global`  | I put global CSS styles in here  |
-| `Images`  | Static images  |
-| `Pages`  | Pages that also are named routes  |
-| `Posts`  | The blog posts in markdown form  |
-| `Templates`  | Blog post and category templates  |
-| `Utils`  | Utility functions  |
+## 🚀 Quick start
 
+1.  **Create a Gatsby site.**
 
-## Getting Started
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-It's preferred to use `npm` because I was running into an issue with yarn that was causing the Netlify deployment to fail. The issue stems from the use of `gatsby-plugin-sharp` and I was unable to actually figure out the root cause. It seems that when using yarn to install that package, it fails to resolve some symbols used by the package. Using npm negates this issue. As I personally prefer yarn, this is something I'll need to revisit. In the meantime, use...
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-```bash
-npm install
-npm develop
-```
+1.  **Start developing.**
 
+    Navigate into your new site’s directory and start it up.
 
-## Netlify Configuration
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-In the `static` directory there is a file called `_headers`. This file is responsible for telling Netlify on how to handle my custom domains. This file gets copied to `public` when the site is built.
+1.  **Open the source code and start editing!**
 
+    Your site is now running at `http://localhost:8000`!
 
-## Learnings
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-Getting up and running in Gatsby is fairly straightforward. Writing components in React and piecing those together is also nothing new. The biggest hurdle I had to tackle was figuring out how to structure my pages/posts in a way that reflects the URL structure I was looking for. After a while a tinkering and trial and error, I found the sweet spot.
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-**Documentation**
+## 🧐 What's inside?
 
-I've seen often where people praise Gatsby for their clear and helpful documentation, but I will say that for someone with 4 or 5 years of JavaScript experience and using a ton of different frameworks, I still found myself confused and frustrated at certain points.
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-I believe Gatsby will continue to improve and evolve so I am confident it will only get better from here.
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-**Prism**
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-I ran into an issue with Prism that made displaying code blocks kind of challenging. The problem I encountered was that I wanted to be able to use markdown
-to write my posts while also having the flexibility to displaying the language of a code block, along with a copy code button. I was hopeful that I could use
-the Github flavor of code blocks in markdown as well instead of having to write HTML in my markdown. 
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-Exacerbating the issue was the fact that my code blocks were styled differently than the content around it on the page. My code blocks are 100% width of the 
-viewport, while the remaining content in posts are limited to a max width of 666 pixels. This meant I needed to close off the wrapping div before injecting
-my code block HTML, finally re-opening the wrapping div.
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-After hours (or maybe days, I don't remember) of attempting different solutions, the ultimate winner was a regex that parses the HTML output by the Gatsby markdown
-plugin and replaces any code block with the appropriate structure.
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-```javascript
-const REGEXP = new RegExp('<div class="gatsby-highlight" data-language="([a-z]*)?">(\t|\r|\n|.)*?<\/div>', 'g');
-html += content.html.replace(REGEXP,
-    `</div><div class="${ style.block }"><div class="${ style.heading }">` +
-    `<p class="${ style.language }">$1</p></div>` +
-    `<div class="${ style.wrapper } gatsby-highlight">$&</div></div><div class="${ style.copy }">`
-);
-```
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+
+<!-- AUTO-GENERATED-CONTENT:END -->

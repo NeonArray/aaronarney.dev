@@ -1,22 +1,21 @@
-import React from 'react'
-import Helmet from 'react-helmet';
+import React from "react"
+import { Link } from "gatsby"
 
-import Layout from '../components/layout';
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link>
+  </Layout>
+)
 
-export default function Index() {
-    return (
-        <Layout>
-            <main data-grid-area="main" style={{ marginTop: '75px' }}>
-                <Helmet title="Ocular-Rhythm" bodyAttributes={{
-                    class: 'page-post'
-                }} />
-                <div style={{ textAlign: 'center', maxWidth: '920px', margin: '0 auto', padding: '0 0.5em' }}>
-                    <h1 style={{ lineHeight: '1.25em', fontSize: '2rem' }}>This is a blog about development by and of Aaron, a developer from Louisville, KY.</h1>
-        
-                    <p>I built this using <a className="link" href="https://www.gatsbyjs.org" target="_blank" rel="noopener nofollow noreferrer">Gatsby 2.0</a> like every other developer. You can also take a look at the <a className="link" href="https://github.com/ocularrhythm/ocular-rhythm-site" target="_blank" rel="noopener nofollow noreferrer">source code</a> if you like.</p>
-                </div>
-            </main>
-        </Layout>
-    );
-}
+export default IndexPage
