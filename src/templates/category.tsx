@@ -3,7 +3,7 @@ import { ReactComponentElement } from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-import Archive from "../components/archive";
+import Archive from "../components/Archive";
 import Layout from "../components/layout";
 import CategoryHeader from "../components/Category/category-header";
 import CategoryAside from "../components/Category/category-aside";

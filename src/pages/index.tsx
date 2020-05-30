@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 export default function Index(): ReactComponentElement<any> {
     return (
         <Layout>
-            <main data-grid-area="main" style={{ marginTop: "75px" }}>
+            <main style={{ marginTop: "75px" }}>
                 <Helmet
                     title="Ocular-Rhythm"
                     bodyAttributes={{

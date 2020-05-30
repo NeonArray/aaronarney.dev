@@ -68,11 +68,10 @@ export default function Template({
 
             <main
                 className="main"
-                data-grid-area="main"
                 itemScope
                 itemType="https://schema.org/Article"
             >
-                <article className="post">
+                <article className="post stack">
                     <PostHeader content={frontmatter} />
 
                     {callout}

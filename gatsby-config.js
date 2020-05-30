@@ -4,8 +4,7 @@ module.exports = {
         title: "Aaron Arney",
         defaultTitle: "Aaron Arney",
         titleTemplate: "%s · A development blog",
-        description:
-            "A development blog, brought to you by Aaron Arney.",
+        description: "A development blog, brought to you by Aaron Arney.",
         url: "https://www.aaronarney.dev",
         image: "/icons/favicon.ico",
         twitterUsername: "@ocularrhythm",
