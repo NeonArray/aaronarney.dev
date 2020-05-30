@@ -4,10 +4,11 @@ import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./Page/header";
+import Footer from "./Page/footer";
 import "../styles/style.css";
 
 interface IProps {
-    readonly location: string;
+    readonly location?: string;
     readonly children: any;
 }
 
@@ -57,6 +58,8 @@ export default function Layout({
                         <Header />
 
                         {children}
+
+                        <Footer />
                     </div>
                 </>
             )}
