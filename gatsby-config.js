@@ -59,6 +59,7 @@ module.exports = {
             options: {
                 headers: {
                     "/*": [
+                        "Content-Security-Policy-Report-Only: default-src https: 'unsafe-inline' 'unsafe-eval'",
                         "Referrer-Policy: no-referrer",
                         'Feature-Policy: vibrate "none"; geolocation "none"; midi "none"; notifications "none"; push "none"; sync-xhr "none"; microphone "none"; camera "none"; magnetometer "none"; gyroscope "none"; speaker "none"; fullscreen "none"; payment "none";',
                     ],
