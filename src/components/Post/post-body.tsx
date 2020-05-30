@@ -36,9 +36,9 @@ export default function PostBody({
 
     html += content.html.replace(
         MATCH_CODE_BLOCKS,
-        `</div><div class="align-center bg-black-lighter my-16 mx-0 w-screen"><div class="m-0 -mr-4 max-w-none px-3 py-0 relative bg-grey-lighter">` +
+        `</div><div class="align-center bg-black-lighter my-16 mx-0 w-screen"><div class="m-0 -mr-4 max-w-none px-3 py-0 relative bg-dark-blue">` +
             `<p class="block font-bold leading-loose mt-0 text-grey-darker uppercase md:text-center">$1</p></div>` +
-            `<div class="mx-auto my-0 max-w-xl gatsby-highlight">$&</div></div><div class="text-xl font-light p-3 md:p-0 md:max-w-copy post-copy">`
+            `<div class="mx-auto my-0 max-w-5xl gatsby-highlight">$&</div></div><div class="text-xl font-light p-3 md:p-0 md:max-w-copy post-copy">`
     );
 
     if (contentContainsMarkup) {
@@ -48,7 +48,7 @@ export default function PostBody({
     return (
         <section
             className="items-center flex flex-col justify-end mt-0"
-            dangerouslySetInnerHTML={{ __html: sanitizeHTML(html) }}
+            dangerouslySetInnerHTML={{ __html: html }}
             itemProp="articleBody"
         />
     );
