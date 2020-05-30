@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-
+import * as React from "react";
+import { Link } from "gatsby";
+import { ReactComponentElement } from "react";
 import CategoryImage from "../category-image";
 
-
-export default function CategoryList() {
+export default function CategoryList(): ReactComponentElement<any> {
     return (
         <div className="sm:block md:hidden">
             <div className="block px-5 md:hidden">
@@ -12,7 +11,10 @@ export default function CategoryList() {
 
                 <ul className="list-reset flex flex-row justify-around mb-6 text-center">
                     <li>
-                        <Link to="blog/category/software" className="no-underline text-xs">
+                        <Link
+                            to="blog/category/software"
+                            className="no-underline text-xs"
+                        >
                             <CategoryImage
                                 height={50}
                                 width={50}
@@ -23,7 +25,10 @@ export default function CategoryList() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="blog/category/web" className="no-underline text-xs">
+                        <Link
+                            to="blog/category/web"
+                            className="no-underline text-xs"
+                        >
                             <CategoryImage
                                 height={50}
                                 width={50}
@@ -34,7 +39,10 @@ export default function CategoryList() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="blog/category/general" className="no-underline text-xs">
+                        <Link
+                            to="blog/category/general"
+                            className="no-underline text-xs"
+                        >
                             <CategoryImage
                                 height={50}
                                 width={50}
