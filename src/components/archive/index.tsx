@@ -1,18 +1,26 @@
-import * as React from 'react';
-import PostBlock from '../post-block';
-import {ReactComponentElement} from "react";
+import * as React from "react";
+import PostBlock from "../post-block";
+import { ReactComponentElement } from "react";
 
 interface IProps {
-    posts: Array<any>;
-    centered?: boolean;
-    layout?: string;
+    readonly posts: Array<any>;
+    readonly centered?: boolean;
+    readonly layout?: string;
 }
 
-export default function Archive({ centered, posts, layout }: IProps): ReactComponentElement<any> {
-    const centerMargin: { margin: string } = centered ? { margin: '0 auto' } : null;
+export default function Archive({
+    centered,
+    posts,
+    layout,
+}: IProps): ReactComponentElement<any> {
+    const centerMargin: { margin: string } = centered
+        ? { margin: "0 auto" }
+        : null;
 
     return (
-        <div style={centerMargin} className="
+        <div
+            style={centerMargin}
+            className="
             grid
             grid-cols-1
             md:grid-cols-2
@@ -23,12 +31,19 @@ export default function Archive({ centered, posts, layout }: IProps): ReactCompo
             lg:px-0
             max-w-screen-lg
             mx-auto
-        ">
-            {posts.map((post, iterator): ReactComponentElement<any> => {
-                return (
-                    <PostBlock key={iterator} meta={post.node} layout={layout} />
-                );
-            })}
+        "
+        >
+            {posts.map(
+                (post, iterator): ReactComponentElement<any> => {
+                    return (
+                        <PostBlock
+                            key={iterator}
+                            meta={post.node}
+                            layout={layout}
+                        />
+                    );
+                }
+            )}
         </div>
     );
 }
