@@ -1,78 +1,71 @@
 import * as React from "react";
 import { ReactComponentElement } from "react";
+import { bubble as Menu } from "react-burger-menu";
 import { Link } from "gatsby";
 // @ts-ignore
 import * as logo from "../../images/ocular-rhythm-logo.svg";
 
+
 export default function Header(): ReactComponentElement<any> {
+    function showSettings() {
+
+    }
+
     return (
-        <header
-            data-grid-area="header"
-            className="block w-screen border-2 border-grey-light"
-        >
+        <header className="flex flex-row">
             <div className="my-0 mx-auto max-w-max py-4 px-3 md:px-5">
-                <ul
-                    className="list-reset flex flex-row items-center"
-                    role="navigation"
+                <Menu pageWrapId={ "page-wrap" }
+                      outerContainerId={ "outer-container" }
+                      right
+                      noOverlay
+                      width={400}
                 >
-                    <li className="flex-1">
-                        <Link to="/" title="Go home">
-                            <img
-                                src={logo}
-                                alt="Ocular Rhythm"
-                                height="28"
-                                width="186"
-                            />
-                        </Link>
-                    </li>
+                    <Link
+                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        to="/blog"
+                    >
+                        Blog
+                    </Link>
 
-                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
-                        <Link
-                            className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
-                            to="/blog"
-                        >
-                            Blog
-                        </Link>
-                    </li>
+                    <Link
+                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        to="/guest-posts"
+                    >
+                        Guest Posts
+                    </Link>
 
-                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
-                        <Link
-                            className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
-                            to="/guest-posts"
-                        >
-                            Guest Posts
-                        </Link>
-                    </li>
+                    <Link
+                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        to="/uses"
+                    >
+                        Uses
+                    </Link>
 
-                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
-                        <Link
-                            className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
-                            to="/uses"
-                        >
-                            Uses
-                        </Link>
-                    </li>
+                    <Link
+                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        to="/fun-stuff"
+                    >
+                        Fun Stuff
+                    </Link>
 
-                    <li className="border-b-2 border-transparent m-r-3 hover:border-b-2 hover:border-red ml-5">
-                        <Link
-                            className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
-                            to="/fun-stuff"
-                        >
-                            Fun Stuff
-                        </Link>
-                    </li>
+                    <a
+                        href="https://github.com/ocularrhythm"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        title="Github Profile - opens in new window"
+                    >
+                        Github
+                    </a>
+                </Menu>
 
-                    <li className="ml-5">
-                        <a
-                            href="https://github.com/ocularrhythm"
-                            target="_blank"
-                            rel="noopener noreferrer nofollow"
-                            title="Github Profile - opens in new window"
-                        >
-                            Github
-                        </a>
-                    </li>
-                </ul>
+                <Link to="/" title="Go home">
+                    <img
+                        src={logo}
+                        alt="Ocular Rhythm"
+                        height="28"
+                        width="186"
+                    />
+                </Link>
             </div>
         </header>
     );
