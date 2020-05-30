@@ -19,7 +19,7 @@ function createHeader(
     if (isH1) {
         return (
             <h1
-                className="text-black font-bold m-0 relative z-50 text-2xl md:text-4xl"
+                className="text-white font-bold m-0 relative z-50 text-2xl md:text-4xl"
                 itemProp="headline"
             >
                 {headerContent}
@@ -29,7 +29,7 @@ function createHeader(
 
     return (
         <h2
-            className="text-black font-bold m-0 relative z-50 text-2xl md:text-4xl"
+            className="text-white font-bold m-0 relative z-50 text-2xl md:text-4xl"
             itemProp="headline"
         >
             {headerContent}
@@ -51,7 +51,7 @@ export default function PostTitle({
         headerContent = <a href={path}>{title}</a>;
     } else if (isLink) {
         headerContent = (
-            <Link className="text-black no-underline" to={path || ""}>
+            <Link className="text-white no-underline" to={path || ""}>
                 {title}
             </Link>
         );
