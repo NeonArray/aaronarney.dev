@@ -1,21 +1,21 @@
 .vr {
-    background: var(--secondary-gradient);
+  background: var(--secondary-gradient);
 }
 
 .general {
-    background: var(--purple-gradient);
+  background: var(--purple-gradient);
 }
 
 .web {
-    background: var(--primary-gradient);
+  background: var(--primary-gradient);
 }
 
 .software {
-    background: var(--yellow-gradient);
+  background: var(--yellow-gradient);
 }
 
 .tag-cat {
-    left: -15px;
-    margin: 0;
-    padding: 5px 13px 18px 16px;
+  left: -15px;
+  margin: 0;
+  padding: 5px 13px 18px 16px;
 }

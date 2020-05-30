@@ -21,7 +21,8 @@
 }
 
 [data-grid-area="aside"] {
-    @supports not (display: grid) {}
+    @supports not (display: grid) {
+    }
 
     @supports (display: grid) {
         grid-area: aside;
@@ -29,7 +30,8 @@
 }
 
 [data-grid-area="main"] {
-    @supports not (display: grid) {}
+    @supports not (display: grid) {
+    }
 
     @supports (display: grid) {
         grid-area: main;
@@ -37,7 +39,8 @@
 }
 
 [data-grid-area="footer"] {
-    @supports not (display: grid) {}
+    @supports not (display: grid) {
+    }
 
     @supports (display: grid) {
         grid-area: footer;
@@ -45,7 +48,8 @@
 }
 
 [data-grid-area="page-footer"] {
-    @supports not (display: grid) {}
+    @supports not (display: grid) {
+    }
 
     @supports (display: grid) {
         grid-area: page-footer;
@@ -55,7 +59,8 @@
 .post-navigation {
     display: flex;
 
-    @supports not (display: grid) {}
+    @supports not (display: grid) {
+    }
 
     @supports (display: grid) {
         grid-area: post-navigation;
@@ -63,7 +68,6 @@
 }
 
 .page-post {
-
     .grid {
         @supports not (display: grid) {
             .main {
@@ -73,17 +77,16 @@
 
         @supports (display: grid) {
             grid-template-areas:
-                "header"
-                "main"
-                "post-navigation"
-                "page-footer";
+                    "header"
+                    "main"
+                    "post-navigation"
+                    "page-footer";
             grid-template-rows: auto 1fr auto auto;
         }
     }
 }
 
 .archive-category {
-
     [data-grid-area="header"] {
         margin-bottom: 0;
     }
@@ -101,18 +104,18 @@
             grid-column-gap: 10px;
             grid-row-gap: 15px;
             grid-template-areas:
-                "header"
-                "main"
-                "footer"
-                "page-footer";
+                    "header"
+                    "main"
+                    "footer"
+                    "page-footer";
             grid-template-columns: 100%;
 
             @media (--tablet) {
                 grid-template-areas:
-                    "header header"
-                    "aside main"
-                    "footer footer"
-                    "page-footer page-footer";
+                        "header header"
+                        "aside main"
+                        "footer footer"
+                        "page-footer page-footer";
                 grid-template-columns: 1fr 2fr;
             }
         }
@@ -122,9 +125,9 @@
 .archive .grid {
     @supports (display: grid) {
         grid-template-areas:
-            "header"
-            "main"
-            "footer"
-            "page-footer";
+                "header"
+                "main"
+                "footer"
+                "page-footer";
     }
 }

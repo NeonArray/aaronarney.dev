@@ -1,73 +1,73 @@
 .post-copy {
-    @media (--tablet) {
-        width: 900px;
-    }
+  @media (--tablet) {
+    width: 900px;
+  }
 }
 
 .post-copy :--heading {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .post-copy a {
-    border-bottom: 4px solid var(--primary);
-    color: var(--link-color);
-    font-weight: bold;
-    text-decoration: none;
+  border-bottom: 4px solid var(--primary);
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
 
-    &:hover {
-        color: var(--primary);
-    }
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 pre {
-    tab-size: 4;
+  tab-size: 4;
 }
 
 :not(pre) code[class="language-text"] {
-    background: #eee !important;
-    box-shadow: none;
-    color: black;
-    text-shadow: none;
-    border-radius: 0 !important;
-    display: inline-block;
-    font-size: 85%;
-    padding: 0 .4em !important;
-    white-space: normal;
+  background: #eee !important;
+  box-shadow: none;
+  color: black;
+  text-shadow: none;
+  border-radius: 0 !important;
+  display: inline-block;
+  font-size: 85%;
+  padding: 0 0.4em !important;
+  white-space: normal;
 }
 
 pre[class*="language-"] {
-    line-height: var(--base-font-line-height) !important;
+  line-height: var(--base-font-line-height) !important;
 }
 
 .copyButton {
-    background: var(--primary);
-    border: none;
-    color: var(--white);
-    font-weight: 700;
-    height: 34px;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    width: 110px;
+  background: var(--primary);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  height: 34px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 110px;
 
-    &:hover {
-        background: #4b8d96;
-        cursor: pointer;
-    }
+  &:hover {
+    background: #4b8d96;
+    cursor: pointer;
+  }
 }
 
 .social-icon {
-    transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 .post-nav {
-    @media (--tablet) {
-        @supports (clip-path: polygon(0 0, 0 0, 0 0, 0 0)) {
-            clip-path: polygon(0 0, 50% 29%, 100% 0, 100% 100%, 0 100%);
-        }
+  @media (--tablet) {
+    @supports (clip-path: polygon(0 0, 0 0, 0 0, 0 0)) {
+      clip-path: polygon(0 0, 50% 29%, 100% 0, 100% 100%, 0 100%);
     }
+  }
 }
 
 .post-copy p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }

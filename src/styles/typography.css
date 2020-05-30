@@ -7,8 +7,8 @@
 @custom-media --large-desktop (min-width: 1200px);
 
 html {
-    background: #f4f4e8;
-    font-size: var(--base-font-size);
+  background: #f4f4e8;
+  font-size: var(--base-font-size);
 }
 
 :--heading,
@@ -18,79 +18,80 @@ blockquote,
 ul,
 li,
 ol {
-    color: var(--gray-dark);
-    font-size: 1.5rem;
+  color: var(--gray-dark);
+  font-size: 1.5rem;
 }
 
 :--heading {
-    font-family: system-ui, sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    line-height: 1.05em;
-    margin: 0 0 34px 0;
+  font-family: system-ui, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.05em;
+  margin: 0 0 34px 0;
 
-    @media (--tablet) {
-        font-size: var(--heading-h1-size);
-        line-height: 1.125em;
-    }
+  @media (--tablet) {
+    font-size: var(--heading-h1-size);
+    line-height: 1.125em;
+  }
 }
 
 h2 {
-    line-height: 1.25;
-    
-    @media (--tablet) {
-        font-size: var(--heading-h2-size);
-    }
+  line-height: 1.25;
+
+  @media (--tablet) {
+    font-size: var(--heading-h2-size);
+  }
 }
 
 h3 {
-    line-height: 1.25;
+  line-height: 1.25;
 
-    @media (--tablet) {
-        font-size: var(--heading-h3-size);
-    }
+  @media (--tablet) {
+    font-size: var(--heading-h3-size);
+  }
 }
 
 h4 {
-    line-height: 1.222em;
+  line-height: 1.222em;
 
-    @media (--tablet) {
-        font-size: var(--heading-h4-size);
-    }
+  @media (--tablet) {
+    font-size: var(--heading-h4-size);
+  }
 }
 
 .blockquote {
-    background: var(--gray-eee);
-    font-size: 1.5em;
-    line-height: 1.458333em;
-    margin: 0;
-    padding: .5em 1em;
+  background: var(--gray-eee);
+  font-size: 1.5em;
+  line-height: 1.458333em;
+  margin: 0;
+  padding: 0.5em 1em;
 
-    p {
-        color: var(--black);
-    }
+  p {
+    color: var(--black);
+  }
 }
 
 .link {
-    border-bottom: 4px solid var(--primary);
-    color: var(--link-color);
-    font-weight: bold;
+  border-bottom: 4px solid var(--primary);
+  color: var(--link-color);
+  font-weight: bold;
 
-    &:hover {
-        color: var(--primary);
-    }
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .stack ul,
 .stack ol {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
-
-.stack li > ul, li > ol {
-    margin: 1rem 0 0 2rem;
+.stack li > ul,
+li > ol {
+  margin: 1rem 0 0 2rem;
 }
 
-.stack h2, .stack h3 {
-    margin: 6rem auto 3rem;
+.stack h2,
+.stack h3 {
+  margin: 6rem auto 3rem;
 }
