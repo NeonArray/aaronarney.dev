@@ -6,15 +6,15 @@ category: "web"
 tags: ["AWS", "Apache", "EC2"]
 ---
 
-The following is not entirely a step-by-step tutorial on how to get up and running with Fathom. Instead this is an overview of my setup and how I went about getting a Fathom server up and capturing data.
+The following is not entirely a step-by-step tutorial on how to get up and running with Fathom. Instead, this is an overview of my setup and how I went about getting a Fathom server up and capturing data.
 
 ## Fathom
 
-[Fathom is an privacy focused data collection system](https://github.com/usefathom/fathom) that replaces the need for using intrusive and overreaching platforms like Google or Adobe analytics. Of course companies or individuals that require a great deal of data filtering, conversions, filters, etc, will probably not be able to replace their platforms of choice with Fathom. The greatest "weakness" of Fathom is also it's greatest strength, simplicity. Instead of tracking tons of data that you really will never use, much less _how_ to use, Fathom just gives you the data you're really looking for - visitors and top pages.
+[Fathom is an privacy focused data collection system](https://github.com/usefathom/fathom) that replaces the need for using intrusive and overreaching platforms like Google or Adobe analytics. Of course companies or individuals that require a great deal of data filtering, conversions, filters, etc, will probably not be able to replace their platforms of choice with Fathom. The greatest "weakness" of Fathom is also its greatest strength, simplicity. Instead of tracking tons of data that you really will never use, much less _how_ to use, Fathom just gives you the data you're really looking for - visitors and top pages.
 
 It took me a few hours to get the Fathom server up and running using an Amazon Web Services EC2 instance. This is mostly due to my inexperience with managing servers on AWS and less to do with Fathom as an application. I first attempted to run the Fathom docker image using Amazon's ECS platform, but those efforts proved futile. In the end I decided to say fuck it and just boot up an Ubuntu image and install Fathom manually.
 
-This is how I went about it. The instructions are written in the
+This is how I went about it.
 
 ## Launching EC2 Instance
 
@@ -127,7 +127,3 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 The last step is to throw the tracking code Fathom gives you when you create a new site.
 
 Bye.
-
-###### Edits
-
--   February 5, 2019 - Reworked inline code snippets and fixed typo

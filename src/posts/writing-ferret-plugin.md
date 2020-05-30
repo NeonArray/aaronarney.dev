@@ -93,7 +93,3 @@ Thanks for reading!
 
 -   [Plugin Git Repo](https://github.com/leap-spark/ferret)
 -   [Plugin Homepage](https://wordpress.org/plugins/ferret/)
-
-###### Edits
-
--   February 5, 2019 - Fixed typo
