@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ReactComponentElement } from "react";
+import * as sanitizeHTML from "sanitize-html";
 
 interface IProps {
     readonly content: any;
@@ -47,8 +48,8 @@ export default function PostBody({
     return (
         <section
             className="items-center flex flex-col justify-end mt-0"
-            dangerouslySetInnerHTML={{ __html: html }}
+            dangerouslySetInnerHTML={{ __html: sanitizeHTML(html) }}
             itemProp="articleBody"
-        ></section>
+        />
     );
 }

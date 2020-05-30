@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { ReactComponentElement } from "react";
-import CategoryImage from "../category-image";
+import CategoryImage from "./category-image";
 
 export default function CategoryList(): ReactComponentElement<any> {
     return (

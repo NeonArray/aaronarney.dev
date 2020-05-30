@@ -3,7 +3,7 @@ import { ReactChildren, ReactComponentElement } from "react";
 import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
+import Header from "./Page/header";
 import "../styles/style.css";
 
 interface IProps {

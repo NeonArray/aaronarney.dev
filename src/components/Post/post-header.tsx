@@ -1,6 +1,6 @@
 import * as React from "react";
 import PostTitle from "../post-title";
-import CategoryImage from "../category-image";
+import CategoryImage from "../Category/category-image";
 import { ReactComponentElement } from "react";
 
 interface IProps {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import CategoryImage from "../category-image";
+import CategoryImage from "./category-image";
 import { ReactComponentElement } from "react";
 
 interface IProps {
