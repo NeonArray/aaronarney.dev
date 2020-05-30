@@ -1,73 +1,82 @@
 .post-copy {
-  @media (--tablet) {
-    width: 900px;
-  }
+    @media (--tablet) {
+        width: 900px;
+    }
+
+    :--heading {
+        margin-top: 35px;
+    }
+
+    a {
+        border-bottom: 4px solid var(--primary);
+        color: var(--link-color);
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    ul {
+        margin-bottom: 1rem;
+        list-style-type: none;
+
+        li {
+            align-items: center;
+            display: flex;
+            position: relative;
+
+            &::before {
+                background: url("../images/stars.svg");
+                background-size: cover;
+                content: "";
+                height: 30px;
+                width: 30px;
+                display: inline-block;
+                margin-right: 15px;
+                position: relative;
+                animation: spin 6s infinite;
+            }
+        }
+    }
 }
 
-.post-copy :--heading {
-  margin-top: 35px;
-}
-
-.post-copy a {
-  border-bottom: 4px solid var(--primary);
-  color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
-
-  &:hover {
-    color: var(--primary);
-  }
-}
-
-pre {
-  tab-size: 4;
-}
-
-:not(pre) code[class="language-text"] {
-  background: #eee !important;
-  box-shadow: none;
-  color: black;
-  text-shadow: none;
-  border-radius: 0 !important;
-  display: inline-block;
-  font-size: 85%;
-  padding: 0 0.4em !important;
-  white-space: normal;
-}
-
-pre[class*="language-"] {
-  line-height: var(--base-font-line-height) !important;
-}
-
-.copyButton {
-  background: var(--primary);
-  border: none;
-  color: var(--white);
-  font-weight: 700;
-  height: 34px;
-  position: absolute;
-  right: 15px;
-  top: 0;
-  width: 110px;
-
-  &:hover {
-    background: #4b8d96;
-    cursor: pointer;
-  }
-}
 
 .social-icon {
-  transform: translateY(5px);
+    transform: translateY(5px);
 }
 
 .post-nav {
-  @media (--tablet) {
-    @supports (clip-path: polygon(0 0, 0 0, 0 0, 0 0)) {
-      clip-path: polygon(0 0, 50% 29%, 100% 0, 100% 100%, 0 100%);
+    @media (--tablet) {
+        @supports (clip-path: polygon(0 0, 0 0, 0 0, 0 0)) {
+            clip-path: polygon(0 0, 50% 29%, 100% 0, 100% 100%, 0 100%);
+        }
     }
-  }
 }
 
-.post-copy p {
-  margin-bottom: 25px;
+.bg-dark-blue {
+    background: var(--dark-blue);
+}
+
+.bg-black-lighter {
+    background: #1c1f23;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }

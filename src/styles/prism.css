@@ -1,0 +1,41 @@
+pre {
+    tab-size: 4;
+}
+
+:not(pre) code[class="language-text"] {
+    background: #1c1f23;
+    border-radius: 0 !important;
+    box-shadow: none;
+    color: var(--white);
+    display: inline-block;
+    font-size: 85%;
+    padding: 0 0.4em !important;
+    text-shadow: none;
+    white-space: normal;
+}
+
+pre[class*="language-"] {
+    background: #1c1f23;
+    line-height: var(--base-font-line-height) !important;
+}
+
+code[class*="language-"] {
+    font-size: 1.25rem;
+}
+
+.copyButton {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    height: 34px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 110px;
+
+    &:hover {
+        background: #4b8d96;
+        cursor: pointer;
+    }
+}

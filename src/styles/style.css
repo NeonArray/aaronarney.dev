@@ -3,36 +3,113 @@
 @import "tailwindcss/components";
 @import "./components.css";
 @import "tailwindcss/utilities";
-/*@import "./grid.css";*/
+@import "./prism.css";
 @import "./typography.css";
 @import "./post.css";
 @import "./post-header.css";
 @import "./tags.css";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: #222831;
 }
 
 body {
-  font-size: 100%;
-  font-family: var(--base-font-family);
-  line-height: var(--base-font-line-height);
-  margin: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 0;
+    font-size: 100%;
+    font-family: var(--base-font-family);
+    line-height: var(--base-font-line-height);
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 .primary-grad {
-  background: var(--primary-gradient);
+    background: var(--primary-gradient);
 }
 
 .secondary-grad {
-  background: var(--secondary-gradient);
+    background: var(--secondary-gradient);
 }
 
 .gatsby-resp-image-link {
-  border: 2px solid var(--secondary);
-  margin: 60px 0;
-  text-decoration: none;
+    border: 2px solid var(--secondary);
+    margin: 60px 0;
+    text-decoration: none;
+}
+
+.main {
+    max-width: 100%;
+    width: 100vw;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 12px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: var(--primary);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: var(--secondary);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 2em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
 }

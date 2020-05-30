@@ -1,19 +1,19 @@
 .header {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjZWVlIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U4ZThlOCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U5ZTllOSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
-  clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%);
+    background: url("../images/Sun-Tornado.svg") no-repeat center center/cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%);
 
-  @media (--tablet) {
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-  }
+    @media (--tablet) {
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    }
 }
 
 .header-image {
-  height: 150px;
-  margin: 0 auto;
-  width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    width: 150px;
 
-  @media (--tablet) {
-    height: 300px;
-    width: 300px;
-  }
+    @media (--tablet) {
+        height: 300px;
+        width: 300px;
+    }
 }
