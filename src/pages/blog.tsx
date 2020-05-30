@@ -3,7 +3,7 @@ import { ReactComponentElement } from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-import Archive from "../components/Archive/index";
+import Archive from "../components/Archive";
 import Layout from "../components/layout";
 
 interface IProps {
