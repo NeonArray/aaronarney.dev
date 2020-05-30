@@ -5,9 +5,9 @@ import { graphql } from "gatsby";
 
 import Archive from "../components/archive";
 import Layout from "../components/layout";
-import CategoryHeader from "../components/category-header";
-import CategoryAside from "../components/category-aside";
-import CategoryList from "../components/category-list";
+import CategoryHeader from "../components/Category/category-header";
+import CategoryAside from "../components/Category/category-aside";
+import CategoryList from "../components/Category/category-list";
 import { capitalizeWords } from "../utils";
 
 interface IProps {
