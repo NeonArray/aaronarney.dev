@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-import Archive from "../components/Archive/index";
+import Archive from "../components/archive";
 import Layout from "../components/layout";
 import { ReactComponentElement } from "react";
 
