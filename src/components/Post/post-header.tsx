@@ -34,29 +34,6 @@ export default function PostHeader({
                     path={content.path}
                     isLink={false}
                 />
-
-                {content.tags !== null ? (
-                    <div className="flex mt-4">
-                        <ul
-                            itemProp="keywords"
-                            className="flex flex-wrap list-reset md:justify-between"
-                        >
-                            <li>Tags:&nbsp;</li>
-
-                            {content.tags &&
-                                content.tags.map((tag, i) => {
-                                    return (
-                                        <li
-                                            className="bg-white text-xs py-0 px-4 capitalize border-1 border-grey-light mr-2 self-center"
-                                            key={i}
-                                        >
-                                            {tag}
-                                        </li>
-                                    );
-                                })}
-                        </ul>
-                    </div>
-                ) : null}
             </div>
         </header>
     );
