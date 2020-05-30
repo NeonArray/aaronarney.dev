@@ -1,10 +1,18 @@
-import React from "react";
-import { Link } from 'gatsby';
+import * as React from "react";
+import { Link } from "gatsby";
 
-import CategoryImage from '../category-image';
+import CategoryImage from "../category-image";
+import { ReactComponentElement } from "react";
 
+interface IProps {
+    readonly data: {
+        readonly category: string;
+    };
+}
 
-export default function CategoryAside({ data }) {
+export default function CategoryAside({
+    data,
+}: IProps): ReactComponentElement<any> {
     return (
         <aside data-grid-area="aside" className="text-right">
             <div className="flex align-right items-end flex-col">
@@ -16,11 +24,16 @@ export default function CategoryAside({ data }) {
                 />
 
                 <div className="sm:invisible md:visible">
-                    <p className="my-6 text-base leading-tight">View By Category:</p>
+                    <p className="my-6 text-base leading-tight">
+                        View By Category:
+                    </p>
 
                     <ul className="list-reset">
                         <li className="mb-3">
-                            <Link className="label software" to="blog/category/software">
+                            <Link
+                                className="label software"
+                                to="blog/category/software"
+                            >
                                 Software
                             </Link>
                         </li>
@@ -30,7 +43,10 @@ export default function CategoryAside({ data }) {
                             </Link>
                         </li>
                         <li>
-                            <Link className="label general" to="blog/category/general">
+                            <Link
+                                className="label general"
+                                to="blog/category/general"
+                            >
                                 General
                             </Link>
                         </li>
@@ -40,7 +56,3 @@ export default function CategoryAside({ data }) {
         </aside>
     );
 }
-
-// CategoryAside.propTypes = {
-//     data: PropTypes.object.isRequired,
-// };
