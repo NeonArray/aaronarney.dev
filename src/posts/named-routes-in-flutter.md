@@ -10,8 +10,8 @@ Flutter provides built-in functionality for routing in apps. You can use either 
 
 There are two ways of going about named routes, you can either:
 
-1. Use URL style routes /main or /login etc.
-2. Use an arbitrary string login_screen, main_screen etc.
+-   Use URL style routes /main or /login etc.
+-   Use an arbitrary string login_screen, main_screen etc.
 
 When using URL style identifiers, you must provide a default route of / or the app will crash. Personally, I don’t like this style at the moment, but in the future when Flutter web support is stable this may make more sense to me.
 
