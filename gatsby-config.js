@@ -1,14 +1,14 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://www.ocular-rhythm.io",
-        title: "Ocular-Rhythm",
-        defaultTitle: "Ocular-Rhythm",
+        siteUrl: "https://www.aaronarney.dev",
+        title: "Aaron Arney",
+        defaultTitle: "Aaron Arney",
         titleTemplate: "%s · A development blog",
         description:
-            "Ocular-Rhythm is a development blog, brought to you by Aaron Arney.",
-        url: "https://www.ocular-rhythm.io",
+            "A development blog, brought to you by Aaron Arney.",
+        url: "https://www.aaronarney.dev",
         image: "/icons/favicon.ico",
-        twitterUsername: "@agarney",
+        twitterUsername: "@ocularrhythm",
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -71,8 +71,8 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                name: "ocular-rhythm",
-                short_name: "ocularrhythm",
+                name: "aaron-arney",
+                short_name: "aaronarney",
                 start_url: "/",
                 background_color: "#6CC9D2",
                 theme_color: "#6CC9D2",
