@@ -1,14 +1,14 @@
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
-    if (node.internal.type === 'MarkdownRemark') {
+    if (node.internal.type === "MarkdownRemark") {
         const value = createFilePath({ node, getNode });
 
         createNodeField({
-            name: 'slug',
+            name: "slug",
             node,
             value,
         });
@@ -18,8 +18,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
 
-    const blogPostTemplate = path.resolve('src/templates/single.js');
-    const blogCategoryTemplate = path.resolve('src/templates/category.js');
+    const blogPostTemplate = path.resolve("src/templates/single.tsx");
+    const blogCategoryTemplate = path.resolve("src/templates/category.tsx");
 
     const result = await graphql(`
         {
@@ -36,7 +36,7 @@ exports.createPages = async ({ actions, graphql }) => {
                         }
                     }
                 }
-            } 
+            }
         }
     `);
 
@@ -52,7 +52,7 @@ exports.createPages = async ({ actions, graphql }) => {
             component: blogPostTemplate,
             context: {
                 prev: index === 0 ? null : posts[index - 1].node,
-                next: index === (posts.length - 1) ? null : posts[index + 1].node,
+                next: index === posts.length - 1 ? null : posts[index + 1].node,
             },
         });
     });
@@ -75,4 +75,3 @@ exports.createPages = async ({ actions, graphql }) => {
         });
     });
 };
-
