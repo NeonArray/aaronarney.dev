@@ -38,7 +38,7 @@ function prime_my_cache() : void {
 	delete_transient( 'key' );
 
 	$data = new WP_Query( array( 'post_type' => 'cpt' ) );
-		
+
 	set_transient( 'key', $data, 60 * MINUTE_IN_SECONDS );
 }
 add_action( 'edit_post_custom_post_type', 'prime_my_cache' );
@@ -48,4 +48,4 @@ Very cool and very easy.
 
 ## Resources
 
-- [WordPress Transients API](https://codex.wordpress.org/Transients_API)
+-   [WordPress Transients API](https://codex.wordpress.org/Transients_API)

@@ -19,17 +19,17 @@ For example, if we want to have a start screen state, main game state, and end s
 ```javascript
 // Some comment
 const game = new Phaser.Game(config);
-game.state.add('gameState', gameState);
-game.state.add('endState', endState);
-game.state.add('titleState', titleState);
+game.state.add("gameState", gameState);
+game.state.add("endState", endState);
+game.state.add("titleState", titleState);
 ```
 
-Each state will have its own respective `preload`, `create`, and `update` methods that will get executed automatically. Note that the order in which these states are added *does* seem to matter. In order for you to change from the start state to the game state for example, you will need to add the game state *first* or else Phaser won't know that it exists.
+Each state will have its own respective `preload`, `create`, and `update` methods that will get executed automatically. Note that the order in which these states are added _does_ seem to matter. In order for you to change from the start state to the game state for example, you will need to add the game state _first_ or else Phaser won't know that it exists.
 
 To specify which state will start when the game is loaded, simply call the `state.start` method, passing the state you want to load as the only argument.
 
 ```javascript
-game.state.start('titleState');
+game.state.start("titleState");
 ```
 
 Lastly, when you want to load a new state you simply call the same method. For example if I want the game state to load after the user presses the `spacebar` key on the title screen, I would add this logic into the `titleScene` `update` method.
@@ -39,7 +39,7 @@ function update() {
     const { game } = this;
 
     if (game.input.keyboard.isDown(Phaser.keyCode.SPACEBAR)) {
-        game.state.start('gameState');
+        game.state.start("gameState");
     }
 }
 ```
