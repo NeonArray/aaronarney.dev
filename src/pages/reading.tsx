@@ -35,7 +35,7 @@ export default function Reading(): ReactComponentElement<any> {
 
                     <p> ★ = Favorites</p>
 
-                    <h3> ⚞ Technology ⚟ </h3>
+                    <h3>Technology</h3>
                     <ul className={style.books}>
                         <li>
                             <a href="https://www.indiebound.org/book/9780735619678">
@@ -79,7 +79,7 @@ export default function Reading(): ReactComponentElement<any> {
                         </li>
                     </ul>
 
-                    <h3> ⚞ Psychology or Brain Thangs ⚟ </h3>
+                    <h3>Psychology or Brain Thangs</h3>
                     <ul className={style.books}>
                         <li>
                             <a href="https://www.indiebound.org/book/9780812981605">
@@ -93,7 +93,7 @@ export default function Reading(): ReactComponentElement<any> {
                         </li>
                     </ul>
 
-                    <h3> ⚞ History ⚟ </h3>
+                    <h3>History</h3>
                     <ul className={style.books}>
                         <li>
                             <a href="https://www.indiebound.org/book/9780671447540">
@@ -117,7 +117,7 @@ export default function Reading(): ReactComponentElement<any> {
                         </li>
                     </ul>
 
-                    <h3> ⚞ Science ⚟ </h3>
+                    <h3>Science</h3>
                     <ul className={style.books}>
                         <li>
                             <a href="https://www.indiebound.org/book/9780393339918">
@@ -131,7 +131,7 @@ export default function Reading(): ReactComponentElement<any> {
                         </li>
                     </ul>
 
-                    <h3> ⚞ Video Games ⚟ </h3>
+                    <h3>Video Games</h3>
                     <ul className={style.books}>
                         <li>
                             <a href="  Blood, Sweat, and Pixels ">
