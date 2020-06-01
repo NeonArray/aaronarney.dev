@@ -81,6 +81,16 @@ h4 {
     }
 }
 
+.stack a {
+    border-bottom: 4px solid var(--primary);
+    color: var(--link-color);
+    font-weight: bold;
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+
 .stack ul,
 .stack ol {
     list-style-type: disc;
