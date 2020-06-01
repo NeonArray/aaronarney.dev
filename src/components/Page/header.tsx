@@ -5,20 +5,16 @@ import { Link } from "gatsby";
 // @ts-ignore
 import * as logo from "../../images/ocular-rhythm-logo.svg";
 
-
 export default function Header(): ReactComponentElement<any> {
-    function showSettings() {
-
-    }
-
     return (
         <header className="flex flex-row">
             <div className="my-0 mx-auto max-w-max py-4 px-3 md:px-5">
-                <Menu pageWrapId={ "page-wrap" }
-                      outerContainerId={ "outer-container" }
-                      right
-                      noOverlay
-                      width={400}
+                <Menu
+                    pageWrapId={"page-wrap"}
+                    outerContainerId={"outer-container"}
+                    right
+                    noOverlay
+                    width={400}
                 >
                     <Link
                         className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
@@ -48,6 +44,15 @@ export default function Header(): ReactComponentElement<any> {
                         Fun Stuff
                     </Link>
 
+                    <Link
+                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        to="/reading"
+                    >
+                        Reading
+                    </Link>
+
+                    <hr style={{ margin: '2rem 0', borderColor: "#222831"}}/>
+
                     <a
                         href="https://github.com/ocularrhythm"
                         target="_blank"
@@ -55,6 +60,14 @@ export default function Header(): ReactComponentElement<any> {
                         title="Github Profile - opens in new window"
                     >
                         Github
+                    </a>
+                    <a
+                        href="https://codepen.io/ocular-rhythm"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        title="CodePen Profile - opens in new window"
+                    >
+                        CodePen
                     </a>
                 </Menu>
 
