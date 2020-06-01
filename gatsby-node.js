@@ -41,12 +41,17 @@ exports.createPages = async ({ actions, graphql }) => {
     `);
 
     if (result.errors) {
-        throw new Error(`GraphQL threw an error in gatsy-node`);
+        throw `GraphQL threw an error in gatsy-node`;
     }
 
     const posts = result.data.allMarkdownRemark.edges;
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
+    posts.forEach(({ node }, index) => {
+
+        if (node.frontmatter === null || node.frontmatter.path === null) {
+            throw `Post ${index} missing path in frontmatter`;
+        }
+
         createPage({
             path: node.frontmatter.path,
             component: blogPostTemplate,
