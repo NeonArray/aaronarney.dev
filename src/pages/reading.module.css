@@ -1,0 +1,18 @@
+.books {
+    list-style-type: none !important;
+
+    li {
+        position: relative;
+
+        &::before {
+            background: url("../images/book.svg") no-repeat center center;
+            background-size: cover;
+            content: "";
+            display: inline-block;
+            height: 30px;
+            position: relative;
+            transform: translate(-20px, 10px) rotate(-19deg);
+            width: 30px;
+        }
+    }
+}
