@@ -45,6 +45,12 @@ module.exports = {
                         },
                     },
                     {
+                        resolve: 'gatsby-remark-external-links',
+                        options: {
+                            target: '_self'
+                        }
+                    },
+                    {
                         resolve: "gatsby-remark-relative-images",
                         options: {
                             name: "uploads",
