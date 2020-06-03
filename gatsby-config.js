@@ -7,7 +7,6 @@ module.exports = {
         description: "A development blog, brought to you by Aaron Arney.",
         url: "https://www.aaronarney.dev",
         image: "/icons/favicon.ico",
-        twitterUsername: "@ocularrhythm",
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -43,12 +42,6 @@ module.exports = {
                             inlineCodeMarker: null,
                             aliases: {},
                         },
-                    },
-                    {
-                        resolve: 'gatsby-remark-external-links',
-                        options: {
-                            target: '_self'
-                        }
                     },
                     {
                         resolve: "gatsby-remark-relative-images",

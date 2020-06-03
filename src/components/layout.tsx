@@ -26,7 +26,6 @@ export default function Layout({
                             defaultDescription: description
                             siteUrl: url
                             defaultImage: image
-                            twitterUsername
                         }
                     }
                 }

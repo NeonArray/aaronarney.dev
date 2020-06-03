@@ -8,7 +8,7 @@ export default function FourOhFour(): ReactComponentElement<any> {
     return (
         <Layout>
             <Helmet
-                title="404 Not Found | Ocular-Rhythm"
+                title="404 Not Found | Aaron Arney"
                 bodyAttributes={{
                     class: "",
                 }}

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout";
 
+// @ts-ignore
 import * as photo from "../images/aaron-with-quiet-cropped.jpg";
 
 export default function Index(): ReactComponentElement<any> {

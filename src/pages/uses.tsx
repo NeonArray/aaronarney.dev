@@ -9,7 +9,7 @@ export default function Uses(): ReactComponentElement<any> {
         <Layout>
             <main data-grid-area="main" style={{ marginTop: "75px" }}>
                 <Helmet
-                    title="Ocular-Rhythm"
+                    title="Uses | Aaron Arney"
                     bodyAttributes={{
                         class: "page-post",
                     }}

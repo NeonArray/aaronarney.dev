@@ -60,7 +60,7 @@ export default function Template({
     return (
         <Layout location={data.location}>
             <Helmet
-                title={`${frontmatter.title} | Ocular-Rhythm`}
+                title={`${frontmatter.title} | Aaron Arney`}
                 bodyAttributes={{
                     class: "page-post",
                 }}

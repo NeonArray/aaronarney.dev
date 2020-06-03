@@ -63,7 +63,7 @@ export default function Header(): ReactComponentElement<any> {
                         Github
                     </a>
                     <a
-                        href="https://codepen.io/ocular-rhythm"
+                        href="https://codepen.io/aaronarney"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         title="CodePen Profile - opens in new window"

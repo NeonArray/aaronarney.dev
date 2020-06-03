@@ -29,7 +29,7 @@ export default function Blog({ data }: IProps): ReactComponentElement<any> {
         <Layout>
             <div style={{ marginTop: "75px" }}>
                 <Helmet
-                    title="Blog | Ocular-Rhythm"
+                    title="Blog | Aaron Arney"
                     bodyAttributes={{
                         class: "archive",
                     }}

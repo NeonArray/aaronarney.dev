@@ -31,7 +31,7 @@ export default function Template({
                         <Helmet
                             title={`${capitalizeWords(
                                 pageContext.category
-                            )} | Ocular-Rhythm`}
+                            )} | Aaron Arney`}
                             bodyAttributes={{
                                 class: "archive-category",
                             }}

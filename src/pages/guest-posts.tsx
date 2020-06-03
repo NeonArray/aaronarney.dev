@@ -79,7 +79,7 @@ export default function GuestPosts(): ReactComponentElement<any> {
         <Layout>
             <div style={{ marginTop: "75px" }}>
                 <Helmet
-                    title="Guest Posts | Ocular-Rhythm"
+                    title="Guest Posts | Aaron Arney"
                     bodyAttributes={{
                         class: "archive",
                     }}

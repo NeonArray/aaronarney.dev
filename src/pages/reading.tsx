@@ -11,7 +11,7 @@ export default function Reading(): ReactComponentElement<any> {
         <Layout>
             <main style={{ marginTop: "75px" }}>
                 <Helmet
-                    title="Ocular-Rhythm"
+                    title="Reading | Aaron Arney"
                     bodyAttributes={{
                         class: "page-post",
                     }}
