@@ -2,8 +2,9 @@ import * as React from "react";
 import { ReactComponentElement } from "react";
 import { bubble as Menu } from "react-burger-menu";
 import { Link } from "gatsby";
+
 // @ts-ignore
-import * as logo from "../../images/ocular-rhythm-logo.svg";
+import * as logo from "../../images/AA-logo.svg";
 
 export default function Header(): ReactComponentElement<any> {
     return (
@@ -74,7 +75,7 @@ export default function Header(): ReactComponentElement<any> {
                 <Link to="/" title="Go home">
                     <img
                         src={logo}
-                        alt="Ocular Rhythm"
+                        alt="Aaron Arney"
                         height="28"
                         width="186"
                     />
