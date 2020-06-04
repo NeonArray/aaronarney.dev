@@ -48,6 +48,11 @@ export default function Layout({
                             name="msvalidate.01"
                             content="1B785495556C9DE837E22313FC8A33E7"
                         />
+                        <meta 
+                            name="google-site-verification"
+                            content="qSYTR-fUhJ4J-fZqzPWk3S88l1Ls8HQX9-DU_j7JxDA"
+                        />
+                        
                         <meta name="robots" content="index,follow" />
                         <meta name="googlebot" content="index,follow" />
                         <meta name="twitter:dnt" content="on" />
