@@ -41,7 +41,7 @@ exports.createPages = async ({ actions, graphql }) => {
     `);
 
     if (result.errors) {
-        throw `GraphQL threw an error in gatsy-node`;
+        throw `GraphQL threw an error in gatbsy-node`;
     }
 
     const posts = result.data.allMarkdownRemark.edges;
