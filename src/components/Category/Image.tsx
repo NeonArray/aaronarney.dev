@@ -40,7 +40,7 @@ const dictionary = Object.freeze({
     },
 });
 
-export default function CategoryImage({
+export default function Image({
     height,
     width,
     category,

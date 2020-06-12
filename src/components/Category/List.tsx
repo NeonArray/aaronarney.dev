@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { ReactComponentElement } from "react";
-import CategoryImage from "./category-image";
+import Image from "./Image";
 
-export default function CategoryList(): ReactComponentElement<any> {
+export default function List(): ReactComponentElement<any> {
     return (
         <div className="sm:block md:hidden">
             <div className="block px-5 md:hidden">
@@ -15,7 +15,7 @@ export default function CategoryList(): ReactComponentElement<any> {
                             to="blog/category/software"
                             className="no-underline text-xs"
                         >
-                            <CategoryImage
+                            <Image
                                 height={50}
                                 width={50}
                                 category="software"
@@ -29,7 +29,7 @@ export default function CategoryList(): ReactComponentElement<any> {
                             to="blog/category/web"
                             className="no-underline text-xs"
                         >
-                            <CategoryImage
+                            <Image
                                 height={50}
                                 width={50}
                                 category="web"
@@ -43,7 +43,7 @@ export default function CategoryList(): ReactComponentElement<any> {
                             to="blog/category/general"
                             className="no-underline text-xs"
                         >
-                            <CategoryImage
+                            <Image
                                 height={50}
                                 width={50}
                                 category="general"

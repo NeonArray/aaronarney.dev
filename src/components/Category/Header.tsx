@@ -7,7 +7,7 @@ interface IProps {
     };
 }
 
-export default function CategoryHeader({
+export default function Header({
     data,
 }: IProps): ReactComponentElement<any> {
     return (

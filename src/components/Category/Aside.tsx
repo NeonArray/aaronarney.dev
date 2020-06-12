@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import CategoryImage from "./category-image";
+import Image from "./Image";
 import { ReactComponentElement } from "react";
 
 interface IProps {
@@ -10,13 +10,13 @@ interface IProps {
     };
 }
 
-export default function CategoryAside({
+export default function Aside({
     data,
 }: IProps): ReactComponentElement<any> {
     return (
         <aside data-grid-area="aside" className="text-right">
             <div className="flex align-right items-end flex-col">
-                <CategoryImage
+                <Image
                     height={164}
                     width={164}
                     category={data.category}
