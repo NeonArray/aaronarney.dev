@@ -9,6 +9,7 @@
         @apply text-5xl pt-32 px-4 pb-16 w-1/2;
     }
 
+    color: #000 !important;
     transition: 0.25s width ease;
 
     &:hover {
