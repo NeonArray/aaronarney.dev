@@ -1,5 +1,7 @@
 # AaronArney.dev/Ocular-Rhythm.io
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/157a8254-fafd-40c9-91db-c06e840eac54/deploy-status)](https://app.netlify.com/sites/aaronarney/deploys)
+
 tl;dr - don't bother reading this.
 
 So years ago I had read advice or a book or something about self-promotion and branding. I also had thought

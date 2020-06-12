@@ -1,6 +1,5 @@
 import * as React from "react";
 import { ReactComponentElement } from "react";
-import * as sanitizeHTML from "sanitize-html";
 
 interface IProps {
     readonly content: any;

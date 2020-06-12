@@ -5,10 +5,10 @@ import { graphql } from "gatsby";
 import * as moment from "moment";
 
 import Layout from "../layout";
-import Callout from "./Callout";
-import PostHeader from "./Header";
-import PostBody from "./Body";
-import PostFooter from "./Footer";
+import Callout from "./callout";
+import PostHeader from "./header";
+import PostBody from "./body";
+import PostFooter from "./footer";
 
 interface IProps {
     readonly pageContext: any;
