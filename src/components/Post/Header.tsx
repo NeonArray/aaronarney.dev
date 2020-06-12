@@ -1,6 +1,6 @@
 import * as React from "react";
 import PostTitle from "../post-title";
-import CategoryImage from "../Category/category-image";
+import Image from "../Category/Image";
 import { ReactComponentElement } from "react";
 
 interface IProps {
@@ -13,13 +13,13 @@ interface IProps {
     };
 }
 
-export default function PostHeader({
+export default function Header({
     content,
 }: IProps): ReactComponentElement<any> {
     return (
         <header className="header flex flex-col md:flex-row mt-0 mx-auto mb-10 pt-6 pr-4 pb-10 pl-4">
             <div className="w-full md:w-1/2 self-end mb-4 text-center">
-                <CategoryImage
+                <Image
                     height={300}
                     width={300}
                     category={content.category}

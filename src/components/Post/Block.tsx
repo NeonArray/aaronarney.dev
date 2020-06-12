@@ -15,7 +15,7 @@ interface IProps {
     readonly layout?: string;
 }
 
-export default function PostBlock({
+export default function Block({
     meta,
     layout,
 }: IProps): ReactComponentElement<any> {

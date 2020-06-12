@@ -6,7 +6,7 @@ interface IProps {
     readonly content: any;
 }
 
-export default function PostBody({
+export default function Body({
     content,
 }: IProps): ReactComponentElement<any> {
     /**

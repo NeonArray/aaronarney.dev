@@ -19,7 +19,7 @@ interface IProps {
     };
 }
 
-export default function PostFooter({
+export default function Footer({
     links,
 }: IProps): ReactComponentElement<any> {
     const { next, prev } = links;
