@@ -20,18 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/body.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/callout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/callout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/archive/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/archive/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +165,7 @@
       <workItem from="1565117745588" duration="53000" />
       <workItem from="1567087295142" duration="66000" />
       <workItem from="1591299070192" duration="1324000" />
-      <workItem from="1591981534983" duration="115000" />
+      <workItem from="1591981534983" duration="275000" />
     </task>
     <servers />
   </component>
