@@ -46,7 +46,7 @@ function shouldShowCallout(date: string): ReactComponentElement<any> {
         );
     }
 
-    return undefined;
+    return null;
 }
 
 export default function Template({
