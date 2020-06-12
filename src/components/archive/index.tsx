@@ -1,5 +1,5 @@
 import * as React from "react";
-import PostBlock from "../Post/post-block";
+import Block from "../Post/Block";
 import { ReactComponentElement } from "react";
 
 interface IProps {
@@ -21,22 +21,21 @@ export default function Archive({
         <div
             style={centerMargin}
             className="
-            grid
-            grid-cols-1
-            md:grid-cols-2
-            row-gap-20
-            gap-12
-            px-12
-            md:px-6
-            lg:px-0
-            max-w-screen-lg
-            mx-auto
-        "
+                grid
+                grid-cols-1
+                md:grid-cols-2
+                row-gap-20
+                gap-12
+                px-12
+                md:px-6
+                lg:px-0
+                max-w-screen-lg
+                mx-auto"
         >
             {posts.map(
                 (post, iterator): ReactComponentElement<any> => {
                     return (
-                        <PostBlock
+                        <Block
                             key={iterator}
                             meta={post.node}
                             layout={layout}
