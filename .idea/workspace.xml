@@ -20,22 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Category/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Post/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/category-aside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/Aside.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/category-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/category-image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/Image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/List.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/callout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Callout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/post-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/post-body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Body.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/post-footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/post-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Page/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Page/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/body.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/callout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/callout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/archive/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/archive/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/category.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/single.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +176,7 @@
       <workItem from="1565117745588" duration="53000" />
       <workItem from="1567087295142" duration="66000" />
       <workItem from="1591299070192" duration="1324000" />
+      <workItem from="1591981534983" duration="115000" />
     </task>
     <servers />
   </component>

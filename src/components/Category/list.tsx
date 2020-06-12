@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { ReactComponentElement } from "react";
-import Image from "./Image";
+import Image from "./image";
 
 export default function List(): ReactComponentElement<any> {
     return (

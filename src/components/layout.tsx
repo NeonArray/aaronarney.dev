@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ReactChildren, ReactComponentElement } from "react";
+import { ReactComponentElement } from "react";
 import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-import Header from "./Page/header";
-import Footer from "./Page/footer";
+import Header from "./page/header";
+import Footer from "./page/footer";
 import "../styles/style.css";
 
 interface IProps {

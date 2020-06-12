@@ -1,5 +1,5 @@
 import * as React from "react";
-import Block from "../Post/block";
+import Block from "../post/block";
 import { ReactComponentElement } from "react";
 
 interface IProps {

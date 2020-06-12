@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { ReactComponentElement } from "react";
 
 export default function PageFooter(): ReactComponentElement<any> {
