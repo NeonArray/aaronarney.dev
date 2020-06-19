@@ -44,6 +44,11 @@
             }
         }
     }
+
+    img {
+        margin: 4rem 0;
+        width: 100%;
+    }
 }
 
 
