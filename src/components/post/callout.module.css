@@ -8,9 +8,11 @@
     border-radius: 50%;
     display: inline-block;
     height: 55px;
+    margin: auto;
     padding: 5px;
     transform: translateX(-43px);
     transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    width: 55px;
 }
 
 @keyframes siren {
