@@ -6,7 +6,8 @@
     background: var(--purple-gradient);
 }
 
-.web {
+.web,
+.website {
     background: var(--primary-gradient);
 }
 
