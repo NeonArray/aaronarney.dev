@@ -16,11 +16,39 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/work.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/work/derby-pie.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/work/uoflphysicians.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/work/uploads/derbypie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/work/uploads/uofl-physicians.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/work/uploads/uoflphysicians-find-a-provider.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category/image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/callout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/code.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/web.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/web.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fun-stuff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fun-stuff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/guest-posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/guest-posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tags.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,34 +58,12 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>vertical</find>
-      <find>some-other-post</find>
-      <find>.main</find>
-      <find>section-la</find>
-      <find>&quot;</find>
-      <find>moment</find>
-      <find>CategoryImage</find>
-      <find>max=w</find>
-      <find>b</find>
-      <find>color</find>
-      <find>backgroundColor</find>
-      <find>colors:</find>
-      <find>box-shadow</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>'</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src</dir>
-      <dir>D:\repos\ocular-rhythm-site\public</dir>
-      <dir>D:\repos\ocular-rhythm-site\src</dir>
-      <dir>D:\repos\ocular-rhythm-site\src\components</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
@@ -113,29 +119,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript 1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/work" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
     <property name="settings.editor.splitter.proportion" value="0.19873016" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/work" />
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="D:\repos\ocular-rhythm-site\src\pages" />
       <recent name="D:\repos\ocular-rhythm-site\static" />
       <recent name="D:\repos\ocular-rhythm-site\src\posts" />
-      <recent name="D:\repos\ocular-rhythm-site\src" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/work/uploads" />
       <recent name="D:\repos\ocular-rhythm-site\static" />
       <recent name="D:\repos\ocular-rhythm-site\public" />
       <recent name="D:\repos\ocular-rhythm-site\static\icons" />
       <recent name="D:\repos\ocular-rhythm-site\static\images" />
-      <recent name="D:\repos\ocular-rhythm-site\src\images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -165,7 +173,10 @@
       <workItem from="1565117745588" duration="53000" />
       <workItem from="1567087295142" duration="66000" />
       <workItem from="1591299070192" duration="1324000" />
-      <workItem from="1591981534983" duration="304000" />
+      <workItem from="1591981534983" duration="1771000" />
+      <workItem from="1593184427154" duration="2673000" />
+      <workItem from="1593452643396" duration="6346000" />
+      <workItem from="1593461303661" duration="2681000" />
     </task>
     <servers />
   </component>
@@ -186,7 +197,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -206,6 +229,28 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="708" y="386" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1593462182424">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="708" y="386" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462182424" />
+    <state x="469" y="163" key="SettingsEditor" timestamp="1593462156851">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="469" y="163" key="SettingsEditor/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462156851" />
+    <state x="484" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593455036194">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="484" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1440.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1593455036194" />
+    <state x="660" y="281" width="600" height="486" key="find.popup" timestamp="1593462186817">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="660" y="281" width="600" height="486" key="find.popup/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462186817" />
+    <state x="625" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1593462166994">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="625" y="244" width="670" height="676" key="search.everywhere.popup/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462166994" />
   </component>
   <component name="masterDetails">
     <states>
