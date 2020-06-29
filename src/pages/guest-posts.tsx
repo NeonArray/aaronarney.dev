@@ -85,6 +85,10 @@ export default function GuestPosts(): ReactComponentElement<any> {
                     }}
                 />
 
+                <div className="stack max-w-screen-lg mx-auto">
+                    <h1 className="mb-20 block">Guest Posts</h1>
+                </div>
+
                 <Archive centered={true} posts={edges} />
             </div>
         </Layout>

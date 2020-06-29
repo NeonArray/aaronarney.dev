@@ -19,14 +19,8 @@ export default function FunStuff(): ReactComponentElement<any> {
                         class: "page-post",
                     }}
                 />
-                <div
-                    style={{
-                        maxWidth: "920px",
-                        margin: "0 auto",
-                        padding: "0 0.5em",
-                    }}
-                >
-                    <h1>Fun Stuff</h1>
+                <div className="stack max-w-screen-lg mx-auto">
+                    <h1 className="mb-20 block">Fun Stuff</h1>
 
 
                     <div className="max-w-sm w-full lg:max-w-full lg:flex my-8">

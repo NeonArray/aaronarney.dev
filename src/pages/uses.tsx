@@ -14,15 +14,9 @@ export default function Uses(): ReactComponentElement<any> {
                         class: "page-post",
                     }}
                 />
-                <div
-                    className="stack"
-                    style={{
-                        maxWidth: "920px",
-                        margin: "0 auto",
-                        padding: "0 0.5em",
-                    }}
-                >
-                    <h1>Uses</h1>
+                <div className="stack max-w-screen-lg mx-auto">
+
+                    <h1 className="mb-20 block">Uses</h1>
 
                     <p>
                         Inspired by the website{" "}

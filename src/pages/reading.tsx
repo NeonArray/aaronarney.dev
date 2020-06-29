@@ -16,15 +16,8 @@ export default function Reading(): ReactComponentElement<any> {
                         class: "page-post",
                     }}
                 />
-                <div
-                    className="stack"
-                    style={{
-                        maxWidth: "920px",
-                        margin: "0 auto",
-                        padding: "0 0.5em",
-                    }}
-                >
-                    <h1>Reading</h1>
+                <div className="stack max-w-screen-lg mx-auto">
+                    <h1 className="mb-20 block">Reading</h1>
 
                     <p>
                         These are a few of the books I've read (some or all of).

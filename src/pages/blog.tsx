@@ -34,6 +34,11 @@ export default function Blog({ data }: IProps): ReactComponentElement<any> {
                         class: "archive",
                     }}
                 />
+
+                <div className="stack max-w-screen-lg mx-auto">
+                    <h1 className="mb-20 block">Blog</h1>
+                </div>
+
                 <Archive centered={true} posts={edges.edges} />
             </div>
         </Layout>
@@ -42,7 +47,9 @@ export default function Blog({ data }: IProps): ReactComponentElement<any> {
 
 export const pageQuery = graphql`
     query BlogQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+        filter: {frontmatter: {type: {ne: "work"}}}
+        sort: { order: DESC, fields: [frontmatter___date] }) {
             edges {
                 node {
                     frontmatter {
