@@ -7,6 +7,8 @@ import { Link } from "gatsby";
 import * as logo from "../../images/AA-logo.svg";
 
 export default function Header(): ReactComponentElement<any> {
+    const linkClassName = "focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy";
+
     return (
         <header className="flex flex-row">
             <div className="my-0 mx-auto max-w-max py-4 px-3 md:px-5">
@@ -18,35 +20,41 @@ export default function Header(): ReactComponentElement<any> {
                     width={400}
                 >
                     <Link
-                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        className={linkClassName}
                         to="/blog"
                     >
                         Blog
                     </Link>
 
                     <Link
-                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        className={linkClassName}
                         to="/guest-posts"
                     >
                         Guest Posts
                     </Link>
 
                     <Link
-                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        className={linkClassName}
+                        to="/work">
+                        Work
+                    </Link>
+
+                    <Link
+                        className={linkClassName}
                         to="/uses"
                     >
                         Uses
                     </Link>
 
                     <Link
-                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        className={linkClassName}
                         to="/fun-stuff"
                     >
                         Fun Stuff
                     </Link>
 
                     <Link
-                        className="focus:text-gray-dark text-gray-dark font-bold no-underline hover:text-red md:leading-flappy"
+                        className={linkClassName}
                         to="/reading"
                     >
                         Reading
@@ -56,16 +64,12 @@ export default function Header(): ReactComponentElement<any> {
 
                     <a
                         href="https://github.com/ocularrhythm"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
                         title="Github Profile - opens in new window"
                     >
                         Github
                     </a>
                     <a
                         href="https://codepen.io/aaronarney"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
                         title="CodePen Profile - opens in new window"
                     >
                         CodePen
