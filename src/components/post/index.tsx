@@ -24,6 +24,7 @@ interface IProps {
                 readonly path: string;
                 readonly tags: Array<string>;
                 readonly title: string;
+                readonly type: string;
             };
         };
     };
@@ -55,7 +56,11 @@ export default function Template({
                                  }: IProps): ReactComponentElement<any> {
     const post = data.markdownRemark;
     const { frontmatter } = post;
-    const callout = shouldShowCallout(frontmatter.date);
+    let callout = null;
+
+    if (frontmatter.type !== 'work') {
+        callout = shouldShowCallout(frontmatter.date);
+    }
 
     return (
         <Layout location={data.location}>
@@ -99,6 +104,7 @@ export const pageQuery = graphql`
                 date(formatString: "YYYY-MM-DD")
                 category
                 tags
+                type
             }
         }
     }
