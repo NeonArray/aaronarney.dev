@@ -38,6 +38,10 @@ const dictionary = Object.freeze({
         alt: "A text editor with binary code",
         src: webImage,
     },
+    website: {
+        alt: "A text editor with binary code",
+        src: webImage,
+    },
 });
 
 export default function Image({
