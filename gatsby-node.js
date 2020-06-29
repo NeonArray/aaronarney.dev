@@ -60,23 +60,27 @@ exports.createPages = async ({ actions, graphql }) => {
         throw `GraphQL threw an error in gatbsy-node`;
     }
 
-    const posts = result.data.allMarkdownRemark.edges;
+    const generatePages = (arr) => {
+        arr.forEach(({ node }, index) => {
 
-    posts.forEach(({ node }, index) => {
+            if (node.frontmatter === null || node.frontmatter.path === null) {
+                throw `Post ${index} missing path in frontmatter`;
+            }
 
-        if (node.frontmatter === null || node.frontmatter.path === null) {
-            throw `Post ${index} missing path in frontmatter`;
-        }
-
-        createPage({
-            path: node.frontmatter.path,
-            component: blogPostTemplate,
-            context: {
-                prev: index === 0 ? null : posts[index - 1].node,
-                next: index === posts.length - 1 ? null : posts[index + 1].node,
-            },
+            createPage({
+                path: node.frontmatter.path,
+                component: blogPostTemplate,
+                context: {
+                    prev: index === 0 ? null : arr[index - 1].node,
+                    next: index === arr.length - 1 ? null : arr[index + 1].node,
+                },
+            });
         });
-    });
+    }
+
+    const posts = result.data.posts.edges;
+    generatePages(posts);
+    generatePages(result.data.work.edges);
 
     let categories = [];
     posts.forEach((edge) => {
