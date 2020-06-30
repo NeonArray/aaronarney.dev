@@ -27,12 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cms/cms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cms/preview-templates/WorkPageTemplate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cms/preview-templates/WorkPageTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cms/preview-templates/WorkPagePreview.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +159,7 @@
       <workItem from="1593452643396" duration="6346000" />
       <workItem from="1593461303661" duration="3508000" />
       <workItem from="1593534240611" duration="1075000" />
-      <workItem from="1593539517127" duration="5685000" />
+      <workItem from="1593539517127" duration="6019000" />
     </task>
     <servers />
   </component>
