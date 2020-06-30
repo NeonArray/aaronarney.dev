@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: staging
 
 media_folder: src/images
 public_folder: /public
