@@ -10,14 +10,29 @@ collections:
     label: 'Blog'
     folder: 'src/posts'
     create: true
-    media_folder: 'uploads'
+    media_folder: 'src/posts/uploads'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Path', name: 'path', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'work'
+    label: 'Work'
+    folder: 'src/work'
+    create: true
+    media_folder: 'src/work/uploads'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Path', name: 'path', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'work' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

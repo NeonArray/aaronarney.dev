@@ -15,7 +15,7 @@ Since I inherited the codebase I had to first familiarize myself with how things
 
 Luckily the core functionality of the site was already mostly decoupled from the theme (as it should be). Since I patched them, I have no problem disclosing the fact that previously there were multiple SQL injection points of attack that could have been exploited. In multiple locations in the custom User class there were database queries being executed with un-prepared input directly from `$_POST` which is a huge no-no. I escaped the input early, filtered it through some sanitization functions and used `mysql->prepare` to ensure the data would not cause any problems.
 
-All in all the project went fairly smoothly and the client was very happy with the end result.
+All in all the project went fairly smoothly, and the client was very happy with the end result.
 
 <a href="https://pass.artswave.org" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Visit Artswave Pass</a>
 
