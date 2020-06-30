@@ -27,28 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/work.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/work/derby-pie.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/work/uoflphysicians.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/work/uploads/derbypie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/work/uploads/uofl-physicians.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/work/uploads/uoflphysicians-find-a-provider.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post/callout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/callout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/code.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/web.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/web.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fun-stuff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fun-stuff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/guest-posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/guest-posts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/reading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uses.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tags.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +99,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript 1.8" />
@@ -131,19 +116,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/work" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="D:\repos\ocular-rhythm-site\src\pages" />
-      <recent name="D:\repos\ocular-rhythm-site\static" />
-      <recent name="D:\repos\ocular-rhythm-site\src\posts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/work/uploads" />
       <recent name="D:\repos\ocular-rhythm-site\static" />
       <recent name="D:\repos\ocular-rhythm-site\public" />
       <recent name="D:\repos\ocular-rhythm-site\static\icons" />
       <recent name="D:\repos\ocular-rhythm-site\static\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/work" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="D:\repos\ocular-rhythm-site\src\pages" />
+      <recent name="D:\repos\ocular-rhythm-site\static" />
+      <recent name="D:\repos\ocular-rhythm-site\src\posts" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -176,7 +161,9 @@
       <workItem from="1591981534983" duration="1771000" />
       <workItem from="1593184427154" duration="2673000" />
       <workItem from="1593452643396" duration="6346000" />
-      <workItem from="1593461303661" duration="2681000" />
+      <workItem from="1593461303661" duration="3508000" />
+      <workItem from="1593534240611" duration="1075000" />
+      <workItem from="1593539517127" duration="250000" />
     </task>
     <servers />
   </component>

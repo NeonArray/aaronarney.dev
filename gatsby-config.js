@@ -9,6 +9,7 @@ module.exports = {
         image: `/icons/favicon.ico`,
     },
     plugins: [
+        `gatsby-plugin-netlify-cms`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         {
