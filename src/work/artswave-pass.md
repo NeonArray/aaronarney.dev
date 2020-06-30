@@ -1,27 +1,21 @@
 ---
-path: "/work/derby-pie"
-date: "2019-04-20"
-title: "Derby Pie™"
+path: "/work/artswave-pass"
+date: "2019-08-10"
+title: "Artswave Pass"
 type: "work"
 category: "website"
-tags: ["Shopify", "JavaScript", "Liquid"]
+tags: ["WordPress", "PHP"]
 ---
 
-Kerns Kitchen's Derby Pie™ is a mainstay in Kentucky culture. Their pies are closely associated with the Kentucky Derby and for good reason, they are DOPE.
+Artswave is a Cincinnati based organization that offers users a chance to find and attend local events. They have a somewhat complex back-end that manages users, coupons, events and tickets all contained within WordPress. I am not sure who originally built out the website, but they came to us for maintenance services and ultimately a design refresh.
 
-![Derby Pie](./uploads/derbypie.jpg)
+![Artswave Pass](./uploads/artswave-pass.jpg)
 
-Kerns approached LEAP Spark for a website refresh as well as the ability to sell their products online. We assessed several platforms for this undertaking but ultimately fell on Shopify. This decision was based on a few factors, ease of use, PCI compliance, ability to tie into existing financial software and processes, ability to integrate with POS and lastly no managed software updates.
+Since I inherited the codebase I had to first familiarize myself with how things worked. I don't want to disclose too much information about how the site is architected to prevent malicious actors from exploiting it. With that being said, our designer [Sarah Powers](https://sarahpowers.pizza) was given the task to refresh their website while keeping all core functionality the same. I then had to apply this new theme without affecting their users or data.
 
-Since this was the first website I've ever built out in Shopify (minus a small proof of concept site I built when initially evaluating Shopify as a platform), there was a bit of a learning curve. Shopify's documentation leaves a bit to be desired, and I found myself confused at various points in development. Right off the bat, getting started was an issue for me. Shopify had developed a tool called Slate which managed a local installation, compiled your assets and generated a skeleton theme for you. This tool eventually became stagnant with tons of open Github issues. Eventually Shopify marked this tool as essentially dead in the water and instead focusing their efforts on other aspects of Shopify.
+Luckily the core functionality of the site was already mostly decoupled from the theme (as it should be). Since I patched them, I have no problem disclosing the fact that previously there were multiple SQL injection points of attack that could have been exploited. In multiple locations in the custom User class there were database queries being executed with un-prepared input directly from `$_POST` which is a huge no-no. I escaped the input early, filtered it through some sanitization functions and used `mysql->prepare` to ensure the data would not cause any problems.
 
-It wasn't until our second project with Shopify that I discovered a different tool for Shopify called [Theme Kit](https://shopify.github.io/themekit/). This tool is so much better for developing Shopify themes. It's simpler, requires less dependencies and can easily be used for CI/CD pipelines ([an issue I had with using Slate as I discuss in a blog post](./blog/azure-devops-pipeline-shopify/)).
+All in all the project went fairly smoothly and the client was very happy with the end result.
 
-The biggest issue I encountered was with their location finder feature. They maintained a huge database in Excel of locations with addresses on where to buy their pies. Since we were utilizing Google Maps to generate the pie icons for a location, I first needed to convert addresses to also include their latitude and longitude data. To do this I used MapQuests batch geocoding API. 
-
-First I converted the Excel sheet to a CSV file. Next I converted the CSV file into a JSON structure. Lastly I used Postman to send this JSON data (in chunks due to limits) and receive the new lat/lon data I needed.
-
-I saved this data to a JSON file and uploaded it with the theme. Now when the location finder loads it pulls the location data from this file. I had to do it this way because we were pressed for time and Shopify doesn't easily allow you to create any type of repeater custom fields on the back-end, making ease-of-use a bit difficult in this situation for the client. In retrospect, I think in this scenario it might have made sense to import this data into Airtable.js and use their REST API to generate this location map.
-
-<a href="https://derbypie.com" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Visit Derby Pie™</a>
+<a href="https://pass.artswave.org" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Visit Artswave Pass</a>
 
