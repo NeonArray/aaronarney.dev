@@ -43,7 +43,7 @@ exports.createPages = async ({ actions, graphql }) => {
     `);
 
     if (result.errors) {
-        throw `GraphQL threw an error in gatbsy-node`;
+        throw `GraphQL threw an error in gatsby-node`;
     }
 
     const generatePages = (arr) => {
