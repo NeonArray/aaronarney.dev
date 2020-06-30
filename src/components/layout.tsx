@@ -62,8 +62,6 @@ export default function Layout({
                         <Header />
 
                         {children}
-
-                        <Footer />
                     </div>
                 </>
             )}
