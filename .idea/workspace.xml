@@ -27,6 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/posts/.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +160,7 @@
       <workItem from="1593452643396" duration="6346000" />
       <workItem from="1593461303661" duration="3508000" />
       <workItem from="1593534240611" duration="1075000" />
-      <workItem from="1593539517127" duration="1422000" />
+      <workItem from="1593539517127" duration="2350000" />
     </task>
     <servers />
   </component>

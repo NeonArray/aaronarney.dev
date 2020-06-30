@@ -9,6 +9,7 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: 'src/posts'
+    create: true
     media_folder: 'uploads'
     editor:
       preview: false
