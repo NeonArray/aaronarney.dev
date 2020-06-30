@@ -10,7 +10,7 @@ collections:
     label: 'Blog'
     folder: 'src/posts'
     create: true
-    media_folder: 'src/posts/uploads'
+    media_folder: 'uploads'
     editor:
       preview: true
     fields:
@@ -25,7 +25,7 @@ collections:
     label: 'Work'
     folder: 'src/work'
     create: true
-    media_folder: 'src/work/uploads'
+    media_folder: 'uploads'
     editor:
       preview: true
     fields:
