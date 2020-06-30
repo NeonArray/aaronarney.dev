@@ -8,6 +8,7 @@ public_folder: /public
 collections:
   - name: 'blog'
     label: 'Blog'
+    slug: 'blog/{{slug}}'
     folder: 'src/posts'
     create: true
     media_folder: 'uploads'
@@ -23,6 +24,7 @@ collections:
 
   - name: 'work'
     label: 'Work'
+    slug: 'work/{{slug}}'
     folder: 'src/work'
     create: true
     media_folder: 'uploads'
