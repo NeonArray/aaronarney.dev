@@ -24,11 +24,4 @@ There are a group of queue's which are called phases in Node nomenclature, each 
 
 I'm not going to go into detail about each of these phases in this post, but perhaps in the future I will. Until then you can [read about each phase in-depth](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#phases-in-detail) over at the Node docs.
 
-```javascript
-let programIsRunning = true;
-
-let taskQueue = 
-while (programIsRunning) {
-    return intervalQueue || timeoutQueue || osQueue || 
-}
-```
+Each phase is an array/queue with a FIFO (first in, first out) list of callbacks. When Node enters a phase it will cycle through each queue and execute each callback until either the maximum number of callbacks is reached, or the queue length is zero.
