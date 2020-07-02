@@ -49,7 +49,7 @@ When the OS returns the data, Node.js gets notified that it's ready to get back 
 
 ![Diagram demonstrating how tasks are routed through the thread pool, into the O.S thread scheduler and finally to the CPU](uploads/thread-queue.svg)
 
-\*Note that by default, libuv uses 4 threads which can be increased using the \`process.env.UV_THREADPOOL_SIZE\`.
+\*Note that by default, libuv uses 4 threads which can be increased using the `process.env.UV_THREADPOOL_SIZE`.
 
 But the question we should be asking ourselves at this point is which parts of Node.js use this thread pool? The answer isn't easy because different OS's might decide to do different things. However it is somewhat safe to assume any intense operation such as reading and writing files, working with databases or networking will utilize the thread pool.
 
