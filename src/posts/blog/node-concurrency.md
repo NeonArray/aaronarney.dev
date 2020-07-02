@@ -6,6 +6,7 @@ category: web
 tags:
   - node
   - concurrency
+  - threads
 ---
 Node.js in of itself is a single-threaded application (if you want to call it that). However through the use of `libuv` and the underlying operating system, we can enjoy asynchronous capabilities. The question I'm going to hopefully answer, is how does this work?
 
