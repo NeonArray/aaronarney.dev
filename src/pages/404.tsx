@@ -15,8 +15,7 @@ export default function FourOhFour(): ReactComponentElement<any> {
             />
             <main
                 data-grid-area="main"
-                className="mx-auto align-center h-screen text-center max-w-copy"
-                style={{ marginTop: "75px" }}
+                className="mx-auto mt-20 align-center h-screen text-center max-w-copy"
             >
                 <h1>
                     I don&apos;t think this is what you we&apos;re hoping to

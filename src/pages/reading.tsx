@@ -9,14 +9,15 @@ const style = require("./reading.module.css");
 export default function Reading(): ReactComponentElement<any> {
     return (
         <Layout>
-            <main style={{ marginTop: "75px" }}>
+            <main className="mt-20">
                 <Helmet
                     title="Reading | Aaron Arney"
                     bodyAttributes={{
                         class: "page-post",
                     }}
                 />
-                <div className="stack max-w-screen-lg mx-auto">
+
+                <div className="stack px-8 lg:px-0 max-w-screen-lg mx-auto">
                     <h1 className="mb-20 block">Reading</h1>
 
                     <p>
@@ -29,6 +30,7 @@ export default function Reading(): ReactComponentElement<any> {
                     <p> ★ = Favorites</p>
 
                     <h3>Technology</h3>
+
                     <ul className={style.books}>
                         <li>
                             <a href="https://www.indiebound.org/book/9780735619678">

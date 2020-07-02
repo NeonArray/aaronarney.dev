@@ -27,7 +27,7 @@ export default function Blog({ data }: IProps): ReactComponentElement<any> {
 
     return (
         <Layout>
-            <div style={{ marginTop: "75px" }}>
+            <div className="mt-20">
                 <Helmet
                     title="Blog | Aaron Arney"
                     bodyAttributes={{
