@@ -1,13 +1,16 @@
 import * as React from "react";
-import { ReactComponentElement } from "react";
+import { ReactComponentElement, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout";
 
 // @ts-ignore
 import * as photo from "../images/aaron-with-quiet-cropped.jpg";
+import * as photoSwap from "../images/aaron-quit-mad.jpg";
 
 export default function Index(): ReactComponentElement<any> {
+    const [imgSrc, setImgSrc] = useState(photo);
+
     return (
         <Layout>
             <main style={{ marginTop: "75px" }}>
@@ -26,7 +29,7 @@ export default function Index(): ReactComponentElement<any> {
                 >
                     <div className="flex">
                         <div className="px-4 py-2 m-2">
-                            <img className="rounded-full" src={photo} alt=""/>
+                            <img className="rounded-full" src={imgSrc} alt="Aaron with his cat Quiet" onMouseEnter={() => setImgSrc(photoSwap)} onMouseLeave={() => setImgSrc(photo)}/>
                         </div>
 
                         <div className="px-4 py-2 m-2">

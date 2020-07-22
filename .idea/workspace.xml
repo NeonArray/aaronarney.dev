@@ -26,9 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +105,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.19873016" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -162,6 +160,7 @@
       <workItem from="1593539517127" duration="9221000" />
       <workItem from="1593709769328" duration="374000" />
       <workItem from="1594310031490" duration="990000" />
+      <workItem from="1595349233605" duration="1865000" />
     </task>
     <servers />
   </component>
@@ -220,10 +219,11 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="708" y="386" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462182424" />
-    <state x="469" y="163" key="SettingsEditor" timestamp="1593462156851">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="469" y="171" key="SettingsEditor" timestamp="1595364377771">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="469" y="163" key="SettingsEditor/-1440.203.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1593462156851" />
+    <state x="469" y="171" key="SettingsEditor/-1440.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1595364377771" />
     <state x="484" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593455036194">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
