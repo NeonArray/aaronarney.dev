@@ -26,7 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="" />
+    <list default="true" id="bbd66350-50b5-4cf8-8b37-9d00cd364458" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,19 +112,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/work/uploads" />
-      <recent name="D:\repos\ocular-rhythm-site\static" />
-      <recent name="D:\repos\ocular-rhythm-site\public" />
-      <recent name="D:\repos\ocular-rhythm-site\static\icons" />
-      <recent name="D:\repos\ocular-rhythm-site\static\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/work" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="D:\repos\ocular-rhythm-site\src\pages" />
       <recent name="D:\repos\ocular-rhythm-site\static" />
       <recent name="D:\repos\ocular-rhythm-site\src\posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/work/uploads" />
+      <recent name="D:\repos\ocular-rhythm-site\static" />
+      <recent name="D:\repos\ocular-rhythm-site\public" />
+      <recent name="D:\repos\ocular-rhythm-site\static\icons" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -161,6 +163,7 @@
       <workItem from="1593709769328" duration="374000" />
       <workItem from="1594310031490" duration="990000" />
       <workItem from="1595349233605" duration="1865000" />
+      <workItem from="1595439876075" duration="2217000" />
     </task>
     <servers />
   </component>

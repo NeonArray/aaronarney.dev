@@ -1,11 +1,13 @@
 import * as React from "react";
 import { ReactComponentElement, useState } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
 // @ts-ignore
 import * as photo from "../images/aaron-with-quiet-cropped.jpg";
+// @ts-ignore
 import * as photoSwap from "../images/aaron-quit-mad.jpg";
 
 export default function Index(): ReactComponentElement<any> {
@@ -34,29 +36,11 @@ export default function Index(): ReactComponentElement<any> {
 
                         <div className="px-4 py-2 m-2">
                             <h1 style={{ lineHeight: "1.25em", fontSize: "2rem" }}>
-                                This is a blog about development by and of Aaron, a
-                                developer from Louisville, KY.
+                                My name is Aaron Arney, and I am a developer in Louisville, KY.
                             </h1>
 
                             <p>
-                                I built this using{" "}
-                                <a
-                                    className="link"
-                                    href="https://www.gatsbyjs.org"
-                                    target="_blank"
-                                    rel="noopener nofollow noreferrer"
-                                >Gatsby
-                                </a>{" "}
-                                and Tailwind. You can also take a look at the{" "}
-                                <a
-                                    className="link"
-                                    href="https://github.com/ocularrhythm/ocular-rhythm-site"
-                                    target="_blank"
-                                    rel="noopener nofollow noreferrer"
-                                >source code</a>{" "}
-                                if you like, though prepare to be unimpressed. I am
-                                going to rebuild this site from the ground-up in the
-                                coming weeks (bet on it).
+                                For the past few years I've been the Lead Front-End Developer at LEAP Spark, a small-to-medium size business digital marketing agency. I enjoy all aspects of programming and love trying out new languages, though my first-love is JavaScript. You can check out <Link to="/blog">my blog posts</Link>, some <Link to="/work">selected work</Link> or <Link to="/fun-stuff">things I do for fun</Link>.
                             </p>
                         </div>
                     </div>
