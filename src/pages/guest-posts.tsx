@@ -84,6 +84,17 @@ export default function GuestPosts(): ReactComponentElement<any> {
                 },
             },
         },
+        {
+            node: {
+                frontmatter: {
+                    title: "TypeScript Generics Simply Put",
+                    date: "2020-08-13",
+                    path:
+                        "https://dev.to/aaronarney/typescript-generics-simply-put-3i9o",
+                    category: "web",
+                },
+            },
+        },
     ];
 
     return (
