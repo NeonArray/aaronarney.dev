@@ -105,3 +105,12 @@ li > ol {
 .stack h3 {
     margin: 6rem auto 3rem;
 }
+
+table {
+    color: var(--white);
+    margin: 25px 0;
+}
+
+table td {
+    padding: 4px;
+}
