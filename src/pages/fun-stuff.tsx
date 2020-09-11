@@ -8,6 +8,8 @@ import Layout from "../components/layout";
 import * as screenshot from "../images/uniball-redux.jpg";
 // @ts-ignore
 import * as noSceneScreenshot from "../images/no-scene.jpg";
+// @ts-ignore
+import * as memorymatch from "../images/memory-match-unity.jpg";
 
 export default function FunStuff(): ReactComponentElement<any> {
     return (
@@ -22,6 +24,35 @@ export default function FunStuff(): ReactComponentElement<any> {
                 <div className="stack max-w-screen-lg mx-auto">
                     <h1 className="mb-20 block">Fun Stuff</h1>
 
+                    <div className="max-w-sm w-full lg:max-w-full lg:flex my-8">
+                        <div
+                            className="h-48 lg:h-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                            style={{ backgroundImage: `url(${memorymatch})` }} title="Memory Match">
+                        </div>
+                        <div
+                            className="bg-black-lighter rounded-b lg:rounded-b-none lg:rounded-r px-4 py-12 flex flex-col justify-between leading-normal">
+                            <div className="mb-8">
+                                <div className="text-white font-bold text-xl mb-2">
+                                    <h3>Memory Match</h3>
+                                </div>
+                                <p className="text-white text-base">
+                                    Memory Match is a game I built in Unity one weekend. I used asset packs that I had purchased previously, but built out 
+                                    some custom shaders and other assets. Overall it was pretty fun to build because it did offer a few challenges. I had 
+                                    never used Unity's WebGL export so that was also really cool to try out.
+                                </p>
+                            </div>
+                            <div className="flex items-center">
+                                <div className="text-sm">
+                                    <a
+                                        className="link"
+                                        href="https://memory-match-unity.netlify.app/"
+                                    >
+                                        Play the game here.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className="max-w-sm w-full lg:max-w-full lg:flex my-8">
                         <div
