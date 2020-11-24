@@ -470,6 +470,14 @@ export default function Uses(): ReactComponentElement<any> {
                                         Draw.io
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        className="link"
+                                        href="https://extendsclass.com/"
+                                    >
+                                        ExtendsClass.com
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
