@@ -64,7 +64,6 @@ exports.createPages = async ({ actions, graphql }) => {
 
     const posts = result.data.posts.edges;
     generatePages(posts);
-    generatePages(result.data.work.edges);
 
     let categories = [];
     posts.forEach((edge) => {
