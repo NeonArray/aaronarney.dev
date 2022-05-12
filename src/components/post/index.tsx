@@ -56,11 +56,7 @@ export default function Template({
                                  }: IProps): ReactComponentElement<any> {
     const post = data.markdownRemark;
     const { frontmatter } = post;
-    let callout = null;
-
-    if (frontmatter.type !== 'work') {
-        callout = shouldShowCallout(frontmatter.date);
-    }
+    let callout = shouldShowCallout(frontmatter.date);
 
     return (
         <Layout location={data.location}>

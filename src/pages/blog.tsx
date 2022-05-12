@@ -48,7 +48,6 @@ export default function Blog({ data }: IProps): ReactComponentElement<any> {
 export const pageQuery = graphql`
     query BlogQuery {
         allMarkdownRemark(
-        filter: {frontmatter: {type: {ne: "work"}}}
         sort: { order: DESC, fields: [frontmatter___date] }) {
             edges {
                 node {

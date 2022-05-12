@@ -42,7 +42,6 @@ module.exports = {
                         query: `
                         {
                             allMarkdownRemark(
-                                filter: { frontmatter: { type: { ne: "work" } } }
                                 sort: { order: DESC, fields: [frontmatter___date] },
                             ) {
                                 edges {
@@ -78,13 +77,6 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/posts`,
                 name: `pages`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/src/work`,
-                name: `work`,
             },
         },
         {

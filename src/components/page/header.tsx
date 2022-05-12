@@ -35,19 +35,6 @@ export default function Header(): ReactComponentElement<any> {
 
                     <Link
                         className={linkClassName}
-                        to="/work">
-                        Work
-                    </Link>
-
-                    <Link
-                        className={linkClassName}
-                        to="/uses"
-                    >
-                        Uses
-                    </Link>
-
-                    <Link
-                        className={linkClassName}
                         to="/fun-stuff"
                     >
                         Fun Stuff
@@ -67,12 +54,6 @@ export default function Header(): ReactComponentElement<any> {
                         title="Github Profile - opens in new window"
                     >
                         Github
-                    </a>
-                    <a
-                        href="https://codepen.io/aaronarney"
-                        title="CodePen Profile - opens in new window"
-                    >
-                        CodePen
                     </a>
                 </Menu>
 
