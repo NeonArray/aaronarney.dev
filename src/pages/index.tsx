@@ -40,7 +40,7 @@ export default function Index(): ReactComponentElement<any> {
                             </h1>
 
                             <p>
-                                For the past few years I've been the Lead Front-End Developer at LEAP Spark, a small-to-medium size business digital marketing agency. I enjoy all aspects of programming and love trying out new languages, though my first-love is JavaScript. You can check out <Link to="/blog">my blog posts</Link>, some <Link to="/work">selected work</Link> or <Link to="/fun-stuff">things I do for fun</Link>.
+                                You can check out <Link to="/blog">my blog posts</Link>, some <Link to="/work">selected work</Link> or <Link to="/fun-stuff">things I do for fun</Link>.
                             </p>
                         </div>
                     </div>
